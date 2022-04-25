@@ -1,0 +1,849 @@
+{
+   "e_scandinavia": {
+      "color": [
+         62,
+         122,
+         189
+      ],
+      "color2": [
+         255,
+         255,
+         0
+      ],
+      "capital": "c_skane",
+      "ai_primary_priority": {
+         "if": {
+            "limit": {
+               "culture": {
+                  "has_cultural_pillar": "heritage_north_germanic"
+               }
+            },
+            "add": "@correct_culture_primary_score"
+         }
+      },
+      "k_sweden": {
+         "color": [
+            50,
+            110,
+            165
+         ],
+         "color2": [
+            255,
+            255,
+            0
+         ],
+         "capital": "c_upland",
+         "ai_primary_priority": {
+            "if": {
+               "limit": {
+                  "culture": "culture:swedish"
+               },
+               "add": "@correct_culture_primary_score"
+            }
+         },
+         "d_svealand": {
+            "color": [
+               20,
+               20,
+               145
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_upland",
+            "c_upland": {
+               "color": [
+                  30,
+                  90,
+                  210
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_swedish": "d_svealand"
+               },
+               "b_sigtuna": {
+                  "province": 341,
+                  "color": [
+                     30,
+                     90,
+                     210
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_uppsala": {
+               "color": [
+                  30,
+                  90,
+                  210
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_uppsala": {
+                  "province": 342,
+                  "color": [
+                     30,
+                     90,
+                     210
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_enescopinge": {
+               "color": [
+                  30,
+                  90,
+                  210
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norwegian": "cn_enkoping",
+                  "name_list_danish": "cn_enkobing"
+               },
+               "b_enescopinge": {
+                  "province": 343,
+                  "color": [
+                     30,
+                     90,
+                     210
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_enkoping",
+                     "name_list_danish": "cn_enkobing"
+                  }
+               }
+            },
+            "c_osthammar": {
+               "color": [
+                  30,
+                  90,
+                  210
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_osthammar": {
+                  "province": 344,
+                  "color": [
+                     30,
+                     90,
+                     210
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_gastrikland": {
+               "color": [
+                  40,
+                  70,
+                  220
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_gavle": {
+                  "province": 354,
+                  "color": [
+                     40,
+                     70,
+                     220
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_oklabo": {
+               "color": [
+                  40,
+                  70,
+                  220
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_oklabo": {
+                  "province": 355,
+                  "color": [
+                     40,
+                     70,
+                     220
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_odmarden": {
+               "color": [
+                  40,
+                  70,
+                  220
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_odmarden": {
+                  "province": 356,
+                  "color": [
+                     40,
+                     70,
+                     220
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_sodermannaland": {
+               "color": [
+                  50,
+                  110,
+                  230
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_strigines": {
+                  "province": 339,
+                  "color": [
+                     50,
+                     110,
+                     230
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_talje": {
+               "color": [
+                  50,
+                  110,
+                  230
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_talje": {
+                  "province": 336,
+                  "color": [
+                     50,
+                     110,
+                     230
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_nykopung": {
+               "cultural_names": {
+                  "name_list_norwegian": "cn_nyokoping",
+                  "name_list_danish": "cn_nyokobing"
+               },
+               "color": [
+                  50,
+                  110,
+                  230
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_nykopung": {
+                  "province": 337,
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_nyokoping",
+                     "name_list_danish": "cn_nyokobing"
+                  },
+                  "color": [
+                     50,
+                     110,
+                     230
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_sundby": {
+               "color": [
+                  50,
+                  110,
+                  230
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_sundby": {
+                  "province": 338,
+                  "color": [
+                     50,
+                     110,
+                     230
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_birkevik": {
+               "color": [
+                  50,
+                  110,
+                  230
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_birkevik": {
+                  "province": 340,
+                  "color": [
+                     50,
+                     110,
+                     230
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_aland": {
+               "color": [
+                  28,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_swedish": "cn_aland_SWE",
+                  "name_list_norse": "cn_ahvenanmaa"
+               },
+               "b_sund": {
+                  "province": 216,
+                  "color": [
+                     28,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_jomala": {
+               "color": [
+                  28,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_jomala": {
+                  "province": 217,
+                  "color": [
+                     28,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_bergslagen": {
+            "color": [
+               60,
+               60,
+               200
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_vastmanland",
+            "c_vastmanland": {
+               "color": [
+                  43,
+                  43,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_vaestraaros": {
+                  "province": 346,
+                  "color": [
+                     43,
+                     43,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_vesteras",
+                     "name_list_danish": "cn_vesteras"
+                  }
+               }
+            },
+            "c_arbuga": {
+               "color": [
+                  43,
+                  43,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_arbuga": {
+                  "province": 347,
+                  "color": [
+                     43,
+                     43,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_skynzekkeberge": {
+               "color": [
+                  43,
+                  43,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_skynzekkeberge": {
+                  "province": 348,
+                  "color": [
+                     43,
+                     43,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_fernabo": {
+               "color": [
+                  43,
+                  43,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_fernabo": {
+                  "province": 349,
+                  "color": [
+                     43,
+                     43,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_varmland": {
+               "color": [
+                  18,
+                  57,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_tingvalla": {
+                  "province": 323,
+                  "color": [
+                     18,
+                     57,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_friskdal": {
+               "color": [
+                  18,
+                  57,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_friskdal": {
+                  "province": 324,
+                  "color": [
+                     18,
+                     57,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_vase": {
+               "color": [
+                  18,
+                  57,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_vase": {
+                  "province": 326,
+                  "color": [
+                     18,
+                     57,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_farnebo": {
+               "color": [
+                  18,
+                  57,
+                  153
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_farnebo": {
+                  "province": 8739,
+                  "color": [
+                     18,
+                     57,
+                     153
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_dalarna": {
+               "color": [
+                  65,
+                  115,
+                  235
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_mor": {
+                  "province": 351,
+                  "color": [
+                     65,
+                     115,
+                     235
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_molungr": {
+               "color": [
+                  65,
+                  115,
+                  235
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_molungr": {
+                  "province": 352,
+                  "color": [
+                     65,
+                     115,
+                     235
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_orsa": {
+               "color": [
+                  65,
+                  115,
+                  235
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_orsa": {
+                  "province": 8730,
+                  "color": [
+                     65,
+                     115,
+                     235
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_lima": {
+               "color": [
+                  65,
+                  115,
+                  235
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_lima": {
+                  "province": 8729,
+                  "color": [
+                     65,
+                     115,
+                     235
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_dalabergslagen": {
+               "color": [
+                  56,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_falene": {
+                  "province": 350,
+                  "color": [
+                     56,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_norrbarke": {
+               "color": [
+                  56,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_norrbarke": {
+                  "province": 353,
+                  "color": [
+                     56,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_henamorum": {
+               "color": [
+                  56,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_henamorum": {
+                  "province": 345,
+                  "color": [
+                     56,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_leksand": {
+               "color": [
+                  56,
+                  56,
+                  199
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_leksand": {
+                  "province": 8728,
+                  "color": [
+                     56,
+                     56,
+                     199
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         }
+      }
+   }
+}

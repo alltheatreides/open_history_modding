@@ -1,0 +1,5809 @@
+{
+   "5000": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5001": {
+      "holding": "none"
+   },
+   "5002": {
+      "holding": "none"
+   },
+   "5003": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5004": {
+      "holding": "none"
+   },
+   "5005": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5006": {
+      "holding": "none"
+   },
+   "5007": {
+      "holding": "none"
+   },
+   "5008": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5009": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5010": {
+      "holding": "none",
+      "960.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5011": {
+      "holding": "none"
+   },
+   "5012": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5013": {
+      "holding": "none",
+      "1070.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5014": {
+      "holding": "none"
+   },
+   "5015": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5016": {
+      "holding": "none"
+   },
+   "5017": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5018": {
+      "holding": "none"
+   },
+   "5019": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5020": {
+      "holding": "none"
+   },
+   "5021": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5022": {
+      "holding": "none"
+   },
+   "5023": {
+      "holding": "none"
+   },
+   "5024": {
+      "holding": "none"
+   },
+   "5025": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5026": {
+      "holding": "none"
+   },
+   "5027": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5028": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5029": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5030": {
+      "holding": "none"
+   },
+   "5031": {
+      "culture": "vlach",
+      "religion": "orthodox",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5032": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5033": {
+      "holding": "none"
+   },
+   "5034": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5035": {
+      "holding": "none"
+   },
+   "5036": {
+      "holding": "none"
+   },
+   "5037": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5038": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5039": {
+      "holding": "none"
+   },
+   "5040": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "special_building_slot": "hotin_fort_01",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1000.1.1": {
+         "religion": "orthodox",
+         "special_building": "hotin_fort_01"
+      }
+   },
+   "5041": {
+      "holding": "none"
+   },
+   "5042": {
+      "holding": "none"
+   },
+   "5043": {
+      "holding": "none"
+   },
+   "5044": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5045": {
+      "holding": "none"
+   },
+   "5046": {
+      "holding": "none"
+   },
+   "5047": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5048": {
+      "holding": "none"
+   },
+   "5049": {
+      "holding": "none"
+   },
+   "5050": {
+      "holding": "none"
+   },
+   "5051": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5052": {
+      "holding": "none"
+   },
+   "5053": {
+      "holding": "none"
+   },
+   "5054": {
+      "holding": "none",
+      "989.9.15": {
+         "religion": "orthodox"
+      },
+      "1150.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5055": {
+      "holding": "none"
+   },
+   "5056": {
+      "holding": "none"
+   },
+   "5057": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "985.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5058": {
+      "holding": "none"
+   },
+   "5059": {
+      "holding": "none"
+   },
+   "5060": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5061": {
+      "holding": "none"
+   },
+   "5062": {
+      "holding": "none"
+   },
+   "5063": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5064": {
+      "holding": "none",
+      "1050.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5065": {
+      "holding": "none",
+      "1071.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5066": {
+      "holding": "none"
+   },
+   "5067": {
+      "holding": "none"
+   },
+   "5068": {
+      "holding": "none"
+   },
+   "5069": {
+      "holding": "none"
+   },
+   "5070": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5071": {
+      "holding": "none",
+      "1100.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5072": {
+      "holding": "none",
+      "1100.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5073": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5074": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5075": {
+      "holding": "none",
+      "950.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5076": {
+      "holding": "none",
+      "1035.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5077": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5078": {
+      "holding": "none"
+   },
+   "5079": {
+      "holding": "none",
+      "1031.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5080": {
+      "holding": "none",
+      "981.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5081": {
+      "holding": "none"
+   },
+   "5082": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5083": {
+      "holding": "none",
+      "980.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5084": {
+      "holding": "none",
+      "1032.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5085": {
+      "holding": "none",
+      "1078.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5086": {
+      "holding": "none"
+   },
+   "5087": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5088": {
+      "holding": "none",
+      "1050.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5089": {
+      "holding": "none"
+   },
+   "5090": {
+      "holding": "none"
+   },
+   "5091": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5092": {
+      "holding": "none",
+      "1180.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5093": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5094": {
+      "holding": "none"
+   },
+   "5095": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5096": {
+      "holding": "none"
+   },
+   "5097": {
+      "holding": "none"
+   },
+   "5098": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5099": {
+      "holding": "none"
+   },
+   "5100": {
+      "holding": "none"
+   },
+   "5101": {
+      "holding": "none"
+   },
+   "5102": {
+      "holding": "none"
+   },
+   "5103": {
+      "holding": "none"
+   },
+   "5104": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5105": {
+      "holding": "none",
+      "946.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5106": {
+      "holding": "none",
+      "1155.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5107": {
+      "holding": "none"
+   },
+   "5108": {
+      "holding": "none"
+   },
+   "5109": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5110": {
+      "holding": "none"
+   },
+   "5111": {
+      "holding": "none"
+   },
+   "5112": {
+      "holding": "none"
+   },
+   "5113": {
+      "holding": "none"
+   },
+   "5114": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5115": {
+      "holding": "none"
+   },
+   "5116": {
+      "holding": "none"
+   },
+   "5117": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5118": {
+      "holding": "none"
+   },
+   "5119": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5120": {
+      "holding": "none"
+   },
+   "5121": {
+      "holding": "none"
+   },
+   "5122": {
+      "holding": "none",
+      "989.9.15": {
+         "holding": "castle_holding"
+      }
+   },
+   "5123": {
+      "holding": "none",
+      "1078.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5124": {
+      "holding": "none",
+      "985.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5125": {
+      "holding": "none"
+   },
+   "5126": {
+      "holding": "none",
+      "1102.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5127": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5128": {
+      "holding": "none",
+      "1078.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5129": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "985.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "ramparts_01",
+            "hunting_grounds_01",
+            "military_camps_01"
+         ]
+      }
+   },
+   "5130": {
+      "holding": "none"
+   },
+   "5131": {
+      "holding": "none"
+   },
+   "5132": {
+      "holding": "none"
+   },
+   "5133": {
+      "holding": "none"
+   },
+   "5134": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "985.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5135": {
+      "holding": "none",
+      "1170.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5136": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5137": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "867.1.1": {
+         "buildings": [
+            "war_camps_01"
+         ]
+      },
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "ramparts_01",
+            "barracks_01",
+            "hunting_grounds_01",
+            "outposts_01"
+         ]
+      }
+   },
+   "5138": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5139": {
+      "holding": "none"
+   },
+   "5140": {
+      "holding": "none"
+   },
+   "5141": {
+      "holding": "none"
+   },
+   "5142": {
+      "holding": "none"
+   },
+   "5143": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5144": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5145": {
+      "holding": "none",
+      "1080.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5146": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5147": {
+      "holding": "none",
+      "935.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5148": {
+      "holding": "none"
+   },
+   "5149": {
+      "holding": "none"
+   },
+   "5150": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5151": {
+      "holding": "none"
+   },
+   "5152": {
+      "holding": "none"
+   },
+   "5153": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5154": {
+      "holding": "none"
+   },
+   "5155": {
+      "holding": "none"
+   },
+   "5156": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5157": {
+      "holding": "none"
+   },
+   "5158": {
+      "holding": "none"
+   },
+   "5159": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1150.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5160": {
+      "holding": "none"
+   },
+   "5161": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5162": {
+      "holding": "none",
+      "1144.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5163": {
+      "holding": "none"
+   },
+   "5164": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1100.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5165": {
+      "holding": "none"
+   },
+   "5166": {
+      "holding": "none"
+   },
+   "5167": {
+      "holding": "none"
+   },
+   "5168": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1100.1.1": {
+         "religion": "orthodox"
+      }
+   },
+   "5169": {
+      "holding": "none"
+   },
+   "5170": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5171": {
+      "holding": "none"
+   },
+   "5172": {
+      "holding": "none"
+   },
+   "5173": {
+      "culture": "merya",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox"
+      },
+      "1050.1.1": {
+         "culture": "russian"
+      }
+   },
+   "5174": {
+      "holding": "none",
+      "1050.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5175": {
+      "holding": "none"
+   },
+   "5176": {
+      "holding": "none",
+      "1050.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5177": {
+      "holding": "none"
+   },
+   "5178": {
+      "holding": "none",
+      "1015.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5179": {
+      "holding": "none",
+      "1085.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5180": {
+      "holding": "none"
+   },
+   "5181": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5182": {
+      "holding": "none",
+      "950.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5183": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5184": {
+      "holding": "none",
+      "1174.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5185": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5186": {
+      "holding": "none"
+   },
+   "5187": {
+      "holding": "none"
+   },
+   "5188": {
+      "holding": "none"
+   },
+   "5189": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5190": {
+      "holding": "none",
+      "988.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5191": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5192": {
+      "holding": "none",
+      "1152.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5193": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "935.1.2": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5194": {
+      "holding": "none",
+      "1000.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5195": {
+      "holding": "none"
+   },
+   "5196": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "988.1.2": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5197": {
+      "holding": "none",
+      "1152.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5198": {
+      "holding": "none"
+   },
+   "5199": {
+      "holding": "none"
+   },
+   "5200": {
+      "holding": "none",
+      "1142.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5201": {
+      "holding": "none",
+      "1147.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5202": {
+      "holding": "none"
+   },
+   "5203": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "988.1.2": {
+         "holding": "castle_holding"
+      },
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5204": {
+      "holding": "none",
+      "975.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5205": {
+      "holding": "none"
+   },
+   "5206": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5207": {
+      "holding": "none"
+   },
+   "5208": {
+      "holding": "none"
+   },
+   "5209": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5210": {
+      "holding": "none",
+      "1147.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5211": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5212": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox"
+      }
+   },
+   "5213": {
+      "holding": "none",
+      "1155.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5214": {
+      "holding": "none",
+      "1147.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5215": {
+      "culture": "meshchera",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5216": {
+      "holding": "none",
+      "1146.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5217": {
+      "culture": "meshchera",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5218": {
+      "holding": "none"
+   },
+   "5219": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5220": {
+      "holding": "none",
+      "1150.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5221": {
+      "culture": "russian",
+      "religion": "slavic_pagan",
+      "holding": "tribal_holding",
+      "989.9.15": {
+         "religion": "orthodox",
+         "holding": "castle_holding"
+      }
+   },
+   "5222": {
+      "holding": "none"
+   },
+   "5223": {
+      "holding": "none"
+   },
+   "5224": {
+      "holding": "none"
+   },
+   "5225": {
+      "holding": "none"
+   },
+   "5226": {
+      "holding": "none"
+   },
+   "5227": {
+      "holding": "none"
+   },
+   "5228": {
+      "holding": "none"
+   },
+   "5229": {
+      "holding": "none",
+      "1153.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5230": {
+      "holding": "none"
+   },
+   "5231": {
+      "culture": "meshchera",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5232": {
+      "holding": "none",
+      "1146.1.1": {
+         "holding": "church_holding"
+      }
+   },
+   "5233": {
+      "holding": "none"
+   },
+   "5234": {
+      "holding": "none"
+   },
+   "5235": {
+      "holding": "none"
+   },
+   "5236": {
+      "holding": "none"
+   },
+   "5237": {
+      "holding": "none"
+   },
+   "5238": {
+      "holding": "none"
+   },
+   "5239": {
+      "culture": "merya",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "935.1.1": {
+         "holding": "castle_holding"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "curtain_walls_01",
+            "hunting_grounds_01",
+            "military_camps_01"
+         ]
+      }
+   },
+   "5240": {
+      "holding": "none",
+      "1152.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5241": {
+      "holding": "none"
+   },
+   "5242": {
+      "holding": "none"
+   },
+   "5243": {
+      "holding": "none"
+   },
+   "5244": {
+      "holding": "none"
+   },
+   "5245": {
+      "holding": "none"
+   },
+   "5246": {
+      "holding": "none"
+   },
+   "5247": {
+      "culture": "merya",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5248": {
+      "holding": "none"
+   },
+   "5249": {
+      "holding": "none"
+   },
+   "5250": {
+      "culture": "merya",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5251": {
+      "holding": "none"
+   },
+   "5252": {
+      "holding": "none"
+   },
+   "5253": {
+      "holding": "none"
+   },
+   "5254": {
+      "holding": "none"
+   },
+   "5255": {
+      "holding": "none"
+   },
+   "5256": {
+      "holding": "none"
+   },
+   "5257": {
+      "culture": "mogyer",
+      "religion": "magyar_pagan",
+      "holding": "tribal_holding",
+      "895.1.2": {
+         "culture": "pecheneg",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5258": {
+      "holding": "none"
+   },
+   "5259": {
+      "holding": "none"
+   },
+   "5260": {
+      "culture": "mogyer",
+      "religion": "magyar_pagan",
+      "895.1.2": {
+         "culture": "pecheneg",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5261": {
+      "holding": "none"
+   },
+   "5262": {
+      "holding": "none"
+   },
+   "5263": {
+      "culture": "mogyer",
+      "religion": "magyar_pagan",
+      "895.1.2": {
+         "culture": "pecheneg",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5264": {
+      "holding": "none"
+   },
+   "5265": {
+      "holding": "none"
+   },
+   "5266": {
+      "holding": "none"
+   },
+   "5267": {
+      "holding": "none"
+   },
+   "5268": {
+      "holding": "none"
+   },
+   "5269": {
+      "culture": "mogyer",
+      "religion": "magyar_pagan",
+      "895.1.2": {
+         "culture": "pecheneg",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5270": {
+      "holding": "none"
+   },
+   "5271": {
+      "holding": "none"
+   },
+   "5272": {
+      "holding": "none"
+   },
+   "5273": {
+      "holding": "none"
+   },
+   "5274": {
+      "culture": "mogyer",
+      "religion": "magyar_pagan",
+      "895.1.2": {
+         "culture": "pecheneg",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5275": {
+      "holding": "none"
+   },
+   "5276": {
+      "holding": "none"
+   },
+   "5277": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "1000.1.2": {
+         "culture": "cuman"
+      }
+   },
+   "5278": {
+      "holding": "none"
+   },
+   "5279": {
+      "holding": "none"
+   },
+   "5280": {
+      "holding": "none"
+   },
+   "5281": {
+      "holding": "none"
+   },
+   "5282": {
+      "holding": "none"
+   },
+   "5283": {
+      "holding": "none"
+   },
+   "5284": {
+      "holding": "none"
+   },
+   "5285": {
+      "holding": "none"
+   },
+   "5286": {
+      "holding": "none"
+   },
+   "5287": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "1000.1.2": {
+         "culture": "cuman"
+      }
+   },
+   "5288": {
+      "holding": "none"
+   },
+   "5289": {
+      "holding": "city_holding",
+      "990.1.2": {
+         "holding": "none"
+      }
+   },
+   "5290": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "750.1.2": {
+         "religion": "kabarism"
+      },
+      "1000.1.2": {
+         "culture": "cuman"
+      }
+   },
+   "5291": {
+      "holding": "none"
+   },
+   "5292": {
+      "holding": "none"
+   },
+   "5293": {
+      "holding": "none"
+   },
+   "5294": {
+      "holding": "none"
+   },
+   "5295": {
+      "holding": "none"
+   },
+   "5296": {
+      "culture": "alan",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "965.1.2": {
+         "religion": "orthodox"
+      }
+   },
+   "5297": {
+      "holding": "none"
+   },
+   "5298": {
+      "holding": "none"
+   },
+   "5299": {
+      "culture": "alan",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "965.1.2": {
+         "religion": "orthodox"
+      }
+   },
+   "5300": {
+      "holding": "none"
+   },
+   "5301": {
+      "holding": "none"
+   },
+   "5302": {
+      "holding": "none"
+   },
+   "5303": {
+      "holding": "none"
+   },
+   "5304": {
+      "holding": "city_holding"
+   },
+   "5305": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "750.1.2": {
+         "religion": "kabarism"
+      }
+   },
+   "5306": {
+      "holding": "none"
+   },
+   "5307": {
+      "holding": "none"
+   },
+   "5308": {
+      "holding": "none"
+   },
+   "5309": {
+      "holding": "none"
+   },
+   "5310": {
+      "holding": "none"
+   },
+   "5311": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "750.1.2": {
+         "religion": "kabarism"
+      }
+   },
+   "5312": {
+      "holding": "none"
+   },
+   "5313": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "1000.1.2": {
+         "culture": "cuman"
+      }
+   },
+   "5314": {
+      "holding": "none"
+   },
+   "5315": {
+      "holding": "none"
+   },
+   "5316": {
+      "holding": "none"
+   },
+   "5317": {
+      "holding": "none"
+   },
+   "5318": {
+      "holding": "none"
+   },
+   "5319": {
+      "culture": "pecheneg",
+      "religion": "tengri_pagan",
+      "1000.1.2": {
+         "culture": "cuman"
+      }
+   },
+   "5320": {
+      "holding": "none"
+   },
+   "5321": {
+      "holding": "none"
+   },
+   "5322": {
+      "holding": "none"
+   },
+   "5323": {
+      "holding": "none"
+   },
+   "5324": {
+      "holding": "none"
+   },
+   "5325": {
+      "holding": "none"
+   },
+   "5326": {
+      "holding": "none"
+   },
+   "5327": {
+      "holding": "none"
+   },
+   "5328": {
+      "holding": "none"
+   },
+   "5329": {
+      "holding": "none"
+   },
+   "5330": {
+      "holding": "none"
+   },
+   "5331": {
+      "holding": "none"
+   },
+   "5332": {
+      "holding": "none"
+   },
+   "5333": {
+      "holding": "none"
+   },
+   "5334": {
+      "holding": "none"
+   },
+   "5335": {
+      "holding": "none"
+   },
+   "5336": {
+      "holding": "none"
+   },
+   "5337": {
+      "holding": "none"
+   },
+   "5338": {
+      "holding": "none"
+   },
+   "5339": {
+      "holding": "none"
+   },
+   "5340": {
+      "holding": "none"
+   },
+   "5341": {
+      "holding": "none",
+      "1066.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5342": {
+      "holding": "none"
+   },
+   "5343": {
+      "culture": "khazar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "750.1.2": {
+         "religion": "kabarism"
+      }
+   },
+   "5344": {
+      "holding": "none"
+   },
+   "5345": {
+      "holding": "none"
+   },
+   "5346": {
+      "holding": "none"
+   },
+   "5347": {
+      "holding": "none"
+   },
+   "5348": {
+      "holding": "none"
+   },
+   "5349": {
+      "holding": "none"
+   },
+   "5350": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5351": {
+      "holding": "none"
+   },
+   "5352": {
+      "holding": "none"
+   },
+   "5353": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5354": {
+      "holding": "none"
+   },
+   "5355": {
+      "holding": "none"
+   },
+   "5356": {
+      "holding": "none"
+   },
+   "5357": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5358": {
+      "holding": "none"
+   },
+   "5359": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5360": {
+      "holding": "none"
+   },
+   "5361": {
+      "holding": "none"
+   },
+   "5362": {
+      "holding": "none"
+   },
+   "5363": {
+      "holding": "none"
+   },
+   "5364": {
+      "holding": "none"
+   },
+   "5365": {
+      "holding": "none"
+   },
+   "5366": {
+      "culture": "chuvash",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "965.1.2": {
+         "culture": "bolghar",
+         "religion": "ashari",
+         "holding": "castle_holding"
+      }
+   },
+   "5367": {
+      "holding": "none"
+   },
+   "5368": {
+      "holding": "none"
+   },
+   "5369": {
+      "holding": "none"
+   },
+   "5370": {
+      "holding": "none"
+   },
+   "5371": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5372": {
+      "holding": "none"
+   },
+   "5373": {
+      "holding": "none"
+   },
+   "5374": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5375": {
+      "holding": "none"
+   },
+   "5376": {
+      "holding": "none"
+   },
+   "5377": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5378": {
+      "holding": "none"
+   },
+   "5379": {
+      "holding": "none"
+   },
+   "5380": {
+      "holding": "none"
+   },
+   "5381": {
+      "holding": "none"
+   },
+   "5382": {
+      "holding": "none"
+   },
+   "5383": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5384": {
+      "holding": "none"
+   },
+   "5385": {
+      "holding": "none"
+   },
+   "5386": {
+      "holding": "none"
+   },
+   "5387": {
+      "holding": "none"
+   },
+   "5388": {
+      "culture": "mordvin",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1066.1.2": {
+         "culture": "chuvash",
+         "religion": "tengri_pagan"
+      }
+   },
+   "5389": {
+      "holding": "none"
+   },
+   "5390": {
+      "culture": "chuvash",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding"
+   },
+   "5391": {
+      "holding": "none"
+   },
+   "5392": {
+      "holding": "none"
+   },
+   "5393": {
+      "holding": "none"
+   },
+   "5394": {
+      "holding": "none"
+   },
+   "5395": {
+      "holding": "none"
+   },
+   "5396": {
+      "holding": "none"
+   },
+   "5397": {
+      "holding": "none",
+      "976.1.2": {
+         "holding": "city_holding"
+      }
+   },
+   "5398": {
+      "holding": "none"
+   },
+   "5399": {
+      "holding": "none"
+   },
+   "5400": {
+      "holding": "none"
+   },
+   "5401": {
+      "holding": "none"
+   },
+   "5402": {
+      "holding": "none"
+   },
+   "5403": {
+      "culture": "komi",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "965.1.2": {
+         "culture": "bolghar",
+         "religion": "ashari"
+      }
+   },
+   "5404": {
+      "holding": "none"
+   },
+   "5405": {
+      "holding": "church_holding"
+   },
+   "5406": {
+      "holding": "none",
+      "922.1.2": {
+         "holding": "city_holding"
+      }
+   },
+   "5407": {
+      "holding": "none",
+      "922.1.2": {
+         "holding": "city_holding"
+      }
+   },
+   "5408": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari"
+      },
+      "965.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5409": {
+      "holding": "none"
+   },
+   "5410": {
+      "holding": "none"
+   },
+   "5411": {
+      "holding": "none",
+      "922.1.2": {
+         "holding": "city_holding"
+      }
+   },
+   "5412": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari",
+         "holding": "castle_holding"
+      }
+   },
+   "5413": {
+      "holding": "none",
+      "922.1.2": {
+         "holding": "city_holding"
+      }
+   },
+   "5414": {
+      "holding": "none"
+   },
+   "5415": {
+      "holding": "none"
+   },
+   "5416": {
+      "holding": "none"
+   },
+   "5417": {
+      "holding": "none"
+   },
+   "5418": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari"
+      }
+   },
+   "5419": {
+      "holding": "none"
+   },
+   "5420": {
+      "holding": "none"
+   },
+   "5421": {
+      "holding": "none"
+   },
+   "5422": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari"
+      }
+   },
+   "5423": {
+      "holding": "none"
+   },
+   "5424": {
+      "holding": "none"
+   },
+   "5425": {
+      "holding": "none"
+   },
+   "5426": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari"
+      }
+   },
+   "5427": {
+      "holding": "none"
+   },
+   "5428": {
+      "holding": "none"
+   },
+   "5429": {
+      "holding": "none"
+   },
+   "5430": {
+      "holding": "none"
+   },
+   "5431": {
+      "culture": "bolghar",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "922.1.2": {
+         "religion": "ashari"
+      }
+   },
+   "5432": {
+      "holding": "none"
+   },
+   "5433": {
+      "holding": "none"
+   },
+   "5434": {
+      "holding": "none"
+   },
+   "5435": {
+      "holding": "none"
+   },
+   "5436": {
+      "holding": "none"
+   },
+   "5437": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5438": {
+      "holding": "none"
+   },
+   "5439": {
+      "holding": "none"
+   },
+   "5440": {
+      "holding": "none"
+   },
+   "5441": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5442": {
+      "holding": "none"
+   },
+   "5443": {
+      "holding": "none"
+   },
+   "5444": {
+      "holding": "none"
+   },
+   "5445": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5446": {
+      "holding": "none"
+   },
+   "5447": {
+      "holding": "none"
+   },
+   "5448": {
+      "holding": "none"
+   },
+   "5449": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5450": {
+      "holding": "none"
+   },
+   "5451": {
+      "holding": "none"
+   },
+   "5452": {
+      "holding": "none"
+   },
+   "5453": {
+      "holding": "none"
+   },
+   "5454": {
+      "holding": "none"
+   },
+   "5455": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5456": {
+      "holding": "none"
+   },
+   "5457": {
+      "holding": "none"
+   },
+   "5458": {
+      "holding": "none"
+   },
+   "5459": {
+      "holding": "none"
+   },
+   "5460": {
+      "holding": "none"
+   },
+   "5461": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5462": {
+      "holding": "none"
+   },
+   "5463": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5464": {
+      "holding": "none"
+   },
+   "5465": {
+      "holding": "none"
+   },
+   "5466": {
+      "culture": "komi",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5467": {
+      "holding": "none"
+   },
+   "5468": {
+      "holding": "none"
+   },
+   "5469": {
+      "holding": "none"
+   },
+   "5470": {
+      "culture": "mari",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5471": {
+      "holding": "none"
+   },
+   "5472": {
+      "holding": "none"
+   },
+   "5473": {
+      "holding": "none"
+   },
+   "5474": {
+      "holding": "none"
+   },
+   "5475": {
+      "holding": "none"
+   },
+   "5476": {
+      "holding": "none"
+   },
+   "5477": {
+      "holding": "none"
+   },
+   "5478": {
+      "holding": "none"
+   },
+   "5479": {
+      "holding": "none"
+   },
+   "5480": {
+      "holding": "none"
+   },
+   "5481": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "915.1.2": {
+         "religion": "ashari"
+      },
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5482": {
+      "holding": "none"
+   },
+   "5483": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "915.1.2": {
+         "religion": "ashari"
+      },
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5484": {
+      "holding": "none"
+   },
+   "5485": {
+      "holding": "none"
+   },
+   "5486": {
+      "holding": "none"
+   },
+   "5487": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "915.1.2": {
+         "religion": "ashari"
+      },
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5488": {
+      "holding": "none"
+   },
+   "5489": {
+      "holding": "none"
+   },
+   "5490": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "915.1.2": {
+         "religion": "ashari"
+      },
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5491": {
+      "holding": "none"
+   },
+   "5492": {
+      "holding": "none"
+   },
+   "5493": {
+      "holding": "none"
+   },
+   "5494": {
+      "holding": "none"
+   },
+   "5495": {
+      "holding": "none"
+   },
+   "5496": {
+      "holding": "none"
+   },
+   "5497": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "915.1.2": {
+         "religion": "ashari"
+      },
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5498": {
+      "holding": "none"
+   },
+   "5499": {
+      "holding": "none"
+   },
+   "5500": {
+      "holding": "none"
+   },
+   "5501": {
+      "culture": "pecheneg",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding"
+   },
+   "5502": {
+      "holding": "none"
+   },
+   "5503": {
+      "holding": "none"
+   },
+   "5504": {
+      "culture": "pecheneg",
+      "religion": "tengri_pagan",
+      "965.1.2": {
+         "culture": "bolghar",
+         "religion": "ashari"
+      }
+   },
+   "5505": {
+      "holding": "none"
+   },
+   "5506": {
+      "holding": "none"
+   },
+   "5507": {
+      "holding": "none"
+   },
+   "5508": {
+      "holding": "none"
+   },
+   "5509": {
+      "culture": "chuvash",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding"
+   },
+   "5519": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5520": {
+      "holding": "none"
+   },
+   "5521": {
+      "holding": "none"
+   },
+   "5522": {
+      "holding": "none"
+   },
+   "5523": {
+      "holding": "none"
+   },
+   "5524": {
+      "holding": "none"
+   },
+   "5525": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5526": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding",
+      "1240.1.2": {
+         "culture": "mongol"
+      }
+   },
+   "5527": {
+      "holding": "none"
+   },
+   "5528": {
+      "holding": "none"
+   },
+   "5529": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5530": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5531": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5532": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5533": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5534": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5535": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5536": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5537": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5538": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5539": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5540": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5541": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5542": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5543": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5544": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5545": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5546": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5547": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5548": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5549": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5550": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5551": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5552": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5553": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5554": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5555": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5556": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5557": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5558": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5559": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5560": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5561": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5562": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5563": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5564": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5565": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5566": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5567": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5568": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5569": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5570": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5571": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5572": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5573": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5574": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5575": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5576": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5577": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5578": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5579": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5580": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5581": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5582": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5583": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5584": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5585": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5586": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5587": {
+      "culture": "greek",
+      "religion": "orthodox"
+   },
+   "5588": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5589": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5590": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5591": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5592": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5593": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5594": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5595": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5596": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5597": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5598": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5599": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5600": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5601": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5602": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5603": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5604": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5605": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5606": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5607": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5608": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5609": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5610": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5611": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5612": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5613": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5614": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5615": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5616": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5617": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5618": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5619": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5620": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5621": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5622": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5623": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5624": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5625": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5626": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5627": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5628": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5629": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5630": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5631": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5632": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5633": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5634": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5635": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5636": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5637": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5638": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5639": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5640": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5641": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5642": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5643": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1000.1.1": {
+         "holding": "none"
+      }
+   },
+   "5644": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5645": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5646": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5647": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5648": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5649": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5650": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5651": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5652": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5653": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5654": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5655": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5656": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5657": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5658": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5659": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5660": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5661": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5662": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5663": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5664": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5665": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5666": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5667": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5668": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5669": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5670": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5671": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5672": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5673": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5674": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5675": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5676": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5677": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5678": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5679": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5680": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5681": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5682": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5683": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5684": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5689": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5690": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5691": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1066.1.1": {
+         "holding": "castle_holding"
+      },
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5692": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5693": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5694": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5695": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5696": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5697": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5698": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5699": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5700": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5701": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5702": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5703": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5704": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "none",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5705": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1100.1.1": {
+         "culture": "turkish",
+         "religion": "ashari"
+      }
+   },
+   "5706": {
+      "culture": "armenian",
+      "religion": "orthodox",
+      "holding": "none",
+      "1121.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5707": {
+      "culture": "armenian",
+      "religion": "orthodox",
+      "holding": "none",
+      "1121.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5708": {
+      "culture": "armenian",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1121.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5709": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1097.8.26": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5710": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1097.8.26": {
+         "religion": "ashari",
+         "culture": "kurdish"
+      }
+   },
+   "5711": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1097.8.26": {
+         "religion": "ashari",
+         "culture": "kurdish"
+      }
+   },
+   "5712": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1097.8.26": {
+         "religion": "ashari",
+         "culture": "kurdish"
+      }
+   },
+   "5713": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5714": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5715": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "castle_holding",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5716": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "castle_holding",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5717": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5718": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "church_holding",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5719": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1086.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5720": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "church_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5721": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1091.8.26": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5722": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1091.8.26": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5723": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "930.1.1": {
+         "holding": "church_holding"
+      },
+      "1091.8.26": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5724": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "1091.8.26": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      }
+   },
+   "5725": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5726": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5727": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "church_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5728": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5729": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5730": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5731": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "castle_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5732": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5733": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5734": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "castle_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5735": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5736": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5737": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5738": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5739": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none",
+      "1187.1.1": {
+         "holding": "city_holding"
+      }
+   },
+   "5740": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5741": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5742": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5743": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5744": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5745": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5746": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1066.1.1": {
+         "buildings": [
+            "hill_forts_01",
+            "hill_farms_01",
+            "common_tradeport_01"
+         ]
+      }
+   },
+   "5747": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5748": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5749": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5750": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5751": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5752": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5753": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5754": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5756": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5757": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5758": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding",
+      "867.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      },
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1124.1.1": {
+         "culture": "georgian",
+         "religion": "orthodox"
+      }
+   },
+   "5759": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "curtain_walls_01",
+            "cereal_fields_01",
+            "military_camps_01"
+         ]
+      },
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1124.1.1": {
+         "culture": "georgian",
+         "religion": "orthodox"
+      }
+   },
+   "5760": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "867.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      },
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1124.1.1": {
+         "culture": "georgian",
+         "religion": "orthodox"
+      }
+   },
+   "5761": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none",
+      "867.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      },
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1124.1.1": {
+         "culture": "georgian",
+         "religion": "orthodox"
+      }
+   },
+   "5762": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none",
+      "867.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      },
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1124.1.1": {
+         "culture": "georgian",
+         "religion": "orthodox"
+      }
+   },
+   "5763": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5764": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5765": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5766": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "church_holding"
+   },
+   "5767": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "none"
+   },
+   "5768": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding"
+   },
+   "5769": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "city_holding"
+   },
+   "5770": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "1066.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5771": {
+      "culture": "persian",
+      "religion": "mazdayasna",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5772": {
+      "holding": "city_holding",
+      "1066.1.1": {
+         "buildings": [
+            "guild_halls_01",
+            "common_tradeport_01",
+            "pastures_01"
+         ]
+      }
+   },
+   "5773": {
+      "holding": "none"
+   },
+   "5774": {
+      "holding": "city_holding"
+   },
+   "5775": {
+      "holding": "none"
+   },
+   "5776": {
+      "holding": "none"
+   },
+   "5777": {
+      "culture": "georgian",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "917.1.1": {
+         "religion": "ashari"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "pastures_01",
+            "hunting_grounds_01",
+            "military_camps_01"
+         ]
+      }
+   },
+   "5778": {
+      "holding": "church_holding"
+   },
+   "5779": {
+      "holding": "city_holding"
+   },
+   "5780": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5781": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "church_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5782": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5783": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "castle_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5784": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5785": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5786": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "none",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5787": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "holding": "city_holding",
+      "1084.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1219.1.1": {
+         "culture": "armenian",
+         "religion": "armenian_apostolic"
+      }
+   },
+   "5788": {
+      "holding": "none"
+   },
+   "5789": {
+      "holding": "none"
+   },
+   "5790": {
+      "culture": "persian",
+      "religion": "khurramism",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5791": {
+      "holding": "none"
+   },
+   "5792": {
+      "holding": "none"
+   },
+   "5793": {
+      "holding": "city_holding"
+   },
+   "5794": {
+      "holding": "none"
+   },
+   "5798": {
+      "culture": "samoyed",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding",
+      "1066.1.1": {
+         "buildings": [
+            "market_villages_01"
+         ]
+      }
+   },
+   "5799": {
+      "holding": "none"
+   },
+   "5800": {
+      "holding": "none"
+   },
+   "5801": {
+      "holding": "none"
+   },
+   "5802": {
+      "holding": "none"
+   },
+   "5803": {
+      "culture": "samoyed",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5804": {
+      "holding": "none"
+   },
+   "5805": {
+      "holding": "none"
+   },
+   "5806": {
+      "holding": "none"
+   },
+   "5807": {
+      "culture": "samoyed",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5808": {
+      "holding": "none"
+   },
+   "5809": {
+      "holding": "none"
+   },
+   "5810": {
+      "holding": "none"
+   },
+   "5811": {
+      "culture": "samoyed",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5812": {
+      "holding": "none"
+   },
+   "5813": {
+      "holding": "none"
+   },
+   "5814": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5815": {
+      "holding": "none"
+   },
+   "5816": {
+      "holding": "none"
+   },
+   "5817": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5818": {
+      "holding": "none"
+   },
+   "5819": {
+      "holding": "none"
+   },
+   "5820": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5821": {
+      "holding": "none"
+   },
+   "5822": {
+      "holding": "none"
+   },
+   "5823": {
+      "holding": "none"
+   },
+   "5824": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5825": {
+      "holding": "none"
+   },
+   "5826": {
+      "holding": "none"
+   },
+   "5827": {
+      "holding": "none"
+   },
+   "5828": {
+      "holding": "none"
+   },
+   "5829": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5830": {
+      "holding": "none"
+   },
+   "5831": {
+      "holding": "none"
+   },
+   "5832": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5833": {
+      "holding": "none"
+   },
+   "5834": {
+      "holding": "none"
+   },
+   "5835": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5836": {
+      "holding": "none"
+   },
+   "5837": {
+      "holding": "none"
+   },
+   "5838": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5839": {
+      "holding": "none"
+   },
+   "5840": {
+      "holding": "none"
+   },
+   "5841": {
+      "holding": "none"
+   },
+   "5842": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5843": {
+      "holding": "none"
+   },
+   "5844": {
+      "holding": "none"
+   },
+   "5845": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5846": {
+      "holding": "none"
+   },
+   "5847": {
+      "holding": "none"
+   },
+   "5848": {
+      "holding": "none"
+   },
+   "5849": {
+      "culture": "vepsian",
+      "religion": "finnish_pagan",
+      "holding": "tribal_holding"
+   },
+   "5850": {
+      "holding": "none"
+   },
+   "5851": {
+      "holding": "none"
+   },
+   "5865": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5866": {
+      "holding": "none"
+   },
+   "5867": {
+      "holding": "none"
+   },
+   "5868": {
+      "holding": "none"
+   },
+   "5869": {
+      "holding": "none"
+   },
+   "5870": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5871": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5872": {
+      "holding": "none"
+   },
+   "5873": {
+      "holding": "none"
+   },
+   "5874": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5875": {
+      "holding": "none"
+   },
+   "5876": {
+      "holding": "none"
+   },
+   "5877": {
+      "holding": "none"
+   },
+   "5878": {
+      "holding": "none"
+   },
+   "5879": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5880": {
+      "holding": "none"
+   },
+   "5881": {
+      "holding": "none"
+   },
+   "5882": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5883": {
+      "holding": "none"
+   },
+   "5884": {
+      "holding": "none"
+   },
+   "5885": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5886": {
+      "holding": "none"
+   },
+   "5887": {
+      "holding": "none"
+   },
+   "5888": {
+      "holding": "none"
+   },
+   "5889": {
+      "holding": "none"
+   },
+   "5890": {
+      "holding": "none"
+   },
+   "5891": {
+      "holding": "none"
+   },
+   "5892": {
+      "culture": "bashkir",
+      "religion": "tengri_pagan",
+      "holding": "tribal_holding"
+   },
+   "5893": {
+      "holding": "none"
+   },
+   "5894": {
+      "holding": "none"
+   },
+   "5895": {
+      "holding": "none"
+   },
+   "5896": {
+      "holding": "none"
+   },
+   "5897": {
+      "culture": "khanty",
+      "religion": "siberian_pagan",
+      "holding": "tribal_holding"
+   },
+   "5898": {
+      "holding": "none"
+   },
+   "5899": {
+      "holding": "none"
+   },
+   "5900": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "1177.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1320.1.1": {
+         "culture": "levantine"
+      }
+   },
+   "5902": {
+      "culture": "armenian",
+      "religion": "armenian_apostolic",
+      "1177.1.1": {
+         "culture": "kurdish",
+         "religion": "ashari"
+      },
+      "1320.1.1": {
+         "culture": "levantine"
+      }
+   },
+   "5903": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5904": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5905": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5906": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5907": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5908": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5909": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5910": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "buildings": [
+            "watchtowers_01"
+         ]
+      },
+      "1066.1.1": {
+         "buildings": [
+            "watchtowers_01",
+            "military_camps_01",
+            "hunting_grounds_01"
+         ]
+      },
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5911": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5912": {
+      "culture": "greek",
+      "religion": "orthodox",
+      "1268.1.1": [
+         {
+            "culture": "levantine"
+         },
+         {
+            "religion": "ashari"
+         }
+      ]
+   },
+   "5914": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1271.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5915": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1271.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5916": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1295.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5917": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5918": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "buildings": [
+            "common_tradeport_01",
+            "military_camps_01"
+         ]
+      },
+      "1066.1.1": {
+         "buildings": [
+            "common_tradeport_02",
+            "military_camps_01",
+            "watchtowers_01"
+         ]
+      },
+      "1295.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5919": {
+      "culture": "levantine",
+      "religion": "orthodox"
+   },
+   "5920": {
+      "culture": "levantine",
+      "religion": "orthodox"
+   },
+   "5921": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "holding": "city_holding",
+      "1066.1.1": {
+         "buildings": [
+            "guild_halls_02",
+            "common_tradeport_02"
+         ]
+      },
+      "1295.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5922": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1270.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5923": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5924": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5925": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      },
+      "1016.1.1": {
+         "religion": "druze"
+      }
+   },
+   "5926": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      },
+      "1016.1.1": {
+         "religion": "druze"
+      }
+   },
+   "5927": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5928": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5929": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "religion": "ashari"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "cereal_fields_01",
+            "plantations_01",
+            "watchtowers_01"
+         ]
+      }
+   },
+   "5930": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5931": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5932": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5933": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1271.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5934": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "769.1.1": {
+         "holding": "castle_holding",
+         "special_building": "citadel_of_aleppo_01"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "pastures_01",
+            "plantations_02",
+            "military_camps_01"
+         ]
+      }
+   },
+   "5935": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1271.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5936": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1271.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5937": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      },
+      "1016.1.1": {
+         "religion": "druze"
+      }
+   },
+   "5938": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5939": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5940": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5941": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5942": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5943": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5944": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5945": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5946": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5947": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5948": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5949": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5950": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5951": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5952": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5953": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5954": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5955": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5956": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5957": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5958": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5959": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "1270.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5960": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "buildings": [
+            "common_tradeport_01",
+            "watchtowers_01"
+         ]
+      },
+      "1066.1.1": {
+         "buildings": [
+            "common_tradeport_01",
+            "watchtowers_01",
+            "plantations_01",
+            "military_camps_01"
+         ]
+      },
+      "1295.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5961": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5962": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5963": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5964": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5965": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "867.1.1": {
+         "holding": "castle_holding",
+         "special_building_slot": "dome_of_the_rock_01",
+         "special_building": "dome_of_the_rock_01",
+         "buildings": [
+            "plantations_01"
+         ]
+      },
+      "1066.1.1": {
+         "buildings": [
+            "plantations_01",
+            "cereal_fields_01",
+            "military_camps_01"
+         ]
+      }
+   },
+   "5966": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5967": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5968": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5969": {
+      "culture": "bedouin",
+      "religion": "ashari"
+   },
+   "5970": {},
+   "5971": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "769.1.1": {
+         "special_building": "petra_01"
+      }
+   },
+   "5972": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5973": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5974": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "5975": {
+      "holding": "city_holding"
+   },
+   "5976": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "5977": {
+      "holding": "none"
+   },
+   "5978": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5979": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5980": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "5981": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "5982": {},
+   "5983": {
+      "holding": "none"
+   },
+   "5984": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "5985": {
+      "culture": "levantine",
+      "religion": "orthodox",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "5986": {
+      "holding": "none"
+   },
+   "5987": {
+      "holding": "city_holding"
+   },
+   "5988": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "5989": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "tribal_holding",
+      "1066.1.1": {
+         "holding": "castle_holding"
+      }
+   },
+   "5990": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5991": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5992": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "church_holding",
+      "850.1.1": {
+         "religion": "ismaili"
+      },
+      "867.1.1": {
+         "buildings": [
+            "plantations_01"
+         ]
+      }
+   },
+   "5993": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "holding": "castle_holding",
+         "religion": "ismaili",
+         "special_building_slot": "holy_site_imam_ali_mosque_01",
+         "special_building": "holy_site_imam_ali_mosque_01"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "plantations_01",
+            "pastures_01",
+            "cereal_fields_01"
+         ]
+      }
+   },
+   "5994": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5995": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5996": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5998": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "5999": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6000": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6001": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6002": {
+      "culture": "levantine",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6003": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6004": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6005": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6006": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6007": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6008": {
+      "culture": "levantine",
+      "religion": "ashari"
+   },
+   "6009": {
+      "holding": "city_holding"
+   },
+   "6010": {
+      "holding": "castle_holding"
+   },
+   "6011": {
+      "culture": "persian",
+      "religion": "mazdakism",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "religion": "ashari",
+         "culture": "bedouin"
+      }
+   },
+   "6012": {
+      "holding": "church_holding"
+   },
+   "6013": {
+      "holding": "city_holding"
+   },
+   "6014": {
+      "culture": "persian",
+      "religion": "mazdakism",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6015": {
+      "holding": "none"
+   },
+   "6016": {
+      "holding": "city_holding"
+   },
+   "6017": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6018": {
+      "holding": "church_holding"
+   },
+   "6019": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "850.1.1": {
+         "religion": "ismaili"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "orchards_01",
+            "common_tradeport_01",
+            "camel_farms_01"
+         ]
+      }
+   },
+   "6020": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6021": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6022": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "city_holding",
+      "850.1.1": {
+         "religion": "ismaili"
+      },
+      "867.1.1": {
+         "buildings": [
+            "orchards_01"
+         ]
+      }
+   },
+   "6023": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6024": {
+      "culture": "bedouin",
+      "religion": "ashari"
+   },
+   "6025": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "850.1.1": {
+         "religion": "ismaili"
+      }
+   },
+   "6030": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "6031": {},
+   "6032": {
+      "holding": "church_holding"
+   },
+   "6033": {
+      "culture": "bedouin",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "909.1.1": {
+         "religion": "ismaili"
+      },
+      "1171.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6034": {},
+   "6035": {},
+   "6036": {},
+   "6037": {},
+   "6038": {
+      "culture": "egyptian",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "6039": {
+      "holding": "none"
+   },
+   "6040": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6041": {
+      "holding": "city_holding"
+   },
+   "6042": {
+      "culture": "egyptian",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "970.1.1": {
+         "special_building": "al_azhar_university"
+      },
+      "1066.1.1": {
+         "buildings": [
+            "cereal_fields_02",
+            "orchards_01",
+            "regimental_grounds_01",
+            "camel_farms_01"
+         ]
+      }
+   },
+   "6043": {
+      "holding": "church_holding"
+   },
+   "6044": {
+      "holding": "church_holding"
+   },
+   "6045": {
+      "holding": "city_holding"
+   },
+   "6046": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6047": {
+      "holding": "none"
+   },
+   "6048": {
+      "holding": "city_holding"
+   },
+   "6049": {
+      "holding": "church_holding"
+   },
+   "6050": {},
+   "6051": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6052": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6053": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "867.1.1": {
+         "buildings": [
+            "common_tradeport_02"
+         ]
+      },
+      "1066.1.1": {
+         "buildings": [
+            "common_tradeport_02",
+            "orchards_01",
+            "military_camps_01"
+         ]
+      }
+   },
+   "6054": {
+      "holding": "city_holding"
+   },
+   "6055": {},
+   "6056": {},
+   "6057": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "767.1.1": {
+         "special_building": "the_pyramids_01"
+      },
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6058": {},
+   "6059": {},
+   "6060": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6061": {},
+   "6062": {},
+   "6063": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "900.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6064": {},
+   "6065": {},
+   "6066": {
+      "holding": "church_holding"
+   },
+   "6067": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6068": {},
+   "6069": {},
+   "6070": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6071": {
+      "holding": "church_holding"
+   },
+   "6072": {
+      "holding": "city_holding"
+   },
+   "6073": {},
+   "6074": {},
+   "6075": {},
+   "6076": {
+      "holding": "church_holding"
+   },
+   "6077": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding",
+      "1171.1.1": {
+         "religion": "ashari"
+      }
+   },
+   "6078": {},
+   "6079": {
+      "holding": "none"
+   },
+   "6080": {
+      "holding": "none"
+   },
+   "6081": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6082": {
+      "holding": "none"
+   },
+   "6083": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6084": {
+      "holding": "none"
+   },
+   "6085": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6086": {
+      "holding": "none"
+   },
+   "6087": {
+      "holding": "none"
+   },
+   "6088": {
+      "culture": "butr",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "6089": {
+      "culture": "butr",
+      "religion": "ashari",
+      "holding": "castle_holding"
+   },
+   "6090": {
+      "holding": "none"
+   },
+   "6091": {
+      "holding": "none"
+   },
+   "6092": {
+      "holding": "none"
+   },
+   "6093": {
+      "culture": "egyptian",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6094": {
+      "holding": "none"
+   },
+   "6095": {},
+   "6096": {
+      "holding": "church_holding"
+   },
+   "6097": {
+      "culture": "butr",
+      "religion": "coptic",
+      "holding": "castle_holding"
+   },
+   "6098": {
+      "culture": "butr",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "1050.1.1": {
+         "holding": "tribal_holding"
+      }
+   },
+   "6099": {
+      "culture": "butr",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "1050.1.1": {
+         "holding": "tribal_holding",
+         "culture": "bedouin"
+      },
+      "1150.1.1": {
+         "culture": "maghrebi"
+      }
+   },
+   "6100": {
+      "holding": "none"
+   },
+   "6101": {
+      "holding": "none"
+   },
+   "6102": {
+      "holding": "none"
+   },
+   "6103": {
+      "holding": "none"
+   },
+   "6104": {
+      "culture": "butr",
+      "religion": "ashari",
+      "holding": "castle_holding",
+      "1050.1.1": {
+         "holding": "tribal_holding",
+         "culture": "bedouin"
+      },
+      "1150.1.1": {
+         "culture": "maghrebi"
+      }
+   },
+   "6105": {
+      "holding": "city_holding",
+      "1050.1.1": {
+         "holding": "none"
+      }
+   }
+}

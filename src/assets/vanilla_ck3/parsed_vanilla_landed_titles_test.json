@@ -1,0 +1,6439 @@
+{
+   "k_papal_state": {
+      "color": [
+        255,
+        249,
+        198
+      ],
+      "color2": [
+        220,
+        220,
+        0
+      ],
+      "definite_form": true,
+      "ruler_uses_title_name": false,
+      "landless": true,
+      "capital": "c_roma",
+      "ai_primary_priority": {
+        "add": "@always_primary_score"
+      },
+      "destroy_if_invalid_heir": true,
+      "no_automatic_claims": true,
+      "always_follows_primary_heir": true,
+      "de_jure_drift_disabled": true,
+      "male_names": [
+        "Alexander",
+        "Anastasius",
+        "Benedictus",
+        "Caelestinus",
+        "Callistus",
+        "Clemens",
+        "Eugenius",
+        "Leo",
+        "Gregorius",
+        "Hadrianus",
+        "Honorius",
+        "Innocentius",
+        "Ioannes",
+        "Lucius",
+        "Marinus",
+        "Martinus",
+        "Nicolaus",
+        "Sergius",
+        "Silvester",
+        "Stephanus",
+        "Urbanus",
+        "Victor"
+      ]
+    },
+   "e_britannia": {
+      "color": [
+         172,
+         22,
+         22
+      ],
+      "color2": [
+         255,
+         255,
+         255
+      ],
+      "capital": "c_middlesex",
+      "cultural_names": {
+         "name_list_pictish": "cn_pictavia",
+         "name_list_irish": "cn_alba",
+         "name_list_gaelic": "cn_alba"
+      },
+      "ai_primary_priority": {
+         "if": {
+            "limit": {
+               "OR": {
+                  "culture": [
+                     {
+                        "has_cultural_pillar": "heritage_west_germanic"
+                     },
+                     {
+                        "has_cultural_pillar": "heritage_goidelic"
+                     },
+                     {
+                        "has_cultural_pillar": "heritage_brythonic"
+                     }
+                  ]
+               }
+            },
+            "add": "@correct_culture_primary_score"
+         }
+      },
+      "k_england": {
+         "color": [
+            202,
+            26,
+            26
+         ],
+         "color2": [
+            255,
+            255,
+            255
+         ],
+         "capital": "c_middlesex",
+         "ai_primary_priority": {
+            "if": {
+               "limit": {
+                  "OR": {
+                     "culture": [
+                        "culture:english",
+                        "culture:anglo_saxon"
+                     ]
+                  }
+               },
+               "add": "@correct_culture_primary_score"
+            }
+         },
+         "d_bedford": {
+            "color": [
+               241,
+               15,
+               15
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_middlesex",
+            "cultural_names": {
+               "name_list_anglo_saxon": "cn_east_seaxe",
+               "name_list_old_saxon": "cn_east_seaxe"
+            },
+            "c_middlesex": {
+               "color": [
+                  230,
+                  5,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_middle_seaxe",
+                  "name_list_old_saxon": "cn_middle_seaxe"
+               },
+               "b_london": {
+                  "province": 1527,
+                  "color": [
+                     230,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_lunden",
+                     "name_list_old_saxon": "cn_lunden",
+                     "name_list_roman": "cn_londinium",
+                     "name_list_welsh": "cn_llundein",
+                     "name_list_cornish": "cn_llundein",
+                     "name_list_breton": "cn_llundein",
+                     "name_list_cumbrian": "cn_llundein",
+                     "name_list_pictish": "cn_llundein",
+                     "name_list_norman": "cn_londres",
+                     "name_list_scottish": "cn_lunnon"
+                  }
+               },
+               "b_southwark": {
+                  "province": 1526,
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_suthweorc",
+                     "name_list_old_saxon": "cn_suthweorc"
+                  },
+                  "color": [
+                     230,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_woxbrigge": {
+                  "province": 1528,
+                  "color": [
+                     230,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_gore": {
+                  "province": 1529,
+                  "color": [
+                     230,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_brentford": {
+                  "province": 1530,
+                  "color": [
+                     230,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_essex": {
+               "color": [
+                  220,
+                  20,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_east_seaxe",
+                  "name_list_old_saxon": "cn_east_seaxe"
+               },
+               "b_colchester": {
+                  "province": 1514,
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_colenceaster",
+                     "name_list_old_saxon": "cn_colenceaster"
+                  },
+                  "color": [
+                     220,
+                     20,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_maldon": {
+                  "province": 1515,
+                  "color": [
+                     220,
+                     20,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_chelmsford": {
+                  "province": 1516,
+                  "color": [
+                     220,
+                     20,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_dunmow": {
+                  "province": 1517,
+                  "color": [
+                     220,
+                     20,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_bedford": {
+               "color": [
+                  205,
+                  20,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_bedanford",
+                  "name_list_old_saxon": "cn_bedanford"
+               },
+               "b_bedford": {
+                  "province": 1538,
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_bedanford",
+                     "name_list_old_saxon": "cn_bedanford"
+                  },
+                  "color": [
+                     205,
+                     20,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ampthill": {
+                  "province": 1539,
+                  "color": [
+                     205,
+                     20,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_luton": {
+                  "province": 1540,
+                  "color": [
+                     205,
+                     20,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_hertfordshire": {
+               "color": [
+                  250,
+                  35,
+                  35
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_herutford",
+                  "name_list_old_saxon": "cn_herutford"
+               },
+               "b_berkhamsted": {
+                  "province": 1531,
+                  "color": [
+                     250,
+                     35,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_saint_albans": {
+                  "province": 1532,
+                  "color": [
+                     250,
+                     35,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_hertford": {
+                  "province": 1533,
+                  "color": [
+                     250,
+                     35,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_buckinghamshire": {
+               "color": [
+                  200,
+                  25,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_buccingahamm",
+                  "name_list_old_saxon": "cn_buccingahamm"
+               },
+               "b_buckingham": {
+                  "province": 1551,
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_buccingahamm",
+                     "name_list_old_saxon": "cn_buccingahamm"
+                  },
+                  "color": [
+                     200,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_aylesbury": {
+                  "province": 1552,
+                  "color": [
+                     200,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_newport": {
+                  "province": 1553,
+                  "color": [
+                     200,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wycombe": {
+                  "province": 1554,
+                  "color": [
+                     200,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_northumberland": {
+            "color": {
+               "hsv": [
+                  0.98,
+                  0.9,
+                  0.9
+               ]
+            },
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "cultural_names": {
+               "name_list_breton": "cn_bryneich",
+               "name_list_cornish": "cn_bryneich",
+               "name_list_cumbrian": "cn_bryneich",
+               "name_list_pictish": "cn_bryneich",
+               "name_list_welsh": "cn_bryneich",
+               "name_list_norman": "cn_norroy",
+               "name_list_french": "cn_norroy",
+               "name_list_outremer": "cn_norroy",
+               "name_list_occitan": "cn_norroy"
+            },
+            "ai_primary_priority": {
+               "if": {
+                  "limit": {
+                     "culture": "culture:anglo_saxon"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            },
+            "capital": "c_northumberland",
+            "c_northumberland": {
+               "color": [
+                  245,
+                  0,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_bernicia",
+                  "name_list_breton": "cn_bryneich",
+                  "name_list_cornish": "cn_bryneich",
+                  "name_list_cumbrian": "cn_bryneich",
+                  "name_list_pictish": "cn_bryneich",
+                  "name_list_welsh": "cn_bryneich"
+               },
+               "b_bamburgh": {
+                  "province": 1609,
+                  "color": [
+                     245,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_bebbanburg",
+                     "name_list_old_saxon": "cn_bebbanburg",
+                     "name_list_norwegian": "cn_bamborg",
+                     "name_list_danish": "cn_bamborg",
+                     "name_list_swedish": "cn_bamborg",
+                     "name_list_norse": "cn_bamborg",
+                     "name_list_welsh": "cn_din_guarie",
+                     "name_list_cumbrian": "cn_din_guarie",
+                     "name_list_pictish": "cn_din_guarie",
+                     "name_list_cornish": "cn_din_guarie",
+                     "name_list_breton": "cn_din_guarie"
+                  }
+               },
+               "b_rothbury": {
+                  "province": 1612,
+                  "color": [
+                     245,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_lindisfarne": {
+                  "province": 1610,
+                  "color": [
+                     245,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_welsh": "cn_medcaut",
+                     "name_list_cumbrian": "cn_medcaut",
+                     "name_list_pictish": "cn_medcaut",
+                     "name_list_cornish": "cn_medcaut",
+                     "name_list_breton": "cn_medcaut"
+                  }
+               },
+               "b_hexham": {
+                  "province": 1611,
+                  "color": [
+                     245,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_durham": {
+               "color": [
+                  255,
+                  15,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_dunholm",
+                  "name_list_old_saxon": "cn_dunholm",
+                  "name_list_norman": "cn_duresm",
+                  "name_list_french": "cn_duresm",
+                  "name_list_outremer": "cn_duresm",
+                  "name_list_occitan": "cn_duresm"
+               },
+               "b_durham": {
+                  "province": 1606,
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_dunholm",
+                     "name_list_old_saxon": "cn_dunholm",
+                     "name_list_norman": "cn_duresm",
+                     "name_list_french": "cn_duresm",
+                     "name_list_outremer": "cn_duresm",
+                     "name_list_occitan": "cn_duresm",
+                     "name_list_norse": "cn_ulfreksfjordr",
+                     "name_list_norwegian": "cn_ulfreksfjordr"
+                  },
+                  "color": [
+                     255,
+                     15,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_hartlepool": {
+                  "province": 1607,
+                  "color": [
+                     255,
+                     15,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_darlington": {
+                  "province": 1608,
+                  "color": [
+                     255,
+                     15,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_cumberland": {
+               "color": [
+                  240,
+                  25,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_cumbraland",
+                  "name_list_old_saxon": "cn_cumbraland"
+               },
+               "ai_primary_priority": {
+                  "if": {
+                     "limit": {
+                        "culture": "culture:cumbrian"
+                     },
+                     "add": "@correct_culture_primary_score"
+                  }
+               },
+               "b_carlisle": {
+                  "province": 1635,
+                  "cultural_names": {
+                     "name_list_cumbrian": "cn_caer_luel",
+                     "name_list_welsh": "cn_caer_luel",
+                     "name_list_pictish": "cn_caer_luel",
+                     "name_list_breton": "cn_caer_luel",
+                     "name_list_cornish": "cn_caer_luel",
+                     "name_list_gaelic": "cn_cathair_luail",
+                     "name_list_irish": "cn_cathair_luail",
+                     "name_list_anglo_saxon": "cn_carleol",
+                     "name_list_old_saxon": "cn_carleol"
+                  },
+                  "color": [
+                     240,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_whitehaven": {
+                  "province": 1636,
+                  "color": [
+                     240,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_furness": {
+                  "province": 1642,
+                  "color": [
+                     240,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wigton": {
+                  "province": 8780,
+                  "color": [
+                     240,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_lancaster": {
+            "color": [
+               255,
+               48,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_lancashire",
+            "cultural_names": {
+               "name_list_breton": "cn_rheged",
+               "name_list_cornish": "cn_rheged",
+               "name_list_cumbrian": "cn_rheged",
+               "name_list_welsh": "cn_rheged",
+               "name_list_pictish": "cn_rheged"
+            },
+            "c_lancashire": {
+               "color": [
+                  250,
+                  55,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_lancaster": {
+                  "province": 1639,
+                  "color": [
+                     250,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_salford": {
+                  "province": 1640,
+                  "color": [
+                     250,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_west_derby": {
+                  "province": 1641,
+                  "color": [
+                     250,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_westmorland": {
+               "color": [
+                  210,
+                  35,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_kendal": {
+                  "province": 1637,
+                  "color": [
+                     210,
+                     35,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_appleby": {
+                  "province": 1638,
+                  "color": [
+                     210,
+                     35,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_cheshire": {
+               "color": [
+                  255,
+                  127,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_chester": {
+                  "province": 1643,
+                  "color": [
+                     255,
+                     152,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_northwich": {
+                  "province": 1644,
+                  "color": [
+                     255,
+                     127,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_macclesfield": {
+                  "province": 1645,
+                  "color": [
+                     255,
+                     127,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_derby": {
+               "color": [
+                  255,
+                  50,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norwegian": "cn_djuraby",
+                  "name_list_danish": "cn_djuraby",
+                  "name_list_swedish": "cn_djuraby",
+                  "name_list_norse": "cn_djuraby"
+               },
+               "b_derby": {
+                  "province": 1621,
+                  "color": [
+                     255,
+                     89,
+                     89
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_djuraby",
+                     "name_list_danish": "cn_djuraby",
+                     "name_list_swedish": "cn_djuraby",
+                     "name_list_norse": "cn_djuraby"
+                  }
+               },
+               "b_chesterfield": {
+                  "province": 1622,
+                  "color": [
+                     255,
+                     50,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_castleton": {
+                  "province": 1623,
+                  "color": [
+                     255,
+                     50,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_york": {
+            "color": [
+               255,
+               90,
+               15
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_north_riding",
+            "cultural_names": {
+               "name_list_norse": "cn_jorvik",
+               "name_list_norwegian": "cn_jorvik",
+               "name_list_swedish": "cn_jorvik",
+               "name_list_danish": "cn_jorvik",
+               "name_list_anglo_saxon": "cn_deira",
+               "name_list_breton": "cn_deifr",
+               "name_list_cornish": "cn_deifr",
+               "name_list_cumbrian": "cn_deifr",
+               "name_list_welsh": "cn_deifr",
+               "name_list_pictish": "cn_deifr"
+            },
+            "ai_primary_priority": {
+               "if": {
+                  "limit": {
+                     "culture": "culture:norse"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            },
+            "c_north_riding": {
+               "color": [
+                  255,
+                  95,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_breton": "cn_efrog",
+                  "name_list_cornish": "cn_efrog",
+                  "name_list_cumbrian": "cn_efrog",
+                  "name_list_welsh": "cn_efrog",
+                  "name_list_pictish": "cn_efrog"
+               },
+               "b_york": {
+                  "province": 1595,
+                  "color": [
+                     255,
+                     95,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_jorvik",
+                     "name_list_norwegian": "cn_jorvik",
+                     "name_list_swedish": "cn_jorvik",
+                     "name_list_danish": "cn_jorvik",
+                     "name_list_anglo_saxon": "cn_eoforwic",
+                     "name_list_breton": "cn_efrog",
+                     "name_list_cornish": "cn_efrog",
+                     "name_list_cumbrian": "cn_efrog",
+                     "name_list_welsh": "cn_efrog",
+                     "name_list_pictish": "cn_efrog"
+                  }
+               },
+               "b_scarborough": {
+                  "province": 1596,
+                  "color": [
+                     255,
+                     95,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_whitby": {
+                  "province": 1597,
+                  "color": [
+                     255,
+                     95,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_richmond": {
+                  "province": 1598,
+                  "color": [
+                     255,
+                     95,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_yarlestre": {
+                  "province": 1500,
+                  "color": [
+                     255,
+                     95,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_east_riding": {
+               "color": [
+                  255,
+                  139,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_pockington": {
+                  "cultural_names": {
+                     "name_list_anglo_saxon": "cn_poclintun"
+                  },
+                  "province": 1588,
+                  "color": [
+                     255,
+                     160,
+                     59
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_cottingham": {
+                  "province": 1589,
+                  "color": [
+                     255,
+                     139,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bridlington": {
+                  "province": 1590,
+                  "color": [
+                     255,
+                     139,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_west_riding": {
+               "color": [
+                  255,
+                  120,
+                  35
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_welsh": "cn_elmet",
+                  "name_list_cumbrian": "cn_elmet",
+                  "name_list_cornish": "cn_elmet",
+                  "name_list_breton": "cn_elmet",
+                  "name_list_pictish": "cn_elmet"
+               },
+               "b_leeds": {
+                  "cultural_names": {
+                     "name_list_welsh": "cn_ladenses",
+                     "name_list_cumbrian": "cn_ladenses",
+                     "name_list_cornish": "cn_ladenses",
+                     "name_list_breton": "cn_ladenses",
+                     "name_list_pictish": "cn_ladenses",
+                     "name_list_anglo_saxon": "cn_leodis"
+                  },
+                  "province": 1591,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_doncaster": {
+                  "province": 1592,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_halifax": {
+                  "province": 1593,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_sheffield": {
+                  "province": 1594,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bolton": {
+                  "province": 1499,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ripon": {
+                  "province": 1599,
+                  "color": [
+                     255,
+                     120,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_lincolnshire": {
+               "color": [
+                  232,
+                  195,
+                  74
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_lindsey"
+               },
+               "b_lincoln": {
+                  "province": 1583,
+                  "color": [
+                     232,
+                     195,
+                     74
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_stamford": {
+                  "province": 1584,
+                  "color": [
+                     232,
+                     195,
+                     74
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_boston": {
+                  "province": 1585,
+                  "color": [
+                     232,
+                     195,
+                     74
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bolingsbroke": {
+                  "province": 1586,
+                  "color": [
+                     232,
+                     195,
+                     74
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_grimsby": {
+                  "province": 1587,
+                  "color": [
+                     232,
+                     195,
+                     74
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_norfolk": {
+            "color": [
+               200,
+               90,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_norfolk",
+            "cultural_names": {
+               "name_list_norse": "cn_jarnamoda",
+               "name_list_norwegian": "cn_jarnamoda"
+            },
+            "c_norfolk": {
+               "color": [
+                  210,
+                  100,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_jarnamoda",
+                  "name_list_norwegian": "cn_jarnamoda"
+               },
+               "b_norwich": {
+                  "province": 1522,
+                  "color": [
+                     210,
+                     100,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_jarnamoda",
+                     "name_list_norwegian": "cn_jarnamoda"
+                  }
+               },
+               "b_thetford": {
+                  "province": 1523,
+                  "color": [
+                     210,
+                     100,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_walsingham": {
+                  "province": 1524,
+                  "color": [
+                     210,
+                     100,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_lynn": {
+                  "province": 1525,
+                  "color": [
+                     210,
+                     100,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_suffolk": {
+               "color": [
+                  215,
+                  125,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_ipswich": {
+                  "province": 1518,
+                  "color": [
+                     215,
+                     125,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_sudbury": {
+                  "province": 1519,
+                  "color": [
+                     215,
+                     125,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_blything": {
+                  "province": 1520,
+                  "color": [
+                     215,
+                     125,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_beodericsworth": {
+                  "province": 1521,
+                  "color": [
+                     215,
+                     125,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_cambridgeshire": {
+               "color": [
+                  205,
+                  145,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_cambridge": {
+                  "province": 1534,
+                  "color": [
+                     205,
+                     145,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_radfield": {
+                  "province": 1535,
+                  "color": [
+                     205,
+                     145,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_papworth": {
+                  "province": 1536,
+                  "color": [
+                     205,
+                     145,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ely": {
+                  "province": 1537,
+                  "color": [
+                     205,
+                     145,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_linn",
+                     "name_list_norwegian": "cn_linn"
+                  }
+               }
+            }
+         },
+         "d_hereford": {
+            "color": [
+               200,
+               30,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_warwickshire",
+            "ai_primary_priority": {
+               "if": {
+                  "limit": {
+                     "culture": "culture:anglo_saxon"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            },
+            "c_warwickshire": {
+               "color": [
+                  190,
+                  30,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_warwick": {
+                  "province": 1603,
+                  "color": [
+                     190,
+                     30,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_coventry": {
+                  "province": 1604,
+                  "color": [
+                     190,
+                     30,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_birmingham": {
+                  "province": 1605,
+                  "color": [
+                     190,
+                     30,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_leicestershire": {
+               "color": [
+                  130,
+                  5,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_leicester": {
+                  "province": 1615,
+                  "color": [
+                     130,
+                     5,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_melton": {
+                  "province": 1616,
+                  "color": [
+                     130,
+                     5,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bosworth": {
+                  "province": 1617,
+                  "color": [
+                     130,
+                     5,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_rutland": {
+                  "province": 1613,
+                  "color": [
+                     130,
+                     5,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_nottinghamshire": {
+               "color": [
+                  175,
+                  0,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_nottingham": {
+                  "province": 1618,
+                  "color": [
+                     175,
+                     0,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_newark": {
+                  "province": 1619,
+                  "color": [
+                     175,
+                     0,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_retford": {
+                  "province": 1620,
+                  "color": [
+                     175,
+                     0,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_staffordshire": {
+               "color": [
+                  210,
+                  90,
+                  65
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_stafford": {
+                  "province": 1627,
+                  "color": [
+                     210,
+                     90,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wolverhampton": {
+                  "province": 1628,
+                  "color": [
+                     210,
+                     90,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_stoke_on_trent": {
+                  "province": 1629,
+                  "color": [
+                     210,
+                     90,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_worcestershire": {
+               "color": [
+                  160,
+                  20,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_worcester": {
+                  "province": 1624,
+                  "color": [
+                     160,
+                     20,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_evesham": {
+                  "province": 1625,
+                  "color": [
+                     160,
+                     20,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kidderminster": {
+                  "province": 1626,
+                  "color": [
+                     160,
+                     20,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_huntingdonshire": {
+               "color": [
+                  175,
+                  40,
+                  55
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_hurstingstone": {
+                  "province": 1541,
+                  "color": [
+                     175,
+                     40,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_norman_cross": {
+                  "province": 1542,
+                  "color": [
+                     175,
+                     40,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_leightonstone": {
+                  "province": 1543,
+                  "color": [
+                     175,
+                     40,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_northamptonshire": {
+               "color": [
+                  125,
+                  5,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_northampton": {
+                  "province": 1600,
+                  "color": [
+                     125,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_peterborough": {
+                  "province": 1601,
+                  "color": [
+                     125,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kettering": {
+                  "province": 1602,
+                  "color": [
+                     125,
+                     5,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_shropshire": {
+               "color": [
+                  241,
+                  70,
+                  70
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_welsh": "cn_amwythig"
+               },
+               "b_shrewsbury": {
+                  "province": 1646,
+                  "color": [
+                     241,
+                     55,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ludlow": {
+                  "province": 1647,
+                  "color": [
+                     241,
+                     55,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bishops_castle": {
+                  "province": 1648,
+                  "color": [
+                     241,
+                     55,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_welsh": "cn_clun"
+                  }
+               }
+            }
+         },
+         "d_gloucester": {
+            "color": [
+               241,
+               79,
+               15
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_gloucestershire",
+            "c_gloucestershire": {
+               "color": [
+                  245,
+                  85,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_gloucester": {
+                  "province": 1580,
+                  "color": [
+                     245,
+                     85,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_bristol": {
+                  "province": 1581,
+                  "color": [
+                     245,
+                     85,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_winchcombe": {
+                  "province": 1582,
+                  "color": [
+                     245,
+                     85,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_wiltshire": {
+               "color": [
+                  250,
+                  55,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_salisbury": {
+                  "province": 1561,
+                  "color": [
+                     250,
+                     55,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wilton": {
+                  "province": 1562,
+                  "color": [
+                     250,
+                     55,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ramsbury": {
+                  "province": 1563,
+                  "color": [
+                     250,
+                     55,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_malmesbury": {
+                  "province": 1564,
+                  "color": [
+                     250,
+                     55,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_oxfordshire": {
+               "color": [
+                  255,
+                  115,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_oxford": {
+                  "province": 1558,
+                  "color": [
+                     255,
+                     115,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_banbury": {
+                  "province": 1559,
+                  "color": [
+                     255,
+                     115,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_witney": {
+                  "province": 1560,
+                  "color": [
+                     255,
+                     115,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_berkshire": {
+               "color": [
+                  255,
+                  100,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_reading": {
+                  "province": 1555,
+                  "color": [
+                     255,
+                     100,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_newbury": {
+                  "province": 1556,
+                  "color": [
+                     255,
+                     100,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_abingdon": {
+                  "province": 1557,
+                  "color": [
+                     255,
+                     100,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_canterbury": {
+            "color": [
+               241,
+               100,
+               15
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_kent",
+            "c_kent": {
+               "color": [
+                  245,
+                  105,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dover": {
+                  "province": 1502,
+                  "color": [
+                     245,
+                     105,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_canterbury": {
+                  "province": 1503,
+                  "color": [
+                     245,
+                     105,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_rochester": {
+                  "province": 1504,
+                  "color": [
+                     245,
+                     105,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_tonbridge": {
+                  "province": 1505,
+                  "color": [
+                     245,
+                     105,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_surrey": {
+               "color": [
+                  225,
+                  80,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_chertsey": {
+                  "province": 1510,
+                  "color": [
+                     225,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_guildford": {
+                  "province": 1511,
+                  "color": [
+                     225,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kingston": {
+                  "province": 1512,
+                  "color": [
+                     225,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_tandbridge": {
+                  "province": 1513,
+                  "color": [
+                     225,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_sussex": {
+               "color": [
+                  225,
+                  105,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_anglo_saxon": "cn_south_seaxe",
+                  "name_list_old_saxon": "cn_south_seaxe"
+               },
+               "b_lewes": {
+                  "province": 1506,
+                  "color": [
+                     225,
+                     105,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_chichester": {
+                  "province": 1507,
+                  "color": [
+                     225,
+                     105,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_arun": {
+                  "province": 1508,
+                  "color": [
+                     225,
+                     105,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_hastings": {
+                  "province": 1509,
+                  "color": [
+                     225,
+                     105,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_somerset": {
+            "color": {
+               "hsv": [
+                  1,
+                  0.9,
+                  0.9
+               ]
+            },
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_hampton",
+            "ai_primary_priority": {
+               "if": {
+                  "limit": {
+                     "culture": "culture:anglo_saxon"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            },
+            "c_hampton": {
+               "color": [
+                  230,
+                  15,
+                  55
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_winchester": {
+                  "province": 1544,
+                  "color": [
+                     230,
+                     15,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_southampton": {
+                  "province": 1545,
+                  "color": [
+                     230,
+                     15,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_portsmouth": {
+                  "province": 1546,
+                  "color": [
+                     230,
+                     15,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_basingstoke": {
+                  "province": 1547,
+                  "color": [
+                     230,
+                     15,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_christchurch": {
+                  "province": 1548,
+                  "color": [
+                     230,
+                     15,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_isle_of_wight": {
+               "color": [
+                  250,
+                  10,
+                  90
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_carisbrooke": {
+                  "province": 1549,
+                  "color": [
+                     250,
+                     10,
+                     90
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_dorset": {
+               "color": [
+                  185,
+                  0,
+                  75
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_wareham": {
+                  "province": 1565,
+                  "color": [
+                     185,
+                     0,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_poole": {
+                  "province": 1566,
+                  "color": [
+                     185,
+                     0,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_shaftesbury": {
+                  "province": 1567,
+                  "color": [
+                     185,
+                     0,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_lyme": {
+                  "province": 1568,
+                  "color": [
+                     185,
+                     0,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_somerset": {
+               "color": [
+                  156,
+                  0,
+                  83
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_bath": {
+                  "province": 1576,
+                  "color": [
+                     241,
+                     30,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_winterstoke": {
+                  "province": 1577,
+                  "color": [
+                     241,
+                     30,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ilchester": {
+                  "province": 1578,
+                  "color": [
+                     241,
+                     30,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_taunton": {
+                  "province": 1579,
+                  "color": [
+                     241,
+                     30,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_cornwall": {
+            "color": [
+               181,
+               60,
+               10
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_devon",
+            "ai_primary_priority": {
+               "if": {
+                  "limit": {
+                     "culture": "culture:cornish"
+                  },
+                  "add": "@correct_culture_primary_score"
+               }
+            },
+            "c_devon": {
+               "color": [
+                  170,
+                  60,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "ai_primary_priority": {
+                  "if": {
+                     "limit": {
+                        "culture": "culture:cornish"
+                     },
+                     "add": "@better_than_the_alternatives_score"
+                  }
+               },
+               "b_exeter": {
+                  "province": 1569,
+                  "color": [
+                     170,
+                     60,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_totnes": {
+                  "province": 1570,
+                  "color": [
+                     170,
+                     60,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_okehampton": {
+                  "province": 1571,
+                  "color": [
+                     170,
+                     60,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_barnstaple": {
+                  "province": 1572,
+                  "color": [
+                     170,
+                     60,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_cornwall": {
+               "color": [
+                  150,
+                  55,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "ai_primary_priority": {
+                  "if": {
+                     "limit": {
+                        "culture": "culture:cornish"
+                     },
+                     "add": "@correct_culture_primary_score"
+                  }
+               },
+               "b_launceston": {
+                  "province": 1573,
+                  "color": [
+                     150,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_tintagel": {
+                  "province": 1574,
+                  "color": [
+                     150,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_helston": {
+                  "province": 1575,
+                  "color": [
+                     150,
+                     55,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         }
+      },
+      "k_wales": {
+         "color": [
+            135,
+            25,
+            3
+         ],
+         "color2": [
+            255,
+            255,
+            255
+         ],
+         "capital": "c_cardiganshire",
+         "can_create": {
+            "trigger_if": {
+               "limit": {
+                  "is_ai": true
+               },
+               "culture": {
+                  "has_cultural_pillar": "heritage_brythonic"
+               }
+            }
+         },
+         "ai_primary_priority": {
+            "if": [
+               {
+                  "limit": {
+                     "culture": "culture:welsh"
+                  },
+                  "add": "@correct_culture_primary_score"
+               },
+               {
+                  "limit": {
+                     "OR": {
+                        "culture": [
+                           "culture:cumbrian",
+                           "culture:cornish",
+                           "culture:breton"
+                        ]
+                     }
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            ]
+         },
+         "d_gwynedd": {
+            "color": [
+               100,
+               0,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_cardiganshire",
+            "c_cardiganshire": {
+               "color": [
+                  110,
+                  10,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_cardiganshire",
+                  "name_list_english": "cn_cardiganshire"
+               },
+               "b_cardigan": {
+                  "province": 1657,
+                  "color": [
+                     110,
+                     10,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_cardigan",
+                     "name_list_english": "cn_cardigan"
+                  }
+               },
+               "b_aberystwyth": {
+                  "province": 1658,
+                  "color": [
+                     110,
+                     10,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_merioneth": {
+               "color": [
+                  105,
+                  20,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_merionethshire",
+                  "name_list_english": "cn_merionethshire"
+               },
+               "b_dolgellau": {
+                  "province": 1665,
+                  "color": [
+                     105,
+                     20,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_corwen": {
+                  "province": 1666,
+                  "color": [
+                     105,
+                     20,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_caernarfonshire": {
+               "color": [
+                  90,
+                  25,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_caernarvonshire",
+                  "name_list_english": "cn_caernarvonshire"
+               },
+               "b_caernarfon": {
+                  "province": 1667,
+                  "color": [
+                     90,
+                     25,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_llyn": {
+                  "province": 1668,
+                  "color": [
+                     90,
+                     25,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_llandudno": {
+                  "province": 1669,
+                  "color": [
+                     90,
+                     25,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_anglesey": {
+               "color": [
+                  85,
+                  0,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_anglesey",
+                  "name_list_english": "cn_anglesey"
+               },
+               "b_yns_mon": {
+                  "province": 1673,
+                  "color": [
+                     85,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_holyhead": {
+                  "province": 1674,
+                  "color": [
+                     85,
+                     0,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_holyhead",
+                     "name_list_english": "cn_holyhead"
+                  }
+               }
+            },
+            "c_denbighshire": {
+               "color": [
+                  125,
+                  0,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_denbighshire",
+                  "name_list_english": "cn_denbighshire"
+               },
+               "b_denbigh": {
+                  "province": 1670,
+                  "color": [
+                     125,
+                     0,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_denbigh",
+                     "name_list_english": "cn_denbigh"
+                  }
+               },
+               "b_wrexham": {
+                  "province": 1671,
+                  "color": [
+                     125,
+                     0,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_wrexham",
+                     "name_list_english": "cn_wrexham"
+                  }
+               },
+               "b_ruthin": {
+                  "province": 1672,
+                  "color": [
+                     125,
+                     0,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_ruthin",
+                     "name_list_english": "cn_ruthin"
+                  }
+               }
+            }
+         },
+         "d_powys": {
+            "color": [
+               115,
+               30,
+               30
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_maldwyn",
+            "c_maldwyn": {
+               "color": [
+                  110,
+                  25,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_montgomeryshire",
+                  "name_list_english": "cn_montgomeryshire"
+               },
+               "b_welshpool": {
+                  "province": 1663,
+                  "color": [
+                     110,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_welshpool",
+                     "name_list_english": "cn_welshpool"
+                  }
+               },
+               "b_newtown": {
+                  "province": 1664,
+                  "color": [
+                     110,
+                     25,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_newtown",
+                     "name_list_english": "cn_newtown"
+                  }
+               }
+            },
+            "c_sir_faesyfed": {
+               "color": [
+                  95,
+                  30,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_radnorshire",
+                  "name_list_english": "cn_radnorshire"
+               },
+               "b_llandrindod": {
+                  "province": 1661,
+                  "cultural_names": {
+                     "name_list_norman": "cn_llandrindod_wells",
+                     "name_list_english": "cn_llandrindod_wells"
+                  },
+                  "color": [
+                     95,
+                     30,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_rhayader": {
+                  "province": 1662,
+                  "cultural_names": {
+                     "name_list_norman": "cn_rhayader",
+                     "name_list_english": "cn_rhayader"
+                  },
+                  "color": [
+                     95,
+                     30,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_hereford": {
+               "color": [
+                  110,
+                  45,
+                  35
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_welsh": "cn_arcenefelde",
+                  "name_list_cumbrian": "cn_arcenefelde"
+               },
+               "b_hereford": {
+                  "province": 1632,
+                  "cultural_names": {
+                     "name_list_welsh": "cn_hennffordd",
+                     "name_list_cumbrian": "cn_hennffordd"
+                  },
+                  "color": [
+                     110,
+                     45,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wigmore": {
+                  "province": 1633,
+                  "color": [
+                     110,
+                     45,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_clifford": {
+                  "province": 1634,
+                  "color": [
+                     110,
+                     45,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_deheubarth": {
+            "color": [
+               240,
+               167,
+               91
+            ],
+            "color2": [
+               255,
+               0,
+               0
+            ],
+            "capital": "c_carmarthenshire",
+            "c_carmarthenshire": {
+               "color": [
+                  245,
+                  170,
+                  100
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_carmarthenshire",
+                  "name_list_english": "cn_carmarthenshire"
+               },
+               "b_carmarthen": {
+                  "province": 1652,
+                  "color": [
+                     245,
+                     170,
+                     100
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_carmarthen",
+                     "name_list_english": "cn_carmarthen"
+                  }
+               },
+               "b_llandovery": {
+                  "province": 1653,
+                  "color": [
+                     245,
+                     170,
+                     100
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_llandovery",
+                     "name_list_english": "cn_llandovery"
+                  }
+               }
+            },
+            "c_pembrokeshire": {
+               "color": [
+                  210,
+                  140,
+                  90
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_pembrokeshire",
+                  "name_list_english": "cn_pembrokeshire"
+               },
+               "b_pembroke": {
+                  "province": 1654,
+                  "color": [
+                     210,
+                     140,
+                     90
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_pembroke",
+                     "name_list_english": "cn_pembroke"
+                  }
+               },
+               "b_st_davids": {
+                  "province": 1655,
+                  "color": [
+                     210,
+                     140,
+                     90
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_st_davids",
+                     "name_list_english": "cn_st_davids"
+                  }
+               },
+               "b_fishguard": {
+                  "province": 1656,
+                  "color": [
+                     210,
+                     140,
+                     90
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_fiscard",
+                     "name_list_english": "cn_fiscard"
+                  }
+               }
+            },
+            "c_glamorgan": {
+               "color": [
+                  220,
+                  190,
+                  145
+               ],
+               "color2": [
+                  255,
+                  0,
+                  0
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_glamorgan",
+                  "name_list_english": "cn_glamorgan"
+               },
+               "b_cardiff": {
+                  "province": 1649,
+                  "color": [
+                     220,
+                     190,
+                     145
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_cardiff",
+                     "name_list_english": "cn_cardiff"
+                  }
+               },
+               "b_swansea": {
+                  "province": 1650,
+                  "color": [
+                     220,
+                     190,
+                     145
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_swansea",
+                     "name_list_english": "cn_swansea"
+                  }
+               },
+               "b_caerphilly": {
+                  "province": 1651,
+                  "color": [
+                     220,
+                     190,
+                     145
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_caerphilly",
+                     "name_list_english": "cn_caerphilly"
+                  }
+               }
+            },
+            "c_monmouthshire": {
+               "color": [
+                  210,
+                  165,
+                  60
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_monmouthshire",
+                  "name_list_english": "cn_monmouthshire"
+               },
+               "b_casnewydd": {
+                  "province": 1630,
+                  "color": [
+                     210,
+                     165,
+                     60
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_caerleon",
+                     "name_list_english": "cn_caerleon"
+                  }
+               },
+               "b_monmouth": {
+                  "province": 1631,
+                  "color": [
+                     210,
+                     165,
+                     60
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_monmouth",
+                     "name_list_english": "cn_monmouth"
+                  }
+               }
+            },
+            "c_brecknockshire": {
+               "color": [
+                  215,
+                  150,
+                  115
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norman": "cn_brecknockshire",
+                  "name_list_english": "cn_brecknockshire"
+               },
+               "b_brecon": {
+                  "province": 1659,
+                  "color": [
+                     215,
+                     150,
+                     115
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norman": "cn_brecknock",
+                     "name_list_english": "cn_brecknock"
+                  }
+               },
+               "b_talgarth": {
+                  "province": 1660,
+                  "color": [
+                     215,
+                     150,
+                     115
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         }
+      },
+      "k_scotland": {
+         "color": [
+            230,
+            140,
+            0
+         ],
+         "color2": [
+            255,
+            255,
+            255
+         ],
+         "capital": "c_gowrie",
+         "cultural_names": {
+            "name_list_irish": "cn_alba",
+            "name_list_gaelic": "cn_alba",
+            "name_list_pictish": "cn_pictland"
+         },
+         "ai_primary_priority": {
+            "if": [
+               {
+                  "limit": {
+                     "OR": {
+                        "culture": [
+                           "culture:scottish",
+                           "culture:gaelic",
+                           "culture:pictish"
+                        ]
+                     }
+                  },
+                  "add": "@correct_culture_primary_score"
+               },
+               {
+                  "limit": {
+                     "culture": "culture:irish"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            ]
+         },
+         "d_albany": {
+            "color": [
+               220,
+               130,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "cultural_names": {
+               "name_list_irish": "cn_circinn",
+               "name_list_gaelic": "cn_circinn",
+               "name_list_pictish": "cn_circinn",
+               "name_list_welsh": "cn_circinn",
+               "name_list_cumbrian": "cn_circinn",
+               "name_list_cornish": "cn_circinn",
+               "name_list_breton": "cn_circinn"
+            },
+            "capital": "c_gowrie",
+            "c_gowrie": {
+               "color": [
+                  220,
+                  130,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_st_johnston": {
+                  "province": 1741,
+                  "color": [
+                     220,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_coupar_angus": {
+                  "province": 1742,
+                  "color": [
+                     220,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_crieff": {
+                  "province": 1745,
+                  "color": [
+                     220,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_fife": {
+               "color": [
+                  210,
+                  115,
+                  5
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dunfermline": {
+                  "province": 1724,
+                  "color": [
+                     210,
+                     115,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kircaldy": {
+                  "province": 1725,
+                  "color": [
+                     210,
+                     115,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_st_andrews": {
+                  "province": 1726,
+                  "color": [
+                     210,
+                     115,
+                     5
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_strathearn": {
+               "color": [
+                  245,
+                  130,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_stirling": {
+                  "province": 1734,
+                  "color": [
+                     245,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_callander": {
+                  "province": 1735,
+                  "color": [
+                     245,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_clackmannan": {
+                  "province": 1736,
+                  "color": [
+                     245,
+                     130,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_atholl": {
+               "color": [
+                  225,
+                  155,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dunkeld": {
+                  "province": 1743,
+                  "color": [
+                     225,
+                     155,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_aberfeldy": {
+                  "province": 1744,
+                  "color": [
+                     225,
+                     155,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_angus": {
+               "color": [
+                  225,
+                  125,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dundee": {
+                  "province": 1720,
+                  "color": [
+                     225,
+                     125,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kirriemuir": {
+                  "province": 1721,
+                  "color": [
+                     225,
+                     125,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_mar": {
+                  "province": 1723,
+                  "color": [
+                     225,
+                     125,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_mearns": {
+               "color": [
+                  230,
+                  140,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_aberdeen": {
+                  "province": 1718,
+                  "color": [
+                     230,
+                     140,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_kincardine": {
+                  "province": 1719,
+                  "color": [
+                     230,
+                     140,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_ballater": {
+                  "province": 1722,
+                  "color": [
+                     230,
+                     140,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_the_isles": {
+            "color": [
+               180,
+               90,
+               0
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_isle_of_man",
+            "cultural_names": {
+               "name_list_norse": "cn_mon",
+               "name_list_norwegian": "cn_mon"
+            },
+            "c_isle_of_man": {
+               "color": [
+                  180,
+                  90,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_mon",
+                  "name_list_norwegian": "cn_mon"
+               },
+               "b_castletown": {
+                  "province": 1698,
+                  "color": [
+                     180,
+                     90,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_holmatun",
+                     "name_list_norwegian": "cn_holmatun"
+                  }
+               },
+               "b_ramsey": {
+                  "province": 1699,
+                  "color": [
+                     180,
+                     90,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_hramsa",
+                     "name_list_norwegian": "cn_hramsa"
+                  }
+               }
+            }
+         },
+         "d_galloway": {
+            "color": [
+               230,
+               120,
+               65
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_lennox",
+            "cultural_names": {
+               "name_list_gaelic": "cn_galloway",
+               "name_list_irish": "cn_galloway",
+               "name_list_norse": "cn_galvei",
+               "name_list_norwegian": "cn_galvei"
+            },
+            "ai_primary_priority": {
+               "if": [
+                  {
+                     "limit": {
+                        "culture": "culture:cumbrian"
+                     },
+                     "add": "@correct_culture_primary_score"
+                  },
+                  {
+                     "limit": {
+                        "culture": [
+                           "culture:welsh",
+                           "culture:cornish",
+                           "culture:breton"
+                        ]
+                     },
+                     "add": "@better_than_the_alternatives_score"
+                  }
+               ]
+            },
+            "c_lennox": {
+               "color": [
+                  230,
+                  150,
+                  50
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "ai_primary_priority": {
+                  "if": {
+                     "limit": {
+                        "culture": "culture:cumbrian"
+                     },
+                     "add": "@correct_culture_primary_score"
+                  }
+               },
+               "cultural_names": {
+                  "name_list_pictish": "cn_alt_clut",
+                  "name_list_breton": "cn_alt_clut",
+                  "name_list_cornish": "cn_alt_clut",
+                  "name_list_cumbrian": "cn_alt_clut",
+                  "name_list_welsh": "cn_alt_clut"
+               },
+               "b_dumbarton": {
+                  "province": 1695,
+                  "color": [
+                     230,
+                     150,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_pictish": "cn_alclud",
+                     "name_list_breton": "cn_alclud",
+                     "name_list_cornish": "cn_alclud",
+                     "name_list_cumbrian": "cn_alclud",
+                     "name_list_welsh": "cn_alclud"
+                  }
+               },
+               "b_glasgow": {
+                  "province": 1696,
+                  "color": [
+                     230,
+                     150,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_meneith": {
+                  "province": 1697,
+                  "color": [
+                     230,
+                     150,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_galloway": {
+               "cultural_names": {
+                  "name_list_pictish": "cn_galwyddel",
+                  "name_list_cumbrian": "cn_galwyddel",
+                  "name_list_welsh": "cn_galwyddel",
+                  "name_list_breton": "cn_galwyddel",
+                  "name_list_cornish": "cn_galwyddel",
+                  "name_list_norse": "cn_galvei",
+                  "name_list_norwegian": "cn_galvei"
+               },
+               "color": [
+                  230,
+                  120,
+                  65
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_kilcudbrite": {
+                  "province": 1682,
+                  "color": [
+                     230,
+                     120,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_sanquhar": {
+                  "province": 1683,
+                  "color": [
+                     230,
+                     120,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_wigtown": {
+                  "province": 1684,
+                  "color": [
+                     230,
+                     120,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_carrick": {
+               "color": [
+                  250,
+                  105,
+                  70
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_maybole": {
+                  "province": 1680,
+                  "color": [
+                     250,
+                     105,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_girvan": {
+                  "province": 1685,
+                  "color": [
+                     250,
+                     105,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_ayrshire": {
+               "color": [
+                  230,
+                  145,
+                  50
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_pictish": "cn_aeron",
+                  "name_list_cumbrian": "cn_aeron",
+                  "name_list_welsh": "cn_aeron",
+                  "name_list_breton": "cn_aeron",
+                  "name_list_cornish": "cn_aeron"
+               },
+               "b_kyle": {
+                  "province": 1686,
+                  "color": [
+                     230,
+                     145,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_strathgryte": {
+                  "province": 1687,
+                  "color": [
+                     230,
+                     145,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_cunningham": {
+                  "province": 1688,
+                  "color": [
+                     230,
+                     145,
+                     50
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_annandale": {
+               "color": [
+                  215,
+                  140,
+                  55
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_annan": {
+                  "province": 1679,
+                  "color": [
+                     215,
+                     140,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_dumfries": {
+                  "province": 1681,
+                  "color": [
+                     215,
+                     140,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_western_isles": {
+            "color": [
+               225,
+               120,
+               30
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_inner_hebrides",
+            "definite_form": true,
+            "cultural_names": {
+               "name_list_norse": "cn_sudreyjar",
+               "name_list_norwegian": "cn_sudreyjar"
+            },
+            "c_inner_hebrides": {
+               "color": [
+                  255,
+                  200,
+                  10
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_innri_sudreyjar",
+                  "name_list_norwegian": "cn_innri_sudreyjar"
+               },
+               "b_islay": {
+                  "province": 1689,
+                  "color": [
+                     255,
+                     200,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_il",
+                     "name_list_norwegian": "cn_il"
+                  }
+               },
+               "b_arran": {
+                  "province": 1690,
+                  "color": [
+                     255,
+                     200,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_hereyjar",
+                     "name_list_norwegian": "cn_hereyjar"
+                  }
+               },
+               "b_mull": {
+                  "province": 1691,
+                  "color": [
+                     255,
+                     200,
+                     10
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_myl",
+                     "name_list_norwegian": "cn_myl"
+                  }
+               }
+            },
+            "c_outer_hebrides": {
+               "color": [
+                  255,
+                  225,
+                  55
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_ytri_sudreyjar",
+                  "name_list_norwegian": "cn_ytri_sudreyjar"
+               },
+               "b_skye": {
+                  "province": 1692,
+                  "color": [
+                     255,
+                     225,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_skid",
+                     "name_list_norwegian": "cn_skid"
+                  }
+               },
+               "b_lewis": {
+                  "province": 1693,
+                  "color": [
+                     255,
+                     225,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_ljodhus",
+                     "name_list_norwegian": "cn_ljodhus"
+                  }
+               },
+               "b_the_uists": {
+                  "province": 1694,
+                  "color": [
+                     255,
+                     225,
+                     55
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_vist",
+                     "name_list_norwegian": "cn_vist"
+                  }
+               }
+            },
+            "c_argyll": {
+               "color": [
+                  215,
+                  200,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_argjall",
+                  "name_list_norwegian": "cn_argjall"
+               },
+               "b_kilmarten": {
+                  "province": 1700,
+                  "color": [
+                     215,
+                     200,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_kjarbarey",
+                     "name_list_norwegian": "cn_kjarbarey"
+                  }
+               },
+               "b_glencoe": {
+                  "province": 1701,
+                  "color": [
+                     215,
+                     200,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_dysjarstadr",
+                     "name_list_norwegian": "cn_dysjarstadr"
+                  }
+               },
+               "b_lomond": {
+                  "province": 1702,
+                  "color": [
+                     215,
+                     200,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_lokolofni",
+                     "name_list_norwegian": "cn_lokolofni"
+                  }
+               },
+               "b_ardnamurchon": {
+                  "province": 35,
+                  "color": [
+                     215,
+                     200,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_mylarsund",
+                     "name_list_norwegian": "cn_mylarsund"
+                  }
+               }
+            }
+         },
+         "d_lothian": {
+            "color": [
+               195,
+               130,
+               25
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_lothian",
+            "cultural_names": {
+               "name_list_breton": "cn_gododdin",
+               "name_list_cornish": "cn_gododdin",
+               "name_list_cumbrian": "cn_gododdin",
+               "name_list_welsh": "cn_gododdin"
+            },
+            "c_lothian": {
+               "color": [
+                  185,
+                  90,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_edinburgh": {
+                  "province": 1727,
+                  "color": [
+                     185,
+                     90,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_haddington": {
+                  "province": 1728,
+                  "color": [
+                     185,
+                     90,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_galashiels": {
+                  "province": 1729,
+                  "color": [
+                     185,
+                     90,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_penicuick": {
+                  "province": 1730,
+                  "color": [
+                     185,
+                     90,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_dunbar": {
+               "color": [
+                  190,
+                  75,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dunbar": {
+                  "province": 1676,
+                  "color": [
+                     190,
+                     75,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_berwick": {
+                  "province": 1675,
+                  "color": [
+                     190,
+                     75,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_teviotdale": {
+               "color": [
+                  198,
+                  70,
+                  23
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_kelso": {
+                  "province": 1677,
+                  "color": [
+                     198,
+                     70,
+                     23
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_jedburgh": {
+                  "province": 1678,
+                  "color": [
+                     198,
+                     70,
+                     23
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_selkirk": {
+                  "province": 1740,
+                  "color": [
+                     198,
+                     70,
+                     23
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_linlithgowshire": {
+               "color": [
+                  185,
+                  115,
+                  25
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_linlithgow": {
+                  "province": 1731,
+                  "color": [
+                     185,
+                     115,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_queensferry": {
+                  "province": 1732,
+                  "color": [
+                     185,
+                     115,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_falkirk": {
+                  "province": 1733,
+                  "color": [
+                     185,
+                     115,
+                     25
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_lanarkshire": {
+               "color": [
+                  195,
+                  100,
+                  35
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_lanark": {
+                  "province": 1737,
+                  "color": [
+                     195,
+                     100,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_cadyou": {
+                  "province": 1738,
+                  "color": [
+                     195,
+                     100,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_biggar": {
+                  "province": 1739,
+                  "color": [
+                     195,
+                     100,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_moray": {
+            "color": [
+               255,
+               180,
+               60
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_moray",
+            "cultural_names": {
+               "name_list_norse": "cn_katanes",
+               "name_list_norwegian": "cn_katanes"
+            },
+            "c_moray": {
+               "color": [
+                  255,
+                  180,
+                  60
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_elgin": {
+                  "province": 1715,
+                  "color": [
+                     255,
+                     180,
+                     60
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_keith": {
+                  "province": 1716,
+                  "color": [
+                     255,
+                     180,
+                     60
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_garioch": {
+                  "province": 1717,
+                  "color": [
+                     255,
+                     180,
+                     60
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_ross": {
+               "color": [
+                  250,
+                  210,
+                  85
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_ros",
+                  "name_list_norwegian": "cn_ros"
+               },
+               "b_dingwall": {
+                  "province": 1703,
+                  "color": [
+                     250,
+                     210,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_gairloch": {
+                  "province": 1704,
+                  "color": [
+                     250,
+                     210,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_tain": {
+                  "province": 8777,
+                  "color": [
+                     250,
+                     210,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_applecross": {
+                  "province": 8778,
+                  "color": [
+                     250,
+                     210,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_buchan": {
+               "color": [
+                  255,
+                  175,
+                  75
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_banff": {
+                  "province": 1712,
+                  "color": [
+                     255,
+                     175,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_mortlach": {
+                  "province": 1713,
+                  "color": [
+                     255,
+                     175,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_peterhead": {
+                  "province": 1714,
+                  "color": [
+                     255,
+                     175,
+                     75
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_sutherland": {
+               "color": [
+                  255,
+                  205,
+                  115
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_sudrland",
+                  "name_list_norwegian": "cn_sudrland"
+               },
+               "b_dornoch": {
+                  "province": 1705,
+                  "color": [
+                     255,
+                     205,
+                     115
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_hjalmundalr",
+                     "name_list_norwegian": "cn_hjalmundalr"
+                  }
+               },
+               "b_durness": {
+                  "province": 1706,
+                  "color": [
+                     255,
+                     205,
+                     115
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_dyrnes",
+                     "name_list_norwegian": "cn_dyrnes"
+                  }
+               },
+               "b_assynt": {
+                  "province": 8779,
+                  "color": [
+                     255,
+                     205,
+                     115
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_caithness": {
+               "color": [
+                  240,
+                  220,
+                  145
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_c_katanes",
+                  "name_list_norwegian": "cn_c_katanes"
+               },
+               "b_thurso": {
+                  "province": 1707,
+                  "color": [
+                     240,
+                     220,
+                     145
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_thorsa",
+                     "name_list_norwegian": "cn_thorsa"
+                  }
+               },
+               "b_wick": {
+                  "province": 1708,
+                  "color": [
+                     240,
+                     220,
+                     145
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_vik",
+                     "name_list_norwegian": "cn_vik"
+                  }
+               }
+            },
+            "c_inverness": {
+               "color": [
+                  240,
+                  160,
+                  45
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_inverness": {
+                  "province": 1709,
+                  "color": [
+                     240,
+                     160,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_badenoch": {
+                  "province": 1710,
+                  "color": [
+                     240,
+                     160,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_glenfinnan": {
+                  "province": 1711,
+                  "color": [
+                     240,
+                     160,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_urquhart": {
+                  "province": 8775,
+                  "color": [
+                     240,
+                     160,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_glenelg": {
+                  "province": 8776,
+                  "color": [
+                     240,
+                     160,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         }
+      },
+      "k_ireland": {
+         "color": [
+            6,
+            127,
+            2
+         ],
+         "color2": [
+            255,
+            255,
+            255
+         ],
+         "capital": "c_dublin",
+         "can_create": {
+            "trigger_if": {
+               "limit": {
+                  "is_ai": true
+               },
+               "culture": {
+                  "has_cultural_pillar": "heritage_goidelic"
+               }
+            }
+         },
+         "ai_primary_priority": {
+            "if": [
+               {
+                  "limit": {
+                     "culture": "culture:irish"
+                  },
+                  "add": "@correct_culture_primary_score"
+               },
+               {
+                  "limit": {
+                     "culture": "culture:gaelic"
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            ]
+         },
+         "d_meath": {
+            "color": [
+               49,
+               249,
+               72
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_dublin",
+            "c_dublin": {
+               "color": [
+                  55,
+                  250,
+                  85
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_dyflinn",
+                  "name_list_norwegian": "cn_dyflinn",
+                  "name_list_irish": "cn_dubhlinn",
+                  "name_list_welsh": "cn_dulyn"
+               },
+               "b_dublin": {
+                  "province": 28,
+                  "color": [
+                     55,
+                     250,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norse": "cn_dyflinn",
+                     "name_list_norwegian": "cn_dyflinn",
+                     "name_list_irish": "cn_dubhlinn",
+                     "name_list_welsh": "cn_dulyn"
+                  }
+               },
+               "b_wicklow": {
+                  "province": 29,
+                  "color": [
+                     55,
+                     250,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_cill_mhantain"
+                  }
+               },
+               "b_kildare": {
+                  "province": 30,
+                  "color": [
+                     55,
+                     250,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_cill_dara"
+                  }
+               },
+               "b_trim": {
+                  "province": 31,
+                  "color": [
+                     55,
+                     250,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_baile_atha_troim"
+                  }
+               },
+               "b_drogheda": {
+                  "province": 32,
+                  "color": [
+                     55,
+                     250,
+                     85
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_droichead_atha"
+                  }
+               }
+            },
+            "c_athlone": {
+               "color": [
+                  40,
+                  230,
+                  65
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_athlone": {
+                  "province": 34,
+                  "color": [
+                     40,
+                     230,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_birr": {
+                  "province": 33,
+                  "color": [
+                     40,
+                     230,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_uisneach": {
+                  "province": 36,
+                  "color": [
+                     40,
+                     230,
+                     65
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_ulster": {
+            "color": [
+               5,
+               222,
+               31
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_ulster",
+            "c_ulster": {
+               "color": [
+                  25,
+                  230,
+                  35
+               ],
+               "color2": [
+                  0,
+                  150,
+                  0
+               ],
+               "b_downpatrick": {
+                  "province": 15,
+                  "color": [
+                     25,
+                     230,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_strangfjordr",
+                     "name_list_swedish": "cn_strangfjord",
+                     "name_list_danish": "cn_strangfjord",
+                     "name_list_norse": "cn_strangfjordr",
+                     "name_list_irish": "cn_dun_padraig"
+                  }
+               },
+               "b_slemish": {
+                  "province": 13,
+                  "color": [
+                     25,
+                     230,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_carrickfergus": {
+                  "province": 14,
+                  "color": [
+                     25,
+                     230,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_carraig_fhearghais"
+                  }
+               },
+               "b_bangor": {
+                  "province": 8741,
+                  "color": [
+                     25,
+                     230,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_oriel": {
+               "color": [
+                  30,
+                  180,
+                  45
+               ],
+               "color2": [
+                  230,
+                  180,
+                  0
+               ],
+               "b_dundalk": {
+                  "province": 18,
+                  "color": [
+                     30,
+                     180,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_kerlingfrjordr",
+                     "name_list_swedish": "cn_kerlingfjord",
+                     "name_list_danish": "cn_kerlingfjord",
+                     "name_list_norse": "cn_kerlingfrjordr",
+                     "name_list_irish": "cn_dun_dealgan"
+                  }
+               },
+               "b_armagh": {
+                  "province": 17,
+                  "color": [
+                     30,
+                     180,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_ard_mhacha"
+                  }
+               },
+               "b_ardee": {
+                  "province": 19,
+                  "color": [
+                     30,
+                     180,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_baile_atha_fhirdhia"
+                  }
+               },
+               "b_clogher": {
+                  "province": 8742,
+                  "color": [
+                     30,
+                     180,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_dungannon": {
+                  "province": 8743,
+                  "color": [
+                     30,
+                     180,
+                     45
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_ailech": {
+               "color": [
+                  66,
+                  157,
+                  22
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_norse": "cn_ulfkelsfjordr",
+                  "name_list_norwegian": "cn_ulfkelsfjordr"
+               },
+               "b_donegal": {
+                  "province": 9,
+                  "color": [
+                     66,
+                     157,
+                     22
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_dun_na_ngall"
+                  }
+               },
+               "b_raphoe": {
+                  "province": 10,
+                  "color": [
+                     66,
+                     157,
+                     22
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_rath_bhoth"
+                  }
+               },
+               "b_fahan": {
+                  "province": 11,
+                  "color": [
+                     66,
+                     157,
+                     22
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_fathain"
+                  }
+               },
+               "b_derry": {
+                  "province": 12,
+                  "color": [
+                     66,
+                     157,
+                     22
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_daire_coluimb_chille",
+                     "name_list_norse": "cn_ulfkelsfjordr",
+                     "name_list_norwegian": "cn_ulfkelsfjordr"
+                  }
+               }
+            }
+         },
+         "d_connacht": {
+            "color": [
+               43,
+               229,
+               108
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_mayo",
+            "c_connacht": {
+               "color": [
+                  45,
+                  230,
+                  70
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "cultural_names": {
+                  "name_list_irish": "cn_ui_maine"
+               },
+               "b_galway": {
+                  "province": 20,
+                  "color": [
+                     45,
+                     230,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_dun_bhun_na_gaillimhe"
+                  }
+               },
+               "b_athenry": {
+                  "province": 23,
+                  "color": [
+                     45,
+                     230,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_tuam": {
+                  "province": 8746,
+                  "color": [
+                     45,
+                     230,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_da_chainoc": {
+                  "province": 8747,
+                  "color": [
+                     45,
+                     230,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_mayo": {
+               "color": [
+                  15,
+                  190,
+                  70
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_cruachu": {
+                  "province": 8745,
+                  "color": [
+                     15,
+                     190,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_castlebar": {
+                  "province": 21,
+                  "color": [
+                     15,
+                     190,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_sligo": {
+                  "province": 22,
+                  "color": [
+                     15,
+                     190,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_killala": {
+                  "province": 8748,
+                  "color": [
+                     15,
+                     190,
+                     70
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_breifne": {
+               "color": [
+                  95,
+                  221,
+                  121
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_dromahair": {
+                  "province": 24,
+                  "color": [
+                     95,
+                     221,
+                     121
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_droim_ath_thiar"
+                  }
+               },
+               "b_belcoo": {
+                  "province": 25,
+                  "color": [
+                     95,
+                     221,
+                     121
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_longford": {
+                  "province": 26,
+                  "color": [
+                     95,
+                     221,
+                     121
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_an_longphort"
+                  }
+               },
+               "b_cavan": {
+                  "province": 27,
+                  "color": [
+                     95,
+                     221,
+                     121
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_an_cabhan"
+                  }
+               },
+               "b_adragh": {
+                  "province": 8744,
+                  "color": [
+                     95,
+                     221,
+                     121
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_leinster": {
+            "color": [
+               85,
+               211,
+               27
+            ],
+            "color2": [
+               255,
+               255,
+               255
+            ],
+            "capital": "c_leinster",
+            "c_leinster": {
+               "color": [
+                  68,
+                  156,
+                  28
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_wexford": {
+                  "province": 37,
+                  "color": [
+                     68,
+                     156,
+                     28
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_veisafjordr",
+                     "name_list_swedish": "cn_veisafjord",
+                     "name_list_danish": "cn_veisafjord",
+                     "name_list_norse": "cn_veisafjordr",
+                     "name_list_irish": "cn_loch_garman"
+                  }
+               },
+               "b_enniscorthy": {
+                  "province": 38,
+                  "color": [
+                     68,
+                     156,
+                     28
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_inis_corthaidh"
+                  }
+               },
+               "b_ferns": {
+                  "province": 39,
+                  "color": [
+                     68,
+                     156,
+                     28
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_fearna_mor_maedhog"
+                  }
+               },
+               "b_carlow": {
+                  "province": 40,
+                  "color": [
+                     68,
+                     156,
+                     28
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_ceatharlach"
+                  }
+               }
+            },
+            "c_ossory": {
+               "color": [
+                  93,
+                  166,
+                  15
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_gowran": {
+                  "province": 43,
+                  "color": [
+                     93,
+                     166,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_gabhran"
+                  }
+               },
+               "b_kilkenny": {
+                  "province": 41,
+                  "color": [
+                     93,
+                     166,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_cill_chainnigh"
+                  }
+               },
+               "b_athy": {
+                  "province": 42,
+                  "color": [
+                     93,
+                     166,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_carrick": {
+                  "province": 44,
+                  "color": [
+                     93,
+                     166,
+                     15
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         },
+         "d_munster": {
+            "color": [
+               16,
+               157,
+               12
+            ],
+            "color2": [
+               205,
+               0,
+               25
+            ],
+            "capital": "c_thomond",
+            "c_thomond": {
+               "color": [
+                  3,
+                  128,
+                  0
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_limerick": {
+                  "province": 45,
+                  "color": [
+                     3,
+                     128,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_hlymrek",
+                     "name_list_danish": "cn_lymrek",
+                     "name_list_swedish": "cn_lymrek",
+                     "name_list_norse": "cn_hlymrek",
+                     "name_list_irish": "cn_luimneach"
+                  }
+               },
+               "b_nenagh": {
+                  "province": 47,
+                  "color": [
+                     3,
+                     128,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_aonach_urmhumhan"
+                  }
+               },
+               "b_roscrea": {
+                  "province": 48,
+                  "color": [
+                     3,
+                     128,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_ros_cre"
+                  }
+               },
+               "b_kilmallock": {
+                  "province": 8750,
+                  "color": [
+                     3,
+                     128,
+                     0
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_ennis": {
+               "color": [
+                  32,
+                  115,
+                  30
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_ennis": {
+                  "province": 46,
+                  "color": [
+                     32,
+                     115,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_inis"
+                  }
+               },
+               "b_kincora": {
+                  "province": 8749,
+                  "color": [
+                     32,
+                     115,
+                     30
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            },
+            "c_ormond": {
+               "color": [
+                  0,
+                  80,
+                  20
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_waterford": {
+                  "province": 49,
+                  "color": [
+                     0,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_norwegian": "cn_vedrafjord",
+                     "name_list_swedish": "cn_vedrafjord",
+                     "name_list_danish": "cn_vedrafjord",
+                     "name_list_norse": "cn_vedrafjordr",
+                     "name_list_irish": "cn_port_lairge"
+                  }
+               },
+               "b_emly": {
+                  "province": 50,
+                  "color": [
+                     0,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_imleach_iubhair"
+                  }
+               },
+               "b_clonmel": {
+                  "province": 51,
+                  "color": [
+                     0,
+                     80,
+                     20
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_cluain_meala"
+                  }
+               }
+            },
+            "c_desmond": {
+               "color": [
+                  10,
+                  137,
+                  35
+               ],
+               "color2": [
+                  255,
+                  255,
+                  255
+               ],
+               "b_tralee": {
+                  "province": 52,
+                  "color": [
+                     10,
+                     137,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_cork": {
+                  "province": 53,
+                  "color": [
+                     10,
+                     137,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ],
+                  "cultural_names": {
+                     "name_list_irish": "cn_corcaigh"
+                  }
+               },
+               "b_kinsale": {
+                  "province": 54,
+                  "color": [
+                     10,
+                     137,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               },
+               "b_baltimore": {
+                  "province": 16,
+                  "color": [
+                     10,
+                     137,
+                     35
+                  ],
+                  "color2": [
+                     255,
+                     255,
+                     255
+                  ]
+               }
+            }
+         }
+      },
+      "k_cornwall": {
+         "color": [
+            204,
+            153,
+            10
+         ],
+         "color2": [
+            220,
+            220,
+            0
+         ],
+         "can_create": {
+            "trigger_if": {
+               "limit": {
+                  "is_ai": true
+               },
+               "culture": {
+                  "has_cultural_pillar": "heritage_brythonic"
+               }
+            }
+         },
+         "ai_primary_priority": {
+            "if": [
+               {
+                  "limit": {
+                     "culture": "culture:cornish"
+                  },
+                  "add": "@correct_culture_primary_score"
+               },
+               {
+                  "limit": {
+                     "OR": {
+                        "culture": [
+                           "culture:welsh",
+                           "culture:cumbrian",
+                           "culture:breton"
+                        ]
+                     }
+                  },
+                  "add": "@better_than_the_alternatives_score"
+               }
+            ]
+         },
+         "capital": "c_cornwall"
+      },
+      "k_mann_the_isles": {
+         "color": [
+            124,
+            59,
+            8
+         ],
+         "capital": "c_isle_of_man"
+      }
+   }
+}
