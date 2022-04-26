@@ -3,6 +3,8 @@ import { supabase } from "../supabase/supabase";
 import amLandedTitles from "../assets/vanilla_ck3/landed_titles_test.json";
 // import vanillaLandedTitles from "../assets/vanilla_ck3/parsed_vanilla_landed_titles_test";
 import vanillaLandedTitles from "../assets/vanilla_ck3/parsed_vanilla_landed_titles.json";
+// import vanillaProvinceHistory from "../assets/vanilla_ck3/vanilla_province_history_test.json";
+import vanillaProvinceHistory from "../assets/vanilla_ck3/parsed_vanilla_province_history.json";
 </script>
 
 <script>
@@ -18,6 +20,20 @@ async function test() {
    } finally {
    }
 }
+// async function getProvinceBarony(top_level_entry_key) {
+//    try {
+//       const { data } = await supabase
+//          .from("landed_title")
+//          .select("title")
+//          .eq("province", parseInt(top_level_entry_key));
+
+//       const provinceBarony = data;
+//       return provinceBarony;
+//    } catch (error) {
+//       alert(error.message);
+//    } finally {
+//    }
+// }
 async function importLandedTitles() {
    try {
       // console.log(amLandedTitles);
@@ -192,13 +208,135 @@ async function importLandedTitles() {
    } finally {
    }
 }
+async function importProvinceHistory() {
+   try {
+      for (const top_level_entry_key of Object.keys(vanillaProvinceHistory)) {
+         // console.log(top_level_entry_key);
+         // console.log(parseInt(top_level_entry_key));
+
+         // Variable declaration of top level title for clearer syntax below
+         const top_level_entry = vanillaProvinceHistory[top_level_entry_key];
+
+         // Querying the related title of the province
+         const baronyQuery = await supabase
+            .from("landed_title")
+            .select("title")
+            .eq("province", parseInt(top_level_entry_key));
+
+         const provinceBarony = baronyQuery.data[0].title;
+
+         // Supabase Writing
+         const { data, error, status } = await supabase
+            .from("province_history")
+            .insert([
+               {
+                  province_id: top_level_entry_key,
+                  holding_type: top_level_entry.holding,
+                  religion: top_level_entry.religion,
+                  culture: top_level_entry.culture,
+                  date: "600.1.1", // Default array has no information, assign a before 867 date
+                  barony: provinceBarony,
+                  buildings: top_level_entry.buildings,
+                  special_buildings: top_level_entry.special_buildings,
+                  terrain: top_level_entry.terrain,
+                  duchy_capital_building:
+                     top_level_entry.duchy_capital_building,
+                  special_building_slot: top_level_entry.special_building_slot,
+                  manual: false,
+               },
+            ]);
+
+         // Log validation
+         // console.log(baronyQuery.data[0]);
+
+         for (const lower_level_entry_key of Object.keys(top_level_entry)) {
+            if (
+               lower_level_entry_key !== "holding" &&
+               lower_level_entry_key !== "culture" &&
+               lower_level_entry_key !== "religion" &&
+               lower_level_entry_key !== "buildings" &&
+               lower_level_entry_key !== "special_building" &&
+               lower_level_entry_key !== "special_building_slot" &&
+               lower_level_entry_key !== "terrain" &&
+               lower_level_entry_key !== "duchy_capital_building"
+            ) {
+               // console.log(lower_level_entry_key);
+               // Variable declaration of top level title for clearer syntax below
+               const lower_level_entry =
+                  vanillaProvinceHistory[top_level_entry_key][
+                     lower_level_entry_key
+                  ];
+
+               // Supabase Writing
+               // Either copy higher level entry info or if info exists overwrite it
+               const { data, error, status } = await supabase
+                  .from("province_history")
+                  .insert([
+                     {
+                        province_id: top_level_entry_key,
+                        holding_type:
+                           typeof lower_level_entry.holding === "undefined"
+                              ? top_level_entry.holding
+                              : lower_level_entry.holding,
+                        religion:
+                           typeof lower_level_entry.religion === "undefined"
+                              ? top_level_entry.religion
+                              : lower_level_entry.religion,
+                        culture:
+                           typeof lower_level_entry.culture === "undefined"
+                              ? top_level_entry.culture
+                              : lower_level_entry.culture,
+                        date: lower_level_entry_key,
+                        barony: provinceBarony,
+                        buildings:
+                           typeof lower_level_entry.buildings === "undefined"
+                              ? top_level_entry.buildings
+                              : lower_level_entry.buildings,
+                        special_buildings:
+                           typeof lower_level_entry.special_buildings ===
+                           "undefined"
+                              ? top_level_entry.special_buildings
+                              : lower_level_entry.special_buildings,
+                        terrain:
+                           typeof lower_level_entry.terrain === "undefined"
+                              ? top_level_entry.terrain
+                              : lower_level_entry.terrain,
+                        duchy_capital_building:
+                           typeof lower_level_entry.duchy_capital_building ===
+                           "undefined"
+                              ? top_level_entry.duchy_capital_building
+                              : lower_level_entry.duchy_capital_building,
+                        special_building_slot:
+                           typeof lower_level_entry.special_building_slot ===
+                           "undefined"
+                              ? top_level_entry.special_building_slot
+                              : lower_level_entry.special_building_slot,
+                        manual: false,
+                     },
+                  ]);
+
+               // console.log(status);
+            }
+         }
+      }
+      // console.log(status);
+   } catch (error) {
+      alert(error.message);
+   } finally {
+   }
+}
 </script>
 
 <template>
    <div class="about">
-      <h1>This is an about page</h1>
-      <button @click="test">Click me GET</button>
-      <button @click="importLandedTitles">Click me INSERT</button>
+      <h1 class="mb-10">This is an about page</h1>
+      <button @click="test" class="mb-10">Click me GET</button>
+      <button @click="importLandedTitles" class="mb-10">
+         Click me INSERT landed titles
+      </button>
+      <button @click="importProvinceHistory">
+         Click me INSERT province history
+      </button>
       <!-- <button @click="test3">Click me JSON</button> -->
    </div>
 </template>
