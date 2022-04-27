@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+/* @font-face {
+   font-family: 'Poppins_Thin';
+   src: url('./assets/fonts/Poppins-Thin.ttf');
+   font-weight: 100;
+   font-style: normal;
+} */
+
+html {
+   font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+   background-color: #F7F0E1;
+   @apply text-secondary
+}
