@@ -57,7 +57,7 @@ import logo from "../assets/svg/logo.svg";
                <li>
                   <router-link
                      to="/"
-                     class="block py-2 pr-4 pl-3 rounded md:p-0"
+                     class="block py-2 pr-4 pl-3 text-secondary"
                      aria-current="page"
                      >Home</router-link
                   >
@@ -67,6 +67,13 @@ import logo from "../assets/svg/logo.svg";
                      to="about"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >About</router-link
+                  >
+               </li>
+               <li>
+                  <router-link
+                     to="vanilla-history"
+                     class="block py-2 pr-4 pl-3 text-secondary"
+                     >Vanilla History</router-link
                   >
                </li>
                <!-- <li>
