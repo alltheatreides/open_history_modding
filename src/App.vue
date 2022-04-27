@@ -4,18 +4,24 @@ import logo from "./assets/svg/logo.svg";
 </script>
 
 <template>
-   <header class="container mx-auto flex justify-between my-10 items-center">
+   <header
+      class="container mx-auto flex justify-between my-10 items-center flex-col md:flex-row"
+   >
       <router-link to="/">
          <img :src="logo" alt="" />
       </router-link>
-      <nav class="flex-1 flex gap-20 justify-end px-6">
-         <router-link to="/" class="text-2xl font-thin">Home</router-link>
+      <nav class="flex-1 flex gap-20 justify-end px-6 hidden md:block">
+         <router-link to="/" class="text-xl lg:text-2xl font-thin"
+            >Home</router-link
+         >
          <router-link
             to="/vanilla-history"
-            class="text-2xl font-thin text-primary"
+            class="text-xl lg:text-2xl font-thin text-primary"
             >Vanilla History</router-link
          >
-         <router-link to="/profile" class="text-2xl font-thin text-primary"
+         <router-link
+            to="/profile"
+            class="text-xl lg:text-2xl font-thin text-primary"
             >Profile</router-link
          >
       </nav>
