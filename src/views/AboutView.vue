@@ -400,6 +400,8 @@ async function importTitleHistory() {
                         liege: tempInfo.liege,
                         holder: tempInfo.holder,
                         government: tempInfo.government,
+                        change_development_level:
+                           tempInfo.change_development_level,
                         succession_laws: tempInfo.succession_laws,
                         de_jure_liege: tempInfo.de_jure_liege,
                         insert_title_history: tempInfo.insert_title_history,
@@ -425,6 +427,8 @@ async function importTitleHistory() {
                         liege: lower_level_entry.liege,
                         holder: lower_level_entry.holder,
                         government: lower_level_entry.government,
+                        change_development_level:
+                           lower_level_entry.change_development_level,
                         succession_laws: lower_level_entry.succession_laws,
                         de_jure_liege: lower_level_entry.de_jure_liege,
                         insert_title_history:

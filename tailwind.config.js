@@ -13,7 +13,11 @@ module.exports = {
         primary: "#F7F0E1",
         secondary: "#3A343A",
         tertiary: "#FFD263",
-        secondary10: "#e5ddd1"
+        secondary10: "#e5ddd1",
+        customWhite: "#fffbf1"
+      },
+      height: {
+        'h-modal-center': "calc(100% - 25rem)",
       }
     },
   },
