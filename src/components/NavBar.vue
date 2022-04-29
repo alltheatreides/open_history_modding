@@ -1,9 +1,31 @@
 <script setup>
+import router from "../router";
 import logo from "../assets/svg/logo.svg";
+import { userStatusStore } from "../stores/counter";
+</script>
+
+<script>
+export default {
+   data() {
+      return {
+         // Instance pinia user store
+         userStore: userStatusStore(),
+         authenticated: userStatusStore().isAuthenticated,
+      };
+   },
+   methods: {
+      logout() {
+         this.userStore.logout();
+         this.userStore.increaseCount();
+         // console.log(this.userStore.session);
+         router.push("/");
+      },
+   },
+};
 </script>
 
 <template>
-   <nav class="w-[90%] px-2 sm:px-4 py-2.5">
+   <nav class="w-[90%] px-2 sm:px-4 py-2.5" :key="userStore.count + 2">
       <div
          class="container flex flex-wrap justify-between items-center mx-auto"
       >
@@ -71,6 +93,30 @@ import logo from "../assets/svg/logo.svg";
                </li>
                <li>
                   <router-link
+                     to="register"
+                     class="block py-2 pr-4 pl-3 text-secondary"
+                     >Register</router-link
+                  >
+               </li>
+               <li>
+                  <router-link
+                     to="login"
+                     class="block py-2 pr-4 pl-3 text-secondary"
+                     >Login</router-link
+                  >
+               </li>
+               <li>
+                  <button
+                     v-if="userStatusStore().isAuthenticated"
+                     @click="logout"
+                     title="Log out of user session"
+                     class="block py-2 pr-4 pl-3 text-secondary"
+                  >
+                     Logout
+                  </button>
+               </li>
+               <li>
+                  <router-link
                      to="vanilla-history"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >Vanilla History</router-link
@@ -78,6 +124,7 @@ import logo from "../assets/svg/logo.svg";
                </li>
                <li>
                   <router-link
+                     v-if="userStatusStore().isAuthenticated"
                      to="create-history"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >Create History</router-link
