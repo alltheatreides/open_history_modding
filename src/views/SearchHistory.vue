@@ -60,11 +60,11 @@ export default {
 
 <template>
    <main class="container mx-auto mb-10">
-      <section class="lg:w-4/6 mx-auto mt-20">
-         <h1 class="text-7xl text-center">Search vanilla history</h1>
+      <section class="lg:w-4/6 mx-auto mt-40">
+         <h1 class="text-4xl text-center">Search vanilla history</h1>
          <!-- Search bar -->
          <article
-            class="flex justify-between items-center w-full mx-auto mt-10 lg:mt-20 h-[55px] overflow-hidden"
+            class="flex justify-between items-center w-full mx-auto mt-5 lg:mt-10 h-[55px] overflow-hidden"
          >
             <!-- Drop down menu -->
             <div class="h-full">

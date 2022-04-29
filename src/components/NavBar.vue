@@ -52,7 +52,7 @@ import logo from "../assets/svg/logo.svg";
          <!-- Menu -->
          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
             <ul
-               class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-xl lg:text-2xl justify-end items-center"
+               class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-lg lg:text-xl justify-end items-center"
             >
                <li>
                   <router-link
@@ -74,6 +74,13 @@ import logo from "../assets/svg/logo.svg";
                      to="vanilla-history"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >Vanilla History</router-link
+                  >
+               </li>
+               <li>
+                  <router-link
+                     to="create-history"
+                     class="block py-2 pr-4 pl-3 text-secondary"
+                     >Create History</router-link
                   >
                </li>
                <!-- <li>

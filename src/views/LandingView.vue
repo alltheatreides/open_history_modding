@@ -44,7 +44,7 @@ import ave_maria from "../assets/svg/ave_maria_icon.svg";
          </div>
          <!-- Landing Page features list -->
          <section
-            class="grid grid-cols-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-0 xl:w-9/12 gap-5 mt-10 md:mt-[10vh] xl:mt-[12vh] 2xl:mt-[23vh]"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-0 xl:w-9/12 gap-5 mt-10 md:mt-[10vh] xl:mt-[12vh] 2xl:mt-[20vh]"
          >
             <HeroFeature
                title="View vanilla history"

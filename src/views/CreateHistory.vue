@@ -20,6 +20,17 @@ export default {
          terrain: "",
          duchy_capital_building: "",
          special_building_slot: "",
+         // Title infos
+         title: "",
+         title_date: "",
+         liege: "",
+         holder: "",
+         government: "",
+         change_development_level: 0,
+         succession_laws: [],
+         de_jure_liege: "",
+         insert_title_history: "",
+         holder_ignore_head_of_faith_requirement: "",
       };
    },
    methods: {
@@ -28,7 +39,8 @@ export default {
             this.supabaseCreateProvinceHistory();
             this.confirmationPrompt = false;
          } else if (this.selectedCategory === "Titles") {
-            // this.supabaseCreateTitleHistory();
+            this.supabaseCreateTitleHistory();
+            this.confirmationPrompt = false;
          }
       },
       async supabaseCreateProvinceHistory() {
@@ -54,6 +66,29 @@ export default {
 
          console.log(status, error);
       },
+      async supabaseCreateTitleHistory() {
+         // Supabase Writing
+         const { data, error, status } = await supabase
+            .from("user_title_history")
+            .insert([
+               {
+                  title: this.title,
+                  date: this.title_date,
+                  liege: this.liege,
+                  holder: this.holder,
+                  government: this.government,
+                  change_development_level: this.change_development_level,
+                  succession_laws: this.succession_laws,
+                  de_jure_liege: this.de_jure_liege,
+                  insert_title_history: this.insert_title_history,
+                  holder_ignore_head_of_faith_requirement:
+                     this.holder_ignore_head_of_faith_requirement,
+                  manual: true,
+               },
+            ]);
+
+         console.log(status, error);
+      },
    },
 };
 </script>
@@ -63,10 +98,10 @@ export default {
       class="container mx-auto mb-10 relative"
       :class="{ 'blur-content': confirmationPrompt }"
    >
-      <section class="mt-20">
-         <h1 class="text-7xl text-center">Create a new history entry</h1>
+      <section class="mt-24">
+         <h1 class="text-4xl text-center">Create a new history entry</h1>
 
-         <article class="flex gap-10 mt-20">
+         <article class="flex gap-10 mt-14">
             <!-- Drop Down select -->
             <select
                v-model="selectedCategory"
@@ -284,33 +319,35 @@ export default {
                      <!-- Form entry: title -->
                      <div class="">
                         <label
-                           for="province_id"
+                           for="title"
                            class="block mb-2 font-medium text-secondary dark:text-gray-300"
                         >
                            Title
                         </label>
                         <input
                            type="text"
-                           id="province_id"
+                           id="title"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Title"
                            required
+                           v-model="title"
                         />
                      </div>
                      <!-- Form entry: date -->
                      <div class="">
                         <label
-                           for="date"
+                           for="title_date"
                            class="block mb-2 font-medium text-secondary dark:text-gray-300"
                         >
                            Date
                         </label>
                         <input
                            type="text"
-                           id="date"
+                           id="title_date"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Date"
                            required
+                           v-model="title_date"
                         />
                      </div>
                      <!-- Form entry: liege -->
@@ -326,6 +363,7 @@ export default {
                            id="liege"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Liege"
+                           v-model="liege"
                         />
                      </div>
                      <!-- Form entry: holder -->
@@ -341,6 +379,7 @@ export default {
                            id="holder"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Holder"
+                           v-model="holder"
                         />
                      </div>
                      <!-- Form entry: government -->
@@ -357,6 +396,7 @@ export default {
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Government"
                            required
+                           v-model="government"
                         />
                      </div>
                      <!-- Form entry: change_development_level -->
@@ -372,6 +412,7 @@ export default {
                            id="change_development_level"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Change development level"
+                           v-model="change_development_level"
                         />
                      </div>
                      <!-- Form entry: succession_laws -->
@@ -387,6 +428,7 @@ export default {
                            id="succession_laws"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Succession Laws"
+                           v-model="succession_laws"
                         />
                      </div>
                      <!-- Form entry: de_jure_liege -->
@@ -402,6 +444,7 @@ export default {
                            id="de_jure_liege"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="De Jure Liege"
+                           v-model="de_jure_liege"
                         />
                      </div>
                      <!-- Form entry: insert_title_history -->
@@ -417,6 +460,7 @@ export default {
                            id="insert_title_history"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Insert Title History"
+                           v-model="insert_title_history"
                         />
                      </div>
                      <!-- Form entry: holder_ignore_head_of_faith_requirement -->
@@ -432,6 +476,7 @@ export default {
                            id="holder_ignore_head_of_faith_requirement"
                            class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
                            placeholder="Holder ignore head of faith requirement"
+                           v-model="holder_ignore_head_of_faith_requirement"
                         />
                      </div>
                   </div>
@@ -450,6 +495,15 @@ export default {
                      Submit
                   </button>
                </form>
+            </div>
+            <!-- Placeholder -->
+            <div
+               v-if="selectedCategory === ''"
+               class="flex-1 grid place-content-center bg-secondary10 p-10 w-full h-full mx-auto"
+            >
+               <h2 class="text-xl text-center">
+                  Select a category to create an entry
+               </h2>
             </div>
          </article>
       </section>
