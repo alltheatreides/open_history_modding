@@ -1,5 +1,6 @@
 <script setup>
 import { supabase } from "../supabase/supabase";
+import { userStatusStore } from "../stores/counter";
 </script>
 
 <script>
@@ -31,6 +32,9 @@ export default {
          de_jure_liege: "",
          insert_title_history: "",
          holder_ignore_head_of_faith_requirement: "",
+
+         // Instance pinia user store
+         userStore: userStatusStore(),
       };
    },
    methods: {
@@ -61,6 +65,7 @@ export default {
                   duchy_capital_building: this.duchy_capital_building,
                   special_building_slot: this.special_building_slot,
                   manual: true,
+                  author: this.userStore.userInfo.id,
                },
             ]);
 
@@ -84,11 +89,15 @@ export default {
                   holder_ignore_head_of_faith_requirement:
                      this.holder_ignore_head_of_faith_requirement,
                   manual: true,
+                  author: this.userStore.userInfo.id,
                },
             ]);
 
          console.log(status, error);
       },
+   },
+   mounted() {
+      // console.log(this.userStore.userInfo.id);
    },
 };
 </script>

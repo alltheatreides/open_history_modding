@@ -41,6 +41,7 @@ export default {
                console.log(this.userStore.isAuthenticated);
                // Updating the store session info
                this.userStore.getAuthStatus();
+               this.userStore.userID = user.id;
                // console.log(this.getAuthStatus());
                // Redirecting user to the create entry page
                router.push({ name: "createHistory" });
@@ -51,8 +52,10 @@ export default {
             }
 
             // console.log("no error in the login, proceed with it");
-            // // Saving the user info into the store user variable
-            // // this.userStore = user;
+            // Saving the user info into the store user variable
+            // this.userStore.setUserInfo(user);
+            // console.log(user);
+
             // // Changing the authentified store variable
             // this.userStore.isAuthenticated = true;
             // // Updating the store session info
@@ -96,7 +99,7 @@ export default {
 
 <template>
    <main class="container mx-auto mb-10">
-      <button @click="test">Click</button>
+      <!-- <button @click="test">Click</button> -->
       <section class="md:w-3/6 mx-auto h-full my-auto mt-20">
          <h1 class="text-4xl text-center">Login</h1>
          <form class="bg-secondary10 p-6 mt-10">

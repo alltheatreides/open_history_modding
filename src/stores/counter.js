@@ -11,6 +11,10 @@ export const userStatusStore = defineStore({
     test: 0,
     loginError: null,
 
+    userInfo: null,
+
+    userID: null,
+
     isAuthenticated: false
   }),
   getters: {
@@ -26,6 +30,18 @@ export const userStatusStore = defineStore({
 
       return this.session
     },
+    // Modify store user variable with supabase info
+    getUserInfo() {
+      // Native supabase method
+      const user = supabase.auth.user()
+      // Assigning supabase session info to the internal store variable
+      this.userInfo = user
+      return this.userInfo
+    },
+    setUserInfo(info) {
+      this.userID = info
+    },
+    // TODO delete this, not used anymore
     // Login user method triggered by the login page, updates the auth status after successful login
     // @param takes the page email and password
     async login(paramEmail, paramPassword) {
