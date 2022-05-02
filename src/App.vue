@@ -36,6 +36,9 @@ export default {
          console.log(this.userStore.count);
       },
    },
+   mounted() {
+      document.title = "History Exporter";
+   },
    beforeMount() {
       console.log(this.userStore.getAuthStatus());
    },
