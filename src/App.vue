@@ -41,6 +41,11 @@ export default {
    },
    beforeMount() {
       console.log(this.userStore.getAuthStatus());
+      console.log(this.userStore.getUserInfo());
+      // console.log(this.userStore.userID);
+      // this.userStore.userID = "fuck you";
+      // console.log(this.userStore.userID);
+      // console.log(this.userStore);
    },
 };
 </script>

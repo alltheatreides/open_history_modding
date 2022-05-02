@@ -32,15 +32,15 @@ defineProps({
          alt="small icon"
          class="bg-tertiary max-w-[40px] lg:max-w-[50px] p-2 rounded-full"
       />
-      <h2 class="font-bold 2xl:text-[24px] text-lg my-4 whitespace-nowrap">
+      <h2 class="font-bold 2xl:text-lg my-4 whitespace-nowrap">
          {{ title }}
       </h2>
-      <p class="text-sm 2xl:text-base lg:min-h-[140px] xl:min-h-[120px]">
+      <p class="text-sm 2xl:text-sm lg:min-h-[110px] xl:min-h-[100px]">
          {{ description }}
       </p>
       <router-link :to="link" class="flex gap-4 mt-6 w-full items-center">
          <button
-            class="font-medium 2xl:text-[20px] whitespace-nowrap text-lg underline underline-offset-8 decoration-4 decoration-tertiary"
+            class="font-medium 2xl:text-lg whitespace-nowrap text-lg underline underline-offset-8 decoration-4 decoration-tertiary"
          >
             {{ callToAction }}
          </button>
