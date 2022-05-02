@@ -8,6 +8,10 @@ defineProps({
       type: String,
       required: false,
    },
+   holding_type: {
+      type: String,
+      required: false,
+   },
    culture: {
       type: String,
       required: false,
@@ -66,6 +70,10 @@ defineProps({
       <div class="flex gap-2 text-normal">
          <p class="font-semibold">Title:</p>
          <h4 class="">{{ barony }}</h4>
+      </div>
+      <div class="flex gap-2 text-normal">
+         <p class="font-semibold">Holding type:</p>
+         <p class="">{{ holding_type }}</p>
       </div>
       <div class="flex gap-2 text-normal">
          <p class="font-semibold">Culture:</p>

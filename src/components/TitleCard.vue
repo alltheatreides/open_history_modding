@@ -13,7 +13,7 @@ defineProps({
       required: false,
    },
    holder: {
-      type: Number,
+      type: String,
       required: false,
    },
    government: {

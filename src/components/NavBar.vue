@@ -76,6 +76,7 @@ export default {
             <ul
                class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-lg lg:text-xl justify-end items-center"
             >
+               <!-- Home -->
                <li>
                   <router-link
                      to="/"
@@ -84,6 +85,7 @@ export default {
                      >Home</router-link
                   >
                </li>
+               <!-- About -->
                <li>
                   <router-link
                      to="about"
@@ -91,20 +93,25 @@ export default {
                      >About</router-link
                   >
                </li>
+               <!-- Register -->
                <li>
                   <router-link
+                     v-if="!userStatusStore().isAuthenticated"
                      to="register"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >Register</router-link
                   >
                </li>
+               <!-- Login -->
                <li>
                   <router-link
+                     v-if="!userStatusStore().isAuthenticated"
                      to="login"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >Login</router-link
                   >
                </li>
+               <!-- Log Out -->
                <li>
                   <button
                      v-if="userStatusStore().isAuthenticated"
@@ -115,6 +122,7 @@ export default {
                      Logout
                   </button>
                </li>
+               <!-- Vanilla History -->
                <li>
                   <router-link
                      to="vanilla-history"
@@ -122,6 +130,7 @@ export default {
                      >Vanilla History</router-link
                   >
                </li>
+               <!-- Create Entry -->
                <li>
                   <router-link
                      v-if="userStatusStore().isAuthenticated"
@@ -155,7 +164,6 @@ export default {
          </div>
       </div>
    </nav>
-   <!-- <h1>hello world</h1> -->
 </template>
 
 <style>
