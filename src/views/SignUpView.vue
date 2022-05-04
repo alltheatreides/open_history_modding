@@ -8,6 +8,8 @@ export default {
    data() {
       return {
          email: "",
+         userName: "",
+         modTeam: "",
          password: "",
          errorMsg: "",
       };

@@ -45,7 +45,7 @@ defineProps({
       required: false,
    },
    author: {
-      type: String,
+      type: Object,
       required: false,
    },
    manual: {
@@ -113,7 +113,7 @@ defineProps({
       </div>
       <div class="flex gap-2 text-normal">
          <p class="font-semibold">Author:</p>
-         <p class="">{{ author }}</p>
+         <p class="">{{ author.name }}</p>
       </div>
       <div class="flex gap-2 text-normal">
          <p class="font-semibold">Manually added:</p>
