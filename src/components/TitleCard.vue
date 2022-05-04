@@ -21,7 +21,7 @@ defineProps({
       required: false,
    },
    change_development_level: {
-      type: String,
+      type: Number,
       required: false,
    },
    succession_laws: {

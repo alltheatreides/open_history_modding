@@ -33,6 +33,9 @@ export default {
          insert_title_history: "",
          holder_ignore_head_of_faith_requirement: "",
 
+         // Async message
+         message: {},
+
          // Instance pinia user store
          userStore: userStatusStore(),
       };
@@ -68,7 +71,11 @@ export default {
                   author: this.userStore.userInfo.id,
                },
             ]);
-
+         if (error !== null) {
+            this.message = error;
+         } else {
+            this.message.message = "Entry Successfuly Added !";
+         }
          console.log(status, error);
       },
       async supabaseCreateTitleHistory() {
@@ -93,6 +100,12 @@ export default {
                },
             ]);
 
+         if (error !== null) {
+            this.message = error;
+         } else {
+            this.message.message = "Entry Successfuly Added !";
+         }
+
          console.log(status, error);
       },
    },
@@ -112,407 +125,412 @@ export default {
 
          <article class="flex gap-10 mt-14">
             <!-- Drop Down select -->
-            <select
-               v-model="selectedCategory"
-               class="text-tertiary bg-secondary focus:outline-none font-medium text-xl px-5 py-3.5 text-center inline-flex items-center focus:ring-0 border-0 focus:border-0 pr-10 self-start"
-               name="select"
-            >
-               <option disabled value="">Category</option>
-               <option value="Provinces" selected>Provinces</option>
-               <option value="Titles">Titles</option>
-            </select>
-            <!-- Province form -->
-            <div v-if="selectedCategory === 'Provinces'" class="flex-1">
-               <form class="bg-secondary10 p-6 w-full mx-auto relative">
-                  <div class="flex flex-wrap gap-10 w-full mx-auto mb-10">
-                     <!-- Form entry: province id -->
-                     <div class="">
-                        <label
-                           for="province_id"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Province ID
-                        </label>
-                        <input
-                           type="number"
-                           id="province_id"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Province ID"
-                           required
-                           v-model="province_id"
-                        />
-                     </div>
-                     <!-- Form entry: barony -->
-                     <div class="">
-                        <label
-                           for="barony"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Barony
-                        </label>
-                        <input
-                           type="text"
-                           id="barony"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Barony"
-                           required
-                           v-model="barony"
-                        />
-                     </div>
-                     <!-- Form entry: date -->
-                     <div class="">
-                        <label
-                           for="date"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Date
-                        </label>
-                        <input
-                           type="text"
-                           id="date"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Date"
-                           required
-                           v-model="date"
-                        />
-                     </div>
-                     <!-- Form entry: culture -->
-                     <div class="">
-                        <label
-                           for="culture"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Culture
-                        </label>
-                        <input
-                           type="text"
-                           id="culture"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Culture"
-                           v-model="culture"
-                        />
-                     </div>
-                     <!-- Form entry: religion -->
-                     <div class="">
-                        <label
-                           for="religion"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Religion
-                        </label>
-                        <input
-                           type="text"
-                           id="religion"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Religion"
-                           v-model="religion"
-                        />
-                     </div>
-                     <!-- Form entry: holding_type -->
-                     <div class="">
-                        <label
-                           for="holding_type"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Holding type
-                        </label>
-                        <input
-                           type="text"
-                           id="holding_type"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Holding type"
-                           v-model="holding_type"
-                        />
-                     </div>
-                     <!-- Form entry: buildings -->
-                     <div class="">
-                        <label
-                           for="buildings"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Buildings
-                        </label>
-                        <input
-                           type="text"
-                           id="buildings"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Buildings"
-                           v-model="buildings"
-                        />
-                     </div>
-                     <!-- Form entry: special_buildings -->
-                     <div class="">
-                        <label
-                           for="special_buildings"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Special buildings
-                        </label>
-                        <input
-                           type="text"
-                           id="special_buildings"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Special buildings"
-                           v-model="special_buildings"
-                        />
-                     </div>
-                     <!-- Form entry: duchy_capital_building -->
-                     <div class="">
-                        <label
-                           for="duchy_capital_building"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Duchy capital building
-                        </label>
-                        <input
-                           type="text"
-                           id="duchy_capital_building"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Duchy capital building"
-                           v-model="duchy_capital_building"
-                        />
-                     </div>
-                     <!-- Form entry: special_building_slot -->
-                     <div class="">
-                        <label
-                           for="special_building_slot"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Special building slot
-                        </label>
-                        <input
-                           type="text"
-                           id="special_building_slot"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Special building slot"
-                           v-model="special_building_slot"
-                        />
-                     </div>
-                     <!-- Form entry: terrain -->
-                     <div class="">
-                        <label
-                           for="terrain"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Terrain
-                        </label>
-                        <input
-                           type="text"
-                           id="terrain"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Terrain"
-                           v-model="terrain"
-                        />
-                     </div>
-                  </div>
-
-                  <!-- Confirmation button -->
-                  <button
-                     type="submit"
-                     class="text-primary bg-secondary hover:bg-tertiary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-tertiary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-                     @click="
-                        (e) => {
-                           e.preventDefault();
-                           confirmationPrompt = true;
-                        }
-                     "
-                  >
-                     Submit
-                  </button>
-               </form>
+            <div class="">
+               <select
+                  v-model="selectedCategory"
+                  class="text-tertiary bg-secondary focus:outline-none font-medium text-xl px-5 py-3.5 text-center inline-flex items-center focus:ring-0 border-0 focus:border-0 pr-10 self-start"
+                  name="select"
+               >
+                  <option disabled value="">Category</option>
+                  <option value="Provinces" selected>Provinces</option>
+                  <option value="Titles">Titles</option>
+               </select>
+               <p class="font-bold mt-6">{{ message.message }}</p>
             </div>
-            <!-- Title form -->
-            <div v-if="selectedCategory === 'Titles'" class="flex-1">
-               <form class="bg-secondary10 p-6 w-full mx-auto relative">
-                  <div class="flex flex-wrap gap-10 w-full mx-auto mb-10">
-                     <!-- Form entry: title -->
-                     <div class="">
-                        <label
-                           for="title"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Title
-                        </label>
-                        <input
-                           type="text"
-                           id="title"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Title"
-                           required
-                           v-model="title"
-                        />
+            <div>
+               <!-- Province form -->
+               <div v-if="selectedCategory === 'Provinces'" class="flex-1">
+                  <form class="bg-secondary10 p-6 w-full mx-auto relative">
+                     <div class="flex flex-wrap gap-10 w-full mx-auto mb-10">
+                        <!-- Form entry: province id -->
+                        <div class="">
+                           <label
+                              for="province_id"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Province ID
+                           </label>
+                           <input
+                              type="number"
+                              id="province_id"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Province ID"
+                              required
+                              v-model="province_id"
+                           />
+                        </div>
+                        <!-- Form entry: barony -->
+                        <div class="">
+                           <label
+                              for="barony"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Barony
+                           </label>
+                           <input
+                              type="text"
+                              id="barony"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Barony"
+                              required
+                              v-model="barony"
+                           />
+                        </div>
+                        <!-- Form entry: date -->
+                        <div class="">
+                           <label
+                              for="date"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Date
+                           </label>
+                           <input
+                              type="text"
+                              id="date"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Date"
+                              required
+                              v-model="date"
+                           />
+                        </div>
+                        <!-- Form entry: culture -->
+                        <div class="">
+                           <label
+                              for="culture"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Culture
+                           </label>
+                           <input
+                              type="text"
+                              id="culture"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Culture"
+                              v-model="culture"
+                           />
+                        </div>
+                        <!-- Form entry: religion -->
+                        <div class="">
+                           <label
+                              for="religion"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Religion
+                           </label>
+                           <input
+                              type="text"
+                              id="religion"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Religion"
+                              v-model="religion"
+                           />
+                        </div>
+                        <!-- Form entry: holding_type -->
+                        <div class="">
+                           <label
+                              for="holding_type"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Holding type
+                           </label>
+                           <input
+                              type="text"
+                              id="holding_type"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Holding type"
+                              v-model="holding_type"
+                           />
+                        </div>
+                        <!-- Form entry: buildings -->
+                        <div class="">
+                           <label
+                              for="buildings"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Buildings
+                           </label>
+                           <input
+                              type="text"
+                              id="buildings"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Buildings"
+                              v-model="buildings"
+                           />
+                        </div>
+                        <!-- Form entry: special_buildings -->
+                        <div class="">
+                           <label
+                              for="special_buildings"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Special buildings
+                           </label>
+                           <input
+                              type="text"
+                              id="special_buildings"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Special buildings"
+                              v-model="special_buildings"
+                           />
+                        </div>
+                        <!-- Form entry: duchy_capital_building -->
+                        <div class="">
+                           <label
+                              for="duchy_capital_building"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Duchy capital building
+                           </label>
+                           <input
+                              type="text"
+                              id="duchy_capital_building"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Duchy capital building"
+                              v-model="duchy_capital_building"
+                           />
+                        </div>
+                        <!-- Form entry: special_building_slot -->
+                        <div class="">
+                           <label
+                              for="special_building_slot"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Special building slot
+                           </label>
+                           <input
+                              type="text"
+                              id="special_building_slot"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Special building slot"
+                              v-model="special_building_slot"
+                           />
+                        </div>
+                        <!-- Form entry: terrain -->
+                        <div class="">
+                           <label
+                              for="terrain"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Terrain
+                           </label>
+                           <input
+                              type="text"
+                              id="terrain"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Terrain"
+                              v-model="terrain"
+                           />
+                        </div>
                      </div>
-                     <!-- Form entry: date -->
-                     <div class="">
-                        <label
-                           for="title_date"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Date
-                        </label>
-                        <input
-                           type="text"
-                           id="title_date"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Date"
-                           required
-                           v-model="title_date"
-                        />
-                     </div>
-                     <!-- Form entry: liege -->
-                     <div class="">
-                        <label
-                           for="liege"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Liege
-                        </label>
-                        <input
-                           type="text"
-                           id="liege"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Liege"
-                           v-model="liege"
-                        />
-                     </div>
-                     <!-- Form entry: holder -->
-                     <div class="">
-                        <label
-                           for="holder"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Holder
-                        </label>
-                        <input
-                           type="text"
-                           id="holder"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Holder"
-                           v-model="holder"
-                        />
-                     </div>
-                     <!-- Form entry: government -->
-                     <div class="">
-                        <label
-                           for="government"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Government
-                        </label>
-                        <input
-                           type="text"
-                           id="government"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Government"
-                           required
-                           v-model="government"
-                        />
-                     </div>
-                     <!-- Form entry: change_development_level -->
-                     <div class="">
-                        <label
-                           for="change_development_level"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Change development level
-                        </label>
-                        <input
-                           type="text"
-                           id="change_development_level"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Change development level"
-                           v-model="change_development_level"
-                        />
-                     </div>
-                     <!-- Form entry: succession_laws -->
-                     <div class="">
-                        <label
-                           for="succession_laws"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Succession Laws
-                        </label>
-                        <input
-                           type="text"
-                           id="succession_laws"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Succession Laws"
-                           v-model="succession_laws"
-                        />
-                     </div>
-                     <!-- Form entry: de_jure_liege -->
-                     <div class="">
-                        <label
-                           for="de_jure_liege"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           De Jure Liege
-                        </label>
-                        <input
-                           type="text"
-                           id="de_jure_liege"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="De Jure Liege"
-                           v-model="de_jure_liege"
-                        />
-                     </div>
-                     <!-- Form entry: insert_title_history -->
-                     <div class="">
-                        <label
-                           for="insert_title_history"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Insert Title History
-                        </label>
-                        <input
-                           type="text"
-                           id="insert_title_history"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Insert Title History"
-                           v-model="insert_title_history"
-                        />
-                     </div>
-                     <!-- Form entry: holder_ignore_head_of_faith_requirement -->
-                     <div class="">
-                        <label
-                           for="holder_ignore_head_of_faith_requirement"
-                           class="block mb-2 font-medium text-secondary dark:text-gray-300"
-                        >
-                           Holder ignore head of faith requirement
-                        </label>
-                        <input
-                           type="text"
-                           id="holder_ignore_head_of_faith_requirement"
-                           class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
-                           placeholder="Holder ignore head of faith requirement"
-                           v-model="holder_ignore_head_of_faith_requirement"
-                        />
-                     </div>
-                  </div>
 
-                  <!-- Confirmation button -->
-                  <button
-                     type="submit"
-                     class="text-primary bg-secondary hover:bg-tertiary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-tertiary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
-                     @click="
-                        (e) => {
-                           e.preventDefault();
-                           confirmationPrompt = true;
-                        }
-                     "
-                  >
-                     Submit
-                  </button>
-               </form>
-            </div>
-            <!-- Placeholder -->
-            <div
-               v-if="selectedCategory === ''"
-               class="flex-1 grid place-content-center bg-secondary10 p-10 w-full h-full mx-auto"
-            >
-               <h2 class="text-xl text-center">
-                  Select a category to create an entry
-               </h2>
+                     <!-- Confirmation button -->
+                     <button
+                        type="submit"
+                        class="text-primary bg-secondary hover:bg-tertiary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-tertiary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                        @click="
+                           (e) => {
+                              e.preventDefault();
+                              confirmationPrompt = true;
+                           }
+                        "
+                     >
+                        Submit
+                     </button>
+                  </form>
+               </div>
+               <!-- Title form -->
+               <div v-if="selectedCategory === 'Titles'" class="flex-1">
+                  <form class="bg-secondary10 p-6 w-full mx-auto relative">
+                     <div class="flex flex-wrap gap-10 w-full mx-auto mb-10">
+                        <!-- Form entry: title -->
+                        <div class="">
+                           <label
+                              for="title"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Title
+                           </label>
+                           <input
+                              type="text"
+                              id="title"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Title"
+                              required
+                              v-model="title"
+                           />
+                        </div>
+                        <!-- Form entry: date -->
+                        <div class="">
+                           <label
+                              for="title_date"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Date
+                           </label>
+                           <input
+                              type="text"
+                              id="title_date"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Date"
+                              required
+                              v-model="title_date"
+                           />
+                        </div>
+                        <!-- Form entry: liege -->
+                        <div class="">
+                           <label
+                              for="liege"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Liege
+                           </label>
+                           <input
+                              type="text"
+                              id="liege"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Liege"
+                              v-model="liege"
+                           />
+                        </div>
+                        <!-- Form entry: holder -->
+                        <div class="">
+                           <label
+                              for="holder"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Holder
+                           </label>
+                           <input
+                              type="text"
+                              id="holder"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Holder"
+                              v-model="holder"
+                           />
+                        </div>
+                        <!-- Form entry: government -->
+                        <div class="">
+                           <label
+                              for="government"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Government
+                           </label>
+                           <input
+                              type="text"
+                              id="government"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Government"
+                              required
+                              v-model="government"
+                           />
+                        </div>
+                        <!-- Form entry: change_development_level -->
+                        <div class="">
+                           <label
+                              for="change_development_level"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Change development level
+                           </label>
+                           <input
+                              type="text"
+                              id="change_development_level"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Change development level"
+                              v-model="change_development_level"
+                           />
+                        </div>
+                        <!-- Form entry: succession_laws -->
+                        <div class="">
+                           <label
+                              for="succession_laws"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Succession Laws
+                           </label>
+                           <input
+                              type="text"
+                              id="succession_laws"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Succession Laws"
+                              v-model="succession_laws"
+                           />
+                        </div>
+                        <!-- Form entry: de_jure_liege -->
+                        <div class="">
+                           <label
+                              for="de_jure_liege"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              De Jure Liege
+                           </label>
+                           <input
+                              type="text"
+                              id="de_jure_liege"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="De Jure Liege"
+                              v-model="de_jure_liege"
+                           />
+                        </div>
+                        <!-- Form entry: insert_title_history -->
+                        <div class="">
+                           <label
+                              for="insert_title_history"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Insert Title History
+                           </label>
+                           <input
+                              type="text"
+                              id="insert_title_history"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Insert Title History"
+                              v-model="insert_title_history"
+                           />
+                        </div>
+                        <!-- Form entry: holder_ignore_head_of_faith_requirement -->
+                        <div class="">
+                           <label
+                              for="holder_ignore_head_of_faith_requirement"
+                              class="block mb-2 font-medium text-secondary dark:text-gray-300"
+                           >
+                              Holder ignore head of faith requirement
+                           </label>
+                           <input
+                              type="text"
+                              id="holder_ignore_head_of_faith_requirement"
+                              class="bg-customWhite border border-gray-300 text-secondary text-sm rounded-lg focus:ring-tertiary focus:border-tertiary block w-full p-2.5"
+                              placeholder="Holder ignore head of faith requirement"
+                              v-model="holder_ignore_head_of_faith_requirement"
+                           />
+                        </div>
+                     </div>
+
+                     <!-- Confirmation button -->
+                     <button
+                        type="submit"
+                        class="text-primary bg-secondary hover:bg-tertiary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-tertiary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                        @click="
+                           (e) => {
+                              e.preventDefault();
+                              confirmationPrompt = true;
+                           }
+                        "
+                     >
+                        Submit
+                     </button>
+                  </form>
+               </div>
+               <!-- Placeholder -->
+               <div
+                  v-if="selectedCategory === ''"
+                  class="flex-1 grid place-content-center bg-secondary10 p-10 w-full h-full mx-auto"
+               >
+                  <h2 class="text-xl text-center">
+                     Select a category to create an entry
+                  </h2>
+               </div>
             </div>
          </article>
       </section>
