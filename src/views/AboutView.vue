@@ -5,8 +5,8 @@ import amLandedTitles from "../assets/modded_ck3/parsed_ave_maria_landed_titles.
 import vanillaLandedTitles from "../assets/vanilla_ck3/parsed_vanilla_landed_titles.json";
 // import vanillaProvinceHistory from "../assets/vanilla_ck3/vanilla_province_history_test.json";
 import vanillaProvinceHistory from "../assets/vanilla_ck3/parsed_vanilla_province_history.json";
-// import vanillaTitleHistory from "../assets/vanilla_ck3/test_title_history.json";
-import vanillaTitleHistory from "../assets/vanilla_ck3/parsed_vanilla_title_history.json";
+import vanillaTitleHistory from "../assets/vanilla_ck3/test_title_history.json";
+// import vanillaTitleHistory from "../assets/vanilla_ck3/parsed_vanilla_title_history.json";
 </script>
 
 <script>
@@ -623,15 +623,15 @@ async function importAMLandedTitles() {
    <div class="about">
       <h1 class="mb-10">This is an about page</h1>
       <button @click="test" class="mb-10">Click me GET</button>
-      <button @click="importLandedTitles" class="mb-10">
+      <!-- <button @click="importLandedTitles" class="mb-10">
          Click me INSERT landed titles
-      </button>
+      </button> -->
       <!-- <button @click="importProvinceHistory" class="mb-10"> -->
       <!-- Click me INSERT province history -->
       <!-- </button> -->
-      <!-- <button @click="importTitleHistory" class="mb-10">
+      <button @click="importTitleHistory" class="mb-10">
          Click me INSERT title history
-      </button> -->
+      </button>
       <!-- <button @click="importAMLandedTitles" class="mb-10"> -->
       <!-- Click me INSERT AVE MARIA Landed Titles -->
       <!-- </button> -->

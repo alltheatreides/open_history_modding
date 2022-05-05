@@ -19,6 +19,7 @@ userStatusStore().$subscribe((mutation) => {
       // console.log("Hi ma");
       userStatusStore().isAuthenticated = false;
    }
+   userStatusStore().getUserInfo();
 });
 </script>
 
