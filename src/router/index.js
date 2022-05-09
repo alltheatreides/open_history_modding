@@ -5,6 +5,8 @@ import CreateHistory from '../views/CreateHistoryView.vue'
 import SignUpView from '../views/SignUpView.vue'
 import LoginView from '../views/LoginView.vue'
 import ProfileView from '../views/ProfileView.vue'
+import EBACView from '../views/EBACView.vue'
+import NotFound from '../views/404View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +31,14 @@ const router = createRouter({
       name: 'profile',
       component: ProfileView
     },
+    {
+      path: '/ebac',
+      name: 'ebac',
+      component: EBACView
+    },
+    { path: '/404', component: NotFound },
+
+    { path: '/:catchAll(.*)', redirect: '404' },
     {
       path: '/vanilla-history',
       name: 'vanillaHistory',

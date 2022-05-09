@@ -4,6 +4,7 @@ import ProvinceCard from "../components/ProvinceCard.vue";
 import TitleCard from "../components/TitleCard.vue";
 import { userStatusStore } from "../stores/counter";
 import downloadIcon from "../assets/svg/download_arrow.svg";
+import router from "../router";
 </script>
 
 <script>
@@ -1806,6 +1807,11 @@ export default {
       // this.supabaseQueryUserProvince();
       // this.supabaseQueryUserTitle();
    },
+   beforeMount() {
+      if (this.userStore.getUserInfo() === null) {
+         router.push("/404");
+      }
+   },
 };
 </script>
 
@@ -1816,9 +1822,9 @@ export default {
          <h1 class="text-3xl font-semibold border-b pb-6 border-secondary">
             User Created History
          </h1>
-         <button @click="test">Click</button>
          <!-- User Entry Informations -->
          <div class="flex flex-col xl:flex-row gap-10 w-full mx-auto">
+            <!-- Left column -->
             <div class="xl:w-3/12 xl:mx-auto">
                <!-- Left column, Filter options -->
                <article class="mt-10 bg-secondary10 p-6 rounded flex flex-col">
@@ -1887,6 +1893,7 @@ export default {
                      Search
                   </button>
                </article>
+
                <!-- Left column, Export Filter options -->
                <article class="mt-10 bg-secondary10 p-6 rounded flex flex-col">
                   <!-- Reset export filters -->
@@ -1912,9 +1919,9 @@ export default {
                      <option value="Titles">Titles</option>
                   </select>
 
-                  <!-- First filter: Category -->
+                  <!-- Second filter: Tier -->
                   <h3 class="font-semibold mb-2 mt-6">Tier</h3>
-                  <!-- Category Drop Down select -->
+                  <!-- Tier Drop Down select -->
                   <select
                      v-model="selectedFilterTier"
                      class="text-tertiary bg-[#625862] focus:outline-none font-medium px-2.5 py-1.25 text-center inline-flex items-center focus:ring-0 border-0 focus:border-0 pr-10 self-start"
