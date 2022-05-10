@@ -1,15 +1,19 @@
 import { supabase } from "../supabase/supabase";
 
 // 
-// @returns an array of landed title objects
 
 export default function bulkExportTxtFile(data, selectedCategory) {
    // Reset the txt string
    let text = "";
 
+   let fileCategoryName = ""
+
    // console.log(data);
    // Depending on select option, search either title or province history export logic
    if (selectedCategory === "Provinces") {
+      // Name of the txt file
+      fileCategoryName = "_province_history"
+
       // Province history export
       if (data.length > 0) {
          // console.log("hi mom");
@@ -491,6 +495,9 @@ export default function bulkExportTxtFile(data, selectedCategory) {
          // console.log(text);
       }
    } else if (selectedCategory === "Titles") {
+      // Name of the txt file
+      fileCategoryName = "_title_history"
+
       // title history export
       if (data.length > 0) {
          // console.log(data[0]);
@@ -766,6 +773,6 @@ export default function bulkExportTxtFile(data, selectedCategory) {
    const blob = new Blob([text], { type: "text/plain" });
    let link = document.createElement("a");
    link.href = window.URL.createObjectURL(blob);
-   link.download = "allResults.txt";
+   link.download = `${exportFilterInput}${fileCategoryName}.txt`;
    link.click();
 }

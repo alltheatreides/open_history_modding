@@ -3,13 +3,18 @@ import supabaseQueryParentCapital from "./supabaseQueryParentCapital"
 // 
 // @returns an array of landed title objects
 
-export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
+export default async function bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput) {
    // Reset the txt string
    let text = "";
+
+   let fileCategoryName = ""
 
    // console.log(data);
    // Depending on select option, search either title or province history export logic
    if (selectedCategory === "Provinces") {
+      // Name of the txt file
+      fileCategoryName = "_province_history"
+
       // Province history export
       if (data.length > 0) {
          // console.log("hello world");
@@ -26,6 +31,7 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                   entry.province + " = {";
                // Writing to the txt string
                text = text.concat(province_id_opening_bracket);
+
 
                // Looping over the vanilla date entries inside the title entry
                entry.province_history.forEach((historyEntry) => {
@@ -149,7 +155,7 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                         historyEntry.holding_type !== ""
                      ) {
                         const province_holding_type =
-                           "\n\t\tholding_type = " +
+                           "\n\t\tholding = " +
                            historyEntry.holding_type;
                         text = text.concat(
                            province_holding_type
@@ -253,7 +259,7 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                      text = text.concat(date_closing_bracket);
                   }
 
-                  // If there is no culture/religion/holding_type information, get the information from parent capital
+                  // If there is no culture/religion/holding_type information from vanilla, get the information from vanilla parent capital
                   if (historyEntry.culture === null || historyEntry.religion === null || historyEntry.holding_type === null) {
                      entry.county_capital.province_history.forEach((capitalHistoryEntry) => {
                         // If the date entry is 600.1.1 which is the equivalent of no dated entries, write without a date entry
@@ -349,7 +355,7 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                         historyEntry.holding_type !== ""
                      ) {
                         const province_holding_type =
-                           "\n\tholding_type = " +
+                           "\n\tholding = " +
                            historyEntry.holding_type;
                         text = text.concat(
                            province_holding_type
@@ -460,7 +466,7 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                         historyEntry.holding_type !== ""
                      ) {
                         const province_holding_type =
-                           "\n\t\tholding_type = " +
+                           "\n\t\tholding = " +
                            historyEntry.holding_type;
                         text = text.concat(
                            province_holding_type
@@ -563,8 +569,9 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                      const date_closing_bracket = "\n\t}";
                      text = text.concat(date_closing_bracket);
                   }
-               });
 
+
+               });
 
 
                // Closing bracket of province id entry
@@ -572,24 +579,14 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                // Writing to the txt string
                text = text.concat(province_id_closing_bracket);
             }
-            // If there is no vanilla history nor user created history, copy parent barony capital history
-            if (entry.province_history.length <= 0 && entry.user_province_history.length <= 0) {
-               // Query the database for the parent info
-               // const { data } = await supabase
-               //    .from("landed_title")
-               //    .select(
-               //       "title, province_history!province_history_barony_fkey(*), province, county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*)"
-               //    )
-               //    .eq("title", entry.county_capital);
-
-               // console.log(data)
-               console.log(entry.title + " has no history data")
-            }
          });
 
          // console.log(text);
       }
    } else if (selectedCategory === "Titles") {
+      // Name of the txt file
+      fileCategoryName = "_title_history"
+
       // title history export
       if (data.length > 0) {
          // console.log(data[0]);
@@ -725,10 +722,45 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                      );
                   }
 
+
                   // closing bracket of date entry
                   const date_closing_bracket = "\n\t}";
                   text = text.concat(date_closing_bracket);
+
+
+
+                  // If there is no liege info, copy the title history of parent
+                  if (
+                     historyEntry.liege === null &&
+                     historyEntry.liege === "undefined" &&
+                     historyEntry.liege === "" &&
+                     entry.county !== null
+                  ) {
+
+                     entry.county.title_history.forEach((historyEntry) => {
+                        // Opening bracket of date entry
+                        const date_opening_bracket =
+                           "\n\t" + historyEntry.date + " = {";
+                        text = text.concat(date_opening_bracket);
+
+                        const title_liege =
+                           "\n\t\tliege = " + historyEntry.liege;
+                        text = text.concat(title_liege);
+
+                        // closing bracket of date entry
+                        const date_closing_bracket = "\n\t}";
+                        text = text.concat(date_closing_bracket);
+
+
+                     })
+
+                  }
+
+
+
                });
+
+
 
                // Looping over the user date entries inside the title entry
                entry.user_title_history.forEach((historyEntry) => {
@@ -857,6 +889,47 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
                // Writing to the txt string
                text = text.concat(title_name_closing_bracket);
             }
+
+            // When there is no vanilla history entries , copy the liege and holder entries from parent county history
+            if (entry.title_history.length <= 0 && entry.user_title_history.length <= 0 && entry.county !== null) {
+               // Opening bracket of title name entry
+               const title_name_opening_bracket = entry.title + " = {";
+               // Writing to the txt string
+               text = text.concat(title_name_opening_bracket);
+
+               // Parent county history entries
+               entry.county.title_history.forEach((historyEntry) => {
+                  // Opening bracket of date entry
+                  const date_opening_bracket =
+                     "\n\t" + historyEntry.date + " = {";
+                  text = text.concat(date_opening_bracket);
+
+                  const title_liege =
+                     "\n\t\tliege = " + historyEntry.liege;
+                  text = text.concat(title_liege);
+
+                  if (
+                     historyEntry.holder !== null &&
+                     historyEntry.holder !== "undefined" &&
+                     historyEntry.holder !== ""
+                  ) {
+                     const title_holder =
+                        "\n\t\tholder = " + historyEntry.holder;
+                     text = text.concat(title_holder);
+                  }
+
+                  // closing bracket of date entry
+                  const date_closing_bracket = "\n\t}";
+                  text = text.concat(date_closing_bracket);
+
+
+               })
+
+               // Closing bracket of title name entry
+               const title_name_closing_bracket = "\n}\n";
+               // Writing to the txt string
+               text = text.concat(title_name_closing_bracket);
+            }
          });
       }
    }
@@ -865,6 +938,6 @@ export default async function bulkExportTxtFileEBAC(data, selectedCategory) {
    const blob = new Blob([text], { type: "text/plain" });
    let link = document.createElement("a");
    link.href = window.URL.createObjectURL(blob);
-   link.download = "allResults.txt";
+   link.download = `${exportFilterInput}${fileCategoryName}.txt`;
    link.click();
 }
