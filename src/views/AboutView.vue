@@ -5,8 +5,8 @@ import amLandedTitles from "../assets/modded_ck3/parsed_ave_maria_landed_titles.
 import vanillaLandedTitles from "../assets/vanilla_ck3/parsed_vanilla_landed_titles.json";
 // import vanillaProvinceHistory from "../assets/vanilla_ck3/vanilla_province_history_test.json";
 import vanillaProvinceHistory from "../assets/vanilla_ck3/parsed_vanilla_province_history.json";
-import vanillaTitleHistory from "../assets/vanilla_ck3/test_title_history.json";
-// import vanillaTitleHistory from "../assets/vanilla_ck3/parsed_vanilla_title_history.json";
+// import vanillaTitleHistory from "../assets/vanilla_ck3/test_title_history.json";
+import vanillaTitleHistory from "../assets/vanilla_ck3/parsed_vanilla_title_history.json";
 </script>
 
 <script>
@@ -36,6 +36,7 @@ async function test() {
 //    } finally {
 //    }
 // }
+// TODO get that shit out in independent js files
 async function importLandedTitles() {
    try {
       // console.log(amLandedTitles);
@@ -356,6 +357,22 @@ async function importTitleHistory() {
                   // console.log(date.liege);
                   // console.log(date);
 
+                  let effectString;
+
+                  // Converting effect objects nesting into strings
+                  if (date.effect !== undefined) {
+                     effectString = JSON.stringify(date.effect, null, 4);
+
+                     effectString = effectString
+                        .replaceAll('":', " =")
+                        .replaceAll(": {", " = {")
+                        .replaceAll(": ", " = ")
+                        .replaceAll('"', "")
+                        .replaceAll(",", "");
+
+                     // console.log(effectString);
+                  }
+
                   // Populating tempInfo, if there is no info, populate it, else ignore and move on
                   typeof tempInfo["liege"] === "undefined"
                      ? (tempInfo["liege"] = date.liege)
@@ -388,6 +405,9 @@ async function importTitleHistory() {
                      ? (tempInfo["holder_ignore_head_of_faith_requirement"] =
                           date.holder_ignore_head_of_faith_requirement)
                      : "";
+                  typeof tempInfo["effect"] === "undefined"
+                     ? (tempInfo["effect"] = effectString)
+                     : "";
                });
 
                // Supabase Writing
@@ -407,6 +427,7 @@ async function importTitleHistory() {
                         insert_title_history: tempInfo.insert_title_history,
                         holder_ignore_head_of_faith_requirement:
                            tempInfo.holder_ignore_head_of_faith_requirement,
+                        effect: tempInfo.effect,
                         manual: false,
                      },
                   ]);
@@ -414,9 +435,29 @@ async function importTitleHistory() {
                // console.log(tempInfo);
                // console.log(tempInfo.liege);
             } else {
-               // console.log(lower_level_entry);
-               // console.log(lower_level_entry.liege);
+               // console.log(lower_level_entry.effect);
 
+               let effectString;
+
+               // Converting effect objects nesting into strings
+               if (lower_level_entry.effect !== undefined) {
+                  effectString = JSON.stringify(
+                     lower_level_entry.effect,
+                     null,
+                     4
+                  );
+
+                  effectString = effectString
+                     .replaceAll('":', " =")
+                     .replaceAll(": {", " = {")
+                     .replaceAll(": ", " = ")
+                     .replaceAll('"', "")
+                     .replaceAll(",", "");
+
+                  // console.log(effectString);
+               }
+
+               // console.log(lower_level_entry.liege);
                // Supabase Writing
                const { data, error, status } = await supabase
                   .from("title_history")
@@ -436,13 +477,14 @@ async function importTitleHistory() {
                         holder_ignore_head_of_faith_requirement:
                            lower_level_entry.holder_ignore_head_of_faith_requirement,
                         manual: false,
+                        effect: effectString,
                      },
                   ]);
             }
          }
       }
    } catch (error) {
-      alert(error.message);
+      console.log(error);
    } finally {
    }
 }
