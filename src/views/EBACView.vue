@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, watch } from "vue";
 import exportFilterSupabaseQuery from "../methods/exportFilterSupabaseQuery.js";
+import exportFilterSupabaseQueryAVEMARIA from "../methods/exportFilterSupabaseQueryAVEMARIA.js";
 import exportTxtFile from "../methods/bulkExportTxtFile.js";
 
 // reactive state
@@ -15,7 +16,13 @@ const checked = ref();
 // Method triggered by the export button
 function exportBulk() {
    // Instancing the supabase query, returns an array of title objects
-   const test = exportFilterSupabaseQuery(
+   // const test = exportFilterSupabaseQuery(
+   //    selectedCategory.value,
+   //    selectedFilterTier.value,
+   //    exportFilterInput.value,
+   //    EBAC.value
+   // );
+   const test = exportFilterSupabaseQueryAVEMARIA(
       selectedCategory.value,
       selectedFilterTier.value,
       exportFilterInput.value,
@@ -80,7 +87,7 @@ onMounted(() => {
                <!-- EBAC or not -->
                <h3>EBAC</h3>
                <input type="checkbox" v-model="EBAC" />
-               <label for="checkbox">{{ EBAC }}</label>
+               <!-- <label for="checkbox">{{ EBAC }}</label> -->
 
                <div class="mt-6">
                   <input
