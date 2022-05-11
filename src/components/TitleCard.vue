@@ -80,6 +80,10 @@ defineProps({
          <p class="">{{ de_jure_liege }}</p>
       </div>
       <div class="flex gap-2 text-normal">
+         <p class="font-semibold">Change development level:</p>
+         <p class="">{{ change_development_level }}</p>
+      </div>
+      <div class="flex gap-2 text-normal">
          <p class="font-semibold">Insert Title History:</p>
          <p class="">{{ insert_title_history }}</p>
       </div>
