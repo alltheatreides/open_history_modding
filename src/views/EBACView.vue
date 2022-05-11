@@ -51,7 +51,7 @@ onMounted(() => {
 <template>
    <main class="container mx-auto mb-10">
       <section class="mx-auto">
-         <div class="xl:w-3/12 xl:mx-auto">
+         <div class="xl:mx-auto">
             <!-- Left column, Export Filter options -->
             <article class="mt-10 bg-secondary10 p-6 rounded flex flex-col">
                <!-- Reset export filters -->
