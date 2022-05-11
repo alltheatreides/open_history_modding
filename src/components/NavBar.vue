@@ -164,6 +164,12 @@ export default {
                      </div>
                   </router-link>
                </li>
+               <!-- EBAC page -->
+               <li v-if="userStatusStore().isAuthenticated">
+                  <router-link to="/ebac" title="EBAC WIP">
+                     <div class="relative w-10 h-10">EBAC WIP</div>
+                  </router-link>
+               </li>
                <!-- Log Out -->
                <li>
                   <button
