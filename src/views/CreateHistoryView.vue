@@ -1,118 +1,115 @@
 <script setup>
+import { ref, onBeforeMount, onMounted, watch } from "vue";
 import { supabase } from "../supabase/supabase";
 import { userStatusStore } from "../stores/counter";
-</script>
 
-<script>
-export default {
-   data() {
-      return {
-         confirmationPrompt: false,
-         selectedCategory: "",
-         // Province infos
-         province_id: "",
-         holding_type: "",
-         religion: "",
-         culture: "",
-         date: "",
-         barony: "",
-         buildings: [],
-         special_buildings: "",
-         terrain: "",
-         duchy_capital_building: "",
-         special_building_slot: "",
-         // Title infos
-         title: "",
-         title_date: "",
-         liege: "",
-         holder: "",
-         government: "",
-         change_development_level: 0,
-         succession_laws: [],
-         de_jure_liege: "",
-         insert_title_history: "",
-         holder_ignore_head_of_faith_requirement: "",
+// REACTIVE STATE START
+const confirmationPrompt = ref(false);
+const selectedCategory = ref("");
+// Province infos
+const province_id = ref("");
+const holding_type = ref("");
+const religion = ref("");
+const culture = ref("");
+const date = ref("");
+const barony = ref("");
+const buildings = ref([]);
+const special_buildings = ref("");
+const terrain = ref("");
+const duchy_capital_building = ref("");
+const special_building_slot = ref("");
+// Title infos
+const title = ref("");
+const title_date = ref("");
+const liege = ref("");
+const holder = ref("");
+const government = ref("");
+const change_development_level = ref(0);
+const succession_laws = ref([]);
+const de_jure_liege = ref("");
+const insert_title_history = ref("");
+const holder_ignore_head_of_faith_requirement = ref("");
 
-         // Async message
-         message: {},
+// Async message
+const message = ref({});
 
-         // Instance pinia user store
-         userStore: userStatusStore(),
-      };
-   },
-   methods: {
-      createHistoryEntry() {
-         if (this.selectedCategory === "Provinces") {
-            this.supabaseCreateProvinceHistory();
-            this.confirmationPrompt = false;
-         } else if (this.selectedCategory === "Titles") {
-            this.supabaseCreateTitleHistory();
-            this.confirmationPrompt = false;
-         }
-      },
-      async supabaseCreateProvinceHistory() {
-         // Supabase Writing
-         const { data, error, status } = await supabase
-            .from("user_province_history")
-            .insert([
-               {
-                  province_id: this.province_id,
-                  holding_type: this.holding_type,
-                  religion: this.religion,
-                  culture: this.culture,
-                  date: this.date,
-                  barony: this.barony,
-                  buildings: this.buildings,
-                  special_buildings: this.special_buildings,
-                  terrain: this.terrain,
-                  duchy_capital_building: this.duchy_capital_building,
-                  special_building_slot: this.special_building_slot,
-                  manual: true,
-                  author: this.userStore.userInfo.id,
-               },
-            ]);
-         if (error !== null) {
-            this.message = error;
-         } else {
-            this.message.message = "Entry Successfuly Added !";
-         }
-         console.log(status, error);
-      },
-      async supabaseCreateTitleHistory() {
-         // Supabase Writing
-         const { data, error, status } = await supabase
-            .from("user_title_history")
-            .insert([
-               {
-                  title: this.title,
-                  date: this.title_date,
-                  liege: this.liege,
-                  holder: this.holder,
-                  government: this.government,
-                  change_development_level: this.change_development_level,
-                  succession_laws: this.succession_laws,
-                  de_jure_liege: this.de_jure_liege,
-                  insert_title_history: this.insert_title_history,
-                  holder_ignore_head_of_faith_requirement:
-                     this.holder_ignore_head_of_faith_requirement,
-                  manual: true,
-                  author: this.userStore.userInfo.id,
-               },
-            ]);
+// Instance pinia user store
+const userStore = ref(userStatusStore());
 
-         if (error !== null) {
-            this.message = error;
-         } else {
-            this.message.message = "Entry Successfuly Added !";
-         }
+// REACTIVE STATE END
 
-         console.log(status, error);
-      },
-   },
-   mounted() {
-      // console.log(this.userStore.userInfo.id);
-   },
-};
+// Page Methods START
+function createHistoryEntry() {
+   if (selectedCategory.value === "Provinces") {
+      supabaseCreateProvinceHistory();
+      confirmationPrompt = false;
+   } else if (selectedCategory.value === "Titles") {
+      supabaseCreateTitleHistory();
+      confirmationPrompt.value = false;
+   }
+}
+async function supabaseCreateProvinceHistory() {
+   // Supabase Writing
+   const { data, error, status } = await supabase
+      .from("user_province_history")
+      .insert([
+         {
+            province_id: province_id.value,
+            holding_type: holding_type.value,
+            religion: religion.value,
+            culture: culture.value,
+            date: date.value,
+            barony: barony.value,
+            buildings: buildings.value,
+            special_buildings: special_buildings.value,
+            terrain: terrain.value,
+            duchy_capital_building: duchy_capital_building.value,
+            special_building_slot: special_building_slot.value,
+            manual: true,
+            author: userStore.value.userInfo.id,
+         },
+      ]);
+   if (error !== null) {
+      message.value = error;
+   } else {
+      message.value.message = "Entry Successfuly Added !";
+   }
+   console.log(status, error);
+}
+async function supabaseCreateTitleHistory() {
+   // Supabase Writing
+   const { data, error, status } = await supabase
+      .from("user_title_history")
+      .insert([
+         {
+            title: title.value,
+            date: title_date.value,
+            liege: liege.value,
+            holder: holder.value,
+            government: government.value,
+            change_development_level: change_development_level.value,
+            succession_laws: succession_laws.value,
+            de_jure_liege: de_jure_liege.value,
+            insert_title_history: insert_title_history.value,
+            holder_ignore_head_of_faith_requirement:
+               holder_ignore_head_of_faith_requirement.value,
+            manual: true,
+            author: userStore.value.userInfo.id,
+         },
+      ]);
+
+   if (error !== null) {
+      message.value = error;
+   } else {
+      message.value.message = "Entry Successfuly Added !";
+   }
+
+   console.log(status, error);
+}
+
+// lifecycle hooks
+onBeforeMount(() => {});
+onMounted(() => {});
 </script>
 
 <template>
