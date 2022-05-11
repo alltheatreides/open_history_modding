@@ -1,398 +1,360 @@
 <script setup>
+import { ref, onMounted, watch } from "vue";
 import searchIcon from "../assets/svg/search_icon.svg";
 import downloadIcon from "../assets/svg/download_arrow.svg";
 import { supabase } from "../supabase/supabase";
 import ProvinceCard from "../components/ProvinceCard.vue";
 import TitleCard from "../components/TitleCard.vue";
-</script>
 
-<script>
-export default {
-   data() {
-      return {
-         searchInput: "",
-         searchResults: [],
-         selectedSearchCategory: "",
-         text: "",
-      };
-   },
-   methods: {
-      // REST method to query province history
-      async supabaseQueryProvince() {
-         try {
-            let { data, error, status } = await supabase
-               .from("province_history")
-               .select(
-                  "province_id, holding_type, religion, culture, date, barony, buildings, special_buildings, terrain, duchy_capital_building, special_building_slot, manual, author"
-               )
-               .textSearch("barony", this.searchInput);
-            this.searchResults = data;
-            console.log(status, error);
-            console.log(data);
-            // console.log(this.searchResults);
-            // console.log(this.searchResults[0].province_id);
-         } catch (error) {
-            console.log(error.message);
-         } finally {
-         }
-      },
-      // REST method to query title history
-      async supabaseQueryTitle() {
-         try {
-            let { data, error, status } = await supabase
-               .from("title_history")
-               .select("*")
-               .textSearch("title", this.searchInput);
-            this.searchResults = data;
-            console.log(status, error);
-            console.log(data);
-         } catch (error) {
-            console.log(error.message);
-         } finally {
-         }
-      },
-      // Depending on select option, search either title or province history
-      searchSupabase() {
-         if (this.selectedSearchCategory === "Provinces") {
-            this.searchResults = [];
-            this.supabaseQueryProvince();
-         } else if (this.selectedSearchCategory === "Titles") {
-            this.searchResults = [];
-            this.supabaseQueryTitle();
-         }
-      },
-      // Export all research result
-      exportAllResearchResults() {
-         // Reset the txt string
-         this.txt = "";
+// reactive state
+const searchInput = ref("");
+const searchResults = ref([]);
+const selectedSearchCategory = ref("");
+const text = ref("");
 
-         // Depending on select option, search either title or province history export logic
-         if (this.selectedSearchCategory === "Provinces") {
-            // Province history export
-            if (this.searchResults.length > 0) {
-               // console.log("hi mom");
-               // Opening bracket of province id entry
-               const province_id_opening_bracket =
-                  this.searchResults[0].province_id + " = {";
-               // Writing to the txt string
-               this.text = this.text.concat(province_id_opening_bracket);
+// Page Methods
+// REST method to query province history
+async function supabaseQueryProvince() {
+   try {
+      let { data, error, status } = await supabase
+         .from("province_history")
+         .select(
+            "province_id, holding_type, religion, culture, date, barony, buildings, special_buildings, terrain, duchy_capital_building, special_building_slot, manual"
+         )
+         .textSearch("barony", searchInput.value);
+      searchResults.value = data;
+      console.log(status, error);
+      console.log(data);
+      console.log(searchResults.value);
+      // console.log(searchResults[0].province_id);
+   } catch (error) {
+      console.log(error.message);
+   } finally {
+   }
+}
+// REST method to query title history
+async function supabaseQueryTitle() {
+   try {
+      let { data, error, status } = await supabase
+         .from("title_history")
+         .select("*")
+         .textSearch("title", searchInput.value);
+      searchResults.value = data;
+      console.log(status, error);
+      console.log(data);
+   } catch (error) {
+      console.log(error.message);
+   } finally {
+   }
+}
+// Depending on select option, search either title or province history
+function searchSupabase() {
+   if (selectedSearchCategory.value === "Provinces") {
+      searchResults.value = [];
+      supabaseQueryProvince();
+   } else if (selectedSearchCategory.value === "Titles") {
+      searchResults.value = [];
+      supabaseQueryTitle();
+   }
+}
+// Export all research result
+function exportAllResearchResults() {
+   // Reset the txt string
+   // txt.value = "";
 
-               // Looping over all the history entries info
-               this.searchResults.forEach((entry) => {
-                  // If the date entry is 600.1.1 which is the equivalent of no dated entries, write without a date entry
-                  if (entry.date === "600.1.1") {
-                     // Defining province info & concat info the txt string
-                     if (
-                        entry.holding_type !== null &&
-                        entry.holding_type !== "undefined"
-                     ) {
-                        const province_holding_type =
-                           "\n\tholding_type = " + entry.holding_type;
-                        this.text = this.text.concat(province_holding_type);
-                     }
-                     if (
-                        entry.religion !== null &&
-                        entry.religion !== "undefined"
-                     ) {
-                        const province_religion =
-                           "\n\treligion = " + entry.religion;
-                        this.text = this.text.concat(province_religion);
-                     }
-                     if (
-                        entry.culture !== null &&
-                        entry.culture !== "undefined"
-                     ) {
-                        const province_culture =
-                           "\n\tculture = " + entry.culture;
-                        this.text = this.text.concat(province_culture);
-                     }
-                     if (
-                        entry.special_buildings !== null &&
-                        entry.special_buildings !== "undefined"
-                     ) {
-                        const province_special_building =
-                           "\n\tspecial_building = " + entry.special_buildings;
-                        this.text = this.text.concat(province_special_building);
-                     }
-                     if (
-                        entry.special_building_slot !== null &&
-                        entry.special_building_slot !== "undefined"
-                     ) {
-                        const province_special_building_slot =
-                           "\n\tspecial_building_slot = " +
-                           entry.special_building_slot;
-                        this.text = this.text.concat(
-                           province_special_building_slot
-                        );
-                     }
-                     if (
-                        entry.duchy_capital_building !== null &&
-                        entry.duchy_capital_building !== "undefined"
-                     ) {
-                        const province_duchy_capital_building =
-                           "\n\tduchy_capital_building = " +
-                           entry.duchy_capital_building;
-                        this.text = this.text.concat(
-                           province_duchy_capital_building
-                        );
-                     }
-                     if (
-                        entry.terrain !== null &&
-                        entry.terrain !== "undefined"
-                     ) {
-                        const province_terrain =
-                           "\n\tterrain = " + entry.terrain;
-                        this.text = this.text.concat(province_terrain);
-                     }
+   // Depending on select option, search either title or province history export logic
+   if (selectedSearchCategory.value === "Provinces") {
+      // Province history export
+      if (searchResults.value.length > 0) {
+         // console.log("hi mom");
+         // Opening bracket of province id entry
+         const province_id_opening_bracket =
+            searchResults.value[0].province_id + " = {";
+         // Writing to the txt string
+         text.value = text.value.concat(province_id_opening_bracket);
 
-                     // If there are buildings, write them
-                     if (entry.buildings !== null) {
-                        // Opening brackets of building entries
-                        const province_building_opening_bracket =
-                           "\n\tbuildings = {\n";
-                        this.text = this.text.concat(
-                           province_building_opening_bracket
-                        );
+         // Looping over all the history entries info
+         searchResults.value.forEach((entry) => {
+            // If the date entry is 600.1.1 which is the equivalent of no dated entries, write without a date entry
+            if (entry.date === "600.1.1") {
+               // Defining province info & concat info the txt string
+               if (
+                  entry.holding_type !== null &&
+                  entry.holding_type !== "undefined"
+               ) {
+                  const province_holding_type =
+                     "\n\tholding_type = " + entry.holding_type;
+                  text.value = text.value.concat(province_holding_type);
+               }
+               if (entry.religion !== null && entry.religion !== "undefined") {
+                  const province_religion = "\n\treligion = " + entry.religion;
+                  text.value = text.value.concat(province_religion);
+               }
+               if (entry.culture !== null && entry.culture !== "undefined") {
+                  const province_culture = "\n\tculture = " + entry.culture;
+                  text.value = text.value.concat(province_culture);
+               }
+               if (
+                  entry.special_buildings !== null &&
+                  entry.special_buildings !== "undefined"
+               ) {
+                  const province_special_building =
+                     "\n\tspecial_building = " + entry.special_buildings;
+                  text.value = text.value.concat(province_special_building);
+               }
+               if (
+                  entry.special_building_slot !== null &&
+                  entry.special_building_slot !== "undefined"
+               ) {
+                  const province_special_building_slot =
+                     "\n\tspecial_building_slot = " +
+                     entry.special_building_slot;
+                  text.value = text.value.concat(
+                     province_special_building_slot
+                  );
+               }
+               if (
+                  entry.duchy_capital_building !== null &&
+                  entry.duchy_capital_building !== "undefined"
+               ) {
+                  const province_duchy_capital_building =
+                     "\n\tduchy_capital_building = " +
+                     entry.duchy_capital_building;
+                  text.value = text.value.concat(
+                     province_duchy_capital_building
+                  );
+               }
+               if (entry.terrain !== null && entry.terrain !== "undefined") {
+                  const province_terrain = "\n\tterrain = " + entry.terrain;
+                  text.value = text.value.concat(province_terrain);
+               }
 
-                        // looping over building of date entry & writing them
-                        entry.buildings.forEach((building) => {
-                           const building_entry = "\t\t" + building + "\n";
-                           // writing building entries
-                           this.text = this.text.concat(building_entry);
-                        });
+               // If there are buildings, write them
+               if (entry.buildings !== null) {
+                  // Opening brackets of building entries
+                  const province_building_opening_bracket =
+                     "\n\tbuildings = {\n";
+                  text.value = text.value.concat(
+                     province_building_opening_bracket
+                  );
 
-                        // Closing brackets of building entries
-                        const province_building_closing_bracket = "\t}";
-                        this.text = this.text.concat(
-                           province_building_closing_bracket
-                        );
-                     }
-                  } else {
-                     // Opening bracket of date entry
-                     const date_opening_bracket = "\n\t" + entry.date + " = {";
-                     this.text = this.text.concat(date_opening_bracket);
+                  // looping over building of date entry & writing them
+                  entry.buildings.forEach((building) => {
+                     const building_entry = "\t\t" + building + "\n";
+                     // writing building entries
+                     text.value = text.value.concat(building_entry);
+                  });
 
-                     // Defining province info & concat info the txt string
-                     if (
-                        entry.holding_type !== null &&
-                        entry.holding_type !== "undefined"
-                     ) {
-                        const province_holding_type =
-                           "\n\t\tholding_type = " + entry.holding_type;
-                        this.text = this.text.concat(province_holding_type);
-                     }
-                     if (
-                        entry.religion !== null &&
-                        entry.religion !== "undefined"
-                     ) {
-                        const province_religion =
-                           "\n\t\treligion = " + entry.religion;
-                        this.text = this.text.concat(province_religion);
-                     }
-                     if (
-                        entry.culture !== null &&
-                        entry.culture !== "undefined"
-                     ) {
-                        const province_culture =
-                           "\n\t\tculture = " + entry.culture;
-                        this.text = this.text.concat(province_culture);
-                     }
-                     if (
-                        entry.special_buildings !== null &&
-                        entry.special_buildings !== "undefined"
-                     ) {
-                        const province_special_building =
-                           "\n\t\tspecial_building = " +
-                           entry.special_buildings;
-                        this.text = this.text.concat(province_special_building);
-                     }
-                     if (
-                        entry.special_building_slot !== null &&
-                        entry.special_building_slot !== "undefined"
-                     ) {
-                        const province_special_building_slot =
-                           "\n\t\tspecial_building_slot = " +
-                           entry.special_building_slot;
-                        this.text = this.text.concat(
-                           province_special_building_slot
-                        );
-                     }
-                     if (
-                        entry.duchy_capital_building !== null &&
-                        entry.duchy_capital_building !== "undefined"
-                     ) {
-                        const province_duchy_capital_building =
-                           "\n\t\tduchy_capital_building = " +
-                           entry.duchy_capital_building;
-                        this.text = this.text.concat(
-                           province_duchy_capital_building
-                        );
-                     }
-                     if (
-                        entry.terrain !== null &&
-                        entry.terrain !== "undefined"
-                     ) {
-                        const province_terrain =
-                           "\n\t\tterrain = " + entry.terrain;
-                        this.text = this.text.concat(province_terrain);
-                     }
+                  // Closing brackets of building entries
+                  const province_building_closing_bracket = "\t}";
+                  text.value = text.value.concat(
+                     province_building_closing_bracket
+                  );
+               }
+            } else {
+               // Opening bracket of date entry
+               const date_opening_bracket = "\n\t" + entry.date + " = {";
+               text.value = text.value.concat(date_opening_bracket);
 
-                     // If there are buildings, write them
-                     if (entry.buildings !== null) {
-                        // Opening brackets of building entries
-                        const province_building_opening_bracket =
-                           "\n\t\tbuildings = {\n";
-                        this.text = this.text.concat(
-                           province_building_opening_bracket
-                        );
+               // Defining province info & concat info the txt string
+               if (
+                  entry.holding_type !== null &&
+                  entry.holding_type !== "undefined"
+               ) {
+                  const province_holding_type =
+                     "\n\t\tholding_type = " + entry.holding_type;
+                  text.value = text.value.concat(province_holding_type);
+               }
+               if (entry.religion !== null && entry.religion !== "undefined") {
+                  const province_religion =
+                     "\n\t\treligion = " + entry.religion;
+                  text.value = text.value.concat(province_religion);
+               }
+               if (entry.culture !== null && entry.culture !== "undefined") {
+                  const province_culture = "\n\t\tculture = " + entry.culture;
+                  text.value = text.value.concat(province_culture);
+               }
+               if (
+                  entry.special_buildings !== null &&
+                  entry.special_buildings !== "undefined"
+               ) {
+                  const province_special_building =
+                     "\n\t\tspecial_building = " + entry.special_buildings;
+                  text.value = text.value.concat(province_special_building);
+               }
+               if (
+                  entry.special_building_slot !== null &&
+                  entry.special_building_slot !== "undefined"
+               ) {
+                  const province_special_building_slot =
+                     "\n\t\tspecial_building_slot = " +
+                     entry.special_building_slot;
+                  text.value = text.value.concat(
+                     province_special_building_slot
+                  );
+               }
+               if (
+                  entry.duchy_capital_building !== null &&
+                  entry.duchy_capital_building !== "undefined"
+               ) {
+                  const province_duchy_capital_building =
+                     "\n\t\tduchy_capital_building = " +
+                     entry.duchy_capital_building;
+                  text.value = text.value.concat(
+                     province_duchy_capital_building
+                  );
+               }
+               if (entry.terrain !== null && entry.terrain !== "undefined") {
+                  const province_terrain = "\n\t\tterrain = " + entry.terrain;
+                  text.value = text.value.concat(province_terrain);
+               }
 
-                        // looping over building of date entry & writing them
-                        entry.buildings.forEach((building) => {
-                           const building_entry = "\t\t\t" + building + "\n";
-                           // writing building entries
-                           this.text = this.text.concat(building_entry);
-                        });
+               // If there are buildings, write them
+               if (entry.buildings !== null) {
+                  // Opening brackets of building entries
+                  const province_building_opening_bracket =
+                     "\n\t\tbuildings = {\n";
+                  text.value = text.value.concat(
+                     province_building_opening_bracket
+                  );
 
-                        // Closing brackets of building entries
-                        const province_building_closing_bracket = "\t\t}";
-                        this.text = this.text.concat(
-                           province_building_closing_bracket
-                        );
-                     }
+                  // looping over building of date entry & writing them
+                  entry.buildings.forEach((building) => {
+                     const building_entry = "\t\t\t" + building + "\n";
+                     // writing building entries
+                     text.value = text.value.concat(building_entry);
+                  });
 
-                     // closing bracket of date entry
-                     const date_closing_bracket = "\n\t}";
-                     this.text = this.text.concat(date_closing_bracket);
-                  }
-               });
+                  // Closing brackets of building entries
+                  const province_building_closing_bracket = "\t\t}";
+                  text.value = text.value.concat(
+                     province_building_closing_bracket
+                  );
+               }
 
-               // Closing bracket of province id entry
-               const province_id_closing_bracket = "\n}\n";
-               // Writing to the txt string
-               this.text = this.text.concat(province_id_closing_bracket);
-
-               // console.log(this.text);
+               // closing bracket of date entry
+               const date_closing_bracket = "\n\t}";
+               text.value = text.value.concat(date_closing_bracket);
             }
-         } else if (this.selectedSearchCategory === "Titles") {
-            // title history export
-            if (this.searchResults.length > 0) {
-               // Opening bracket of title name entry
-               const title_name_opening_bracket =
-                  this.searchResults[0].title + " = {";
-               // Writing to the txt string
-               this.text = this.text.concat(title_name_opening_bracket);
+         });
 
-               // Looping over all the history entries info
-               this.searchResults.forEach((entry) => {
-                  // Opening bracket of date entry
-                  const date_opening_bracket = "\n\t" + entry.date + " = {";
-                  this.text = this.text.concat(date_opening_bracket);
+         // Closing bracket of province id entry
+         const province_id_closing_bracket = "\n}\n";
+         // Writing to the txt string
+         text.value = text.value.concat(province_id_closing_bracket);
 
-                  // Defining title info & concat info the txt string
-                  if (entry.liege !== null && entry.liege !== "undefined") {
-                     const title_liege = "\n\t\tliege = " + entry.liege;
-                     this.text = this.text.concat(title_liege);
-                  }
-                  if (entry.holder !== null && entry.holder !== "undefined") {
-                     const title_holder = "\n\t\tholder = " + entry.holder;
-                     this.text = this.text.concat(title_holder);
-                  }
-                  if (
-                     entry.government !== null &&
-                     entry.government !== "undefined"
-                  ) {
-                     const title_government =
-                        "\n\t\tgovernment = " + entry.government;
-                     this.text = this.text.concat(title_government);
-                  }
-                  if (
-                     entry.change_development_level !== null &&
-                     entry.change_development_level !== "undefined"
-                  ) {
-                     const title_change_development_level =
-                        "\n\t\tchange_development_level = " +
-                        entry.change_development_level;
-                     this.text = this.text.concat(
-                        title_change_development_level
-                     );
-                  }
-                  if (
-                     entry.de_jure_liege !== null &&
-                     entry.de_jure_liege !== "undefined"
-                  ) {
-                     const title_de_jure_liege =
-                        "\n\t\tde_jure_liege = " + entry.de_jure_liege;
-                     this.text = this.text.concat(title_de_jure_liege);
-                  }
-                  if (
-                     entry.insert_title_history !== null &&
-                     entry.insert_title_history !== "undefined"
-                  ) {
-                     const title_insert_title_history =
-                        "\n\t\tinsert_title_history = " +
-                        entry.insert_title_history;
-                     this.text = this.text.concat(title_insert_title_history);
-                  }
-                  if (
-                     entry.holder_ignore_head_of_faith_requirement !== null &&
-                     entry.holder_ignore_head_of_faith_requirement !==
-                        "undefined"
-                  ) {
-                     const title_holder_ignore_head_of_faith_requirement =
-                        "\n\t\tholder_ignore_head_of_faith_requirement = " +
-                        entry.holder_ignore_head_of_faith_requirement;
-                     this.text = this.text.concat(
-                        title_holder_ignore_head_of_faith_requirement
-                     );
-                  }
+         // console.log(text.value);
+      }
+   } else if (selectedSearchCategory.value === "Titles") {
+      // title history export
+      if (searchResults.value.length > 0) {
+         // Opening bracket of title name entry
+         const title_name_opening_bracket =
+            searchResults.value[0].title + " = {";
+         // Writing to the txt string
+         text.value = text.value.concat(title_name_opening_bracket);
 
-                  // If there are succession_laws, write them
-                  if (entry.succession_laws !== null) {
-                     // Opening brackets of succession_law entries
-                     const title_succession_laws_opening_bracket =
-                        "\n\t\tsuccession_laws = {\n";
-                     this.text = this.text.concat(
-                        title_succession_laws_opening_bracket
-                     );
+         // Looping over all the history entries info
+         searchResults.value.forEach((entry) => {
+            // Opening bracket of date entry
+            const date_opening_bracket = "\n\t" + entry.date + " = {";
+            text.value = text.value.concat(date_opening_bracket);
 
-                     // looping over succession_law of date entry & writing them
-                     entry.succession_laws.forEach((succession_law) => {
-                        const succession_law_entry =
-                           "\t\t\t" + succession_law + "\n";
-                        // writing succession_law entries
-                        this.text = this.text.concat(succession_law_entry);
-                     });
-
-                     // Closing brackets of succession_law entries
-                     const title_succession_laws_closing_bracket = "\t\t}";
-                     this.text = this.text.concat(
-                        title_succession_laws_closing_bracket
-                     );
-                  }
-
-                  // closing bracket of date entry
-                  const date_closing_bracket = "\n\t}";
-                  this.text = this.text.concat(date_closing_bracket);
-               });
-
-               // Closing bracket of title name entry
-               const title_name_closing_bracket = "\n}\n";
-               // Writing to the txt string
-               this.text = this.text.concat(title_name_closing_bracket);
+            // Defining title info & concat info the txt string
+            if (entry.liege !== null && entry.liege !== "undefined") {
+               const title_liege = "\n\t\tliege = " + entry.liege;
+               text.value = text.value.concat(title_liege);
+            }
+            if (entry.holder !== null && entry.holder !== "undefined") {
+               const title_holder = "\n\t\tholder = " + entry.holder;
+               text.value = text.value.concat(title_holder);
+            }
+            if (entry.government !== null && entry.government !== "undefined") {
+               const title_government =
+                  "\n\t\tgovernment = " + entry.government;
+               text.value = text.value.concat(title_government);
+            }
+            if (
+               entry.change_development_level !== null &&
+               entry.change_development_level !== "undefined"
+            ) {
+               const title_change_development_level =
+                  "\n\t\tchange_development_level = " +
+                  entry.change_development_level;
+               text.value = text.value.concat(title_change_development_level);
+            }
+            if (
+               entry.de_jure_liege !== null &&
+               entry.de_jure_liege !== "undefined"
+            ) {
+               const title_de_jure_liege =
+                  "\n\t\tde_jure_liege = " + entry.de_jure_liege;
+               text.value = text.value.concat(title_de_jure_liege);
+            }
+            if (
+               entry.insert_title_history !== null &&
+               entry.insert_title_history !== "undefined"
+            ) {
+               const title_insert_title_history =
+                  "\n\t\tinsert_title_history = " + entry.insert_title_history;
+               text.value = text.value.concat(title_insert_title_history);
+            }
+            if (
+               entry.holder_ignore_head_of_faith_requirement !== null &&
+               entry.holder_ignore_head_of_faith_requirement !== "undefined"
+            ) {
+               const title_holder_ignore_head_of_faith_requirement =
+                  "\n\t\tholder_ignore_head_of_faith_requirement = " +
+                  entry.holder_ignore_head_of_faith_requirement;
+               text.value = text.value.concat(
+                  title_holder_ignore_head_of_faith_requirement
+               );
             }
 
-            // console.log(this.text);
-         }
+            // If there are succession_laws, write them
+            if (entry.succession_laws !== null) {
+               // Opening brackets of succession_law entries
+               const title_succession_laws_opening_bracket =
+                  "\n\t\tsuccession_laws = {\n";
+               text.value = text.value.concat(
+                  title_succession_laws_opening_bracket
+               );
 
-         // Triggers the text file download
-         const blob = new Blob([this.text], { type: "text/plain" });
-         let link = document.createElement("a");
-         link.href = window.URL.createObjectURL(blob);
-         link.download = "allResults.txt";
-         link.click();
-      },
-   },
-};
+               // looping over succession_law of date entry & writing them
+               entry.succession_laws.forEach((succession_law) => {
+                  const succession_law_entry = "\t\t\t" + succession_law + "\n";
+                  // writing succession_law entries
+                  text.value = text.value.concat(succession_law_entry);
+               });
+
+               // Closing brackets of succession_law entries
+               const title_succession_laws_closing_bracket = "\t\t}";
+               text.value = text.value.concat(
+                  title_succession_laws_closing_bracket
+               );
+            }
+
+            // closing bracket of date entry
+            const date_closing_bracket = "\n\t}";
+            text.value = text.value.concat(date_closing_bracket);
+         });
+
+         // Closing bracket of title name entry
+         const title_name_closing_bracket = "\n}\n";
+         // Writing to the txt string
+         text.value = text.value.concat(title_name_closing_bracket);
+      }
+
+      // console.log(text.value);
+   }
+
+   // Triggers the text file download
+   const blob = new Blob([text.value], { type: "text/plain" });
+   let link = document.createElement("a");
+   link.href = window.URL.createObjectURL(blob);
+   link.download = "allResults.txt";
+   link.click();
+}
 </script>
 
 <template>
@@ -509,10 +471,3 @@ export default {
       </section>
    </main>
 </template>
-
-<style>
-/* input:focus {
-   outline: none !important;
-   border: 0 !important;
-} */
-</style>

@@ -111,7 +111,7 @@ defineProps({
          <p class="font-semibold">Terrain:</p>
          <p class="">{{ terrain }}</p>
       </div>
-      <div class="flex gap-2 text-normal">
+      <div class="flex gap-2 text-normal" v-if="author">
          <p class="font-semibold">Author:</p>
          <p class="">{{ author.name }}</p>
       </div>
