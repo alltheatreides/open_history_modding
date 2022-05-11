@@ -60,7 +60,7 @@ function searchSupabase() {
 // Export all research result
 function exportAllResearchResults() {
    // Reset the txt string
-   // txt.value = "";
+   text.value = "";
 
    // Depending on select option, search either title or province history export logic
    if (selectedSearchCategory.value === "Provinces") {
