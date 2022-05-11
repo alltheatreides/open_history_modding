@@ -1,9 +1,20 @@
 <script setup>
+import { ref, onMounted, watch } from "vue";
 import HeroFeature from "../components/HeroFeature.vue";
 import wtf from "../assets/wtf.jpg";
 import discover_icon from "../assets/svg/discover_icon.svg";
 import export_icon from "../assets/svg/export_icon.svg";
 import ave_maria from "../assets/svg/ave_maria_icon.svg";
+import { userStatusStore } from "../stores/counter";
+
+// Instance pinia user store
+const userStore = ref(userStatusStore());
+let context = ref("");
+if (userStore.value.isAuthenticated) {
+   context = "profile";
+} else {
+   context = "register";
+}
 </script>
 
 <template>
@@ -58,7 +69,7 @@ import ave_maria from "../assets/svg/ave_maria_icon.svg";
                description="Once you have created an account, you will be able to create your own history entries and export them in vanilla text format."
                :picture="export_icon"
                callToAction="Try now "
-               link="vanilla-history"
+               :link="context"
             />
             <HeroFeature
                title="An AVE MARIA project"
