@@ -691,6 +691,30 @@ export default async function bulkExportTxtFileEBACAVEMARIA(data, selectedCatego
                      );
                   }
 
+                  if (
+                     historyEntry.effect !==
+                     null &&
+                     historyEntry.effect !==
+                     "undefined" &&
+                     historyEntry.effect !==
+                     ""
+                  ) {
+
+                     let cleaned_effect = "";
+
+                     // cleaned_effect = historyEntry.effect.substring(1)
+                     // cleaned_effect = historyEntry.effect.substring(1)
+                     // cleaned_effect = cleaned_effect.substring(0, cleaned_effect.length - 1)
+
+                     // console.log(cleaned_effect)
+
+                     const title_effect =
+                        "\n\t\teffect = " + historyEntry.effect;
+                     text = text.concat(
+                        title_effect
+                     );
+                  }
+
                   // If there are succession_laws, write them
                   if (
                      historyEntry.succession_laws !== null &&
