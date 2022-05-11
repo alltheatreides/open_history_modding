@@ -86,13 +86,13 @@ export default {
                   >
                </li>
                <!-- About -->
-               <li>
+               <!-- <li>
                   <router-link
                      to="about"
                      class="block py-2 pr-4 pl-3 text-secondary"
                      >About</router-link
                   >
-               </li>
+               </li> -->
                <!-- Vanilla History -->
                <li>
                   <router-link
@@ -165,11 +165,11 @@ export default {
                   </router-link>
                </li>
                <!-- EBAC page -->
-               <li v-if="userStatusStore().isAuthenticated">
+               <!-- <li v-if="userStatusStore().isAuthenticated">
                   <router-link to="/ebac" title="EBAC WIP">
                      <div class="relative w-10 h-10">EBAC WIP</div>
                   </router-link>
-               </li>
+               </li> -->
                <!-- Log Out -->
                <li>
                   <button
