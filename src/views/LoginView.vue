@@ -1,100 +1,94 @@
 <script setup>
+import { ref, onBeforeMount, onMounted, watch } from "vue";
 import { supabase } from "../supabase/supabase";
 import router from "../router";
 import { userStatusStore } from "../stores/counter";
-</script>
 
-<script>
-export default {
-   data() {
-      return {
-         // Refresh Management
-         tagKey: 0,
+// REACTIVE STATE START
+// Refresh Management
+const tagKey = ref(0);
+const email = ref("");
+const password = ref("");
+const errorMsg = ref("");
+// Instance pinia user store
+const userStore = ref(userStatusStore());
 
-         email: "",
-         password: "",
-         errorMsg: "",
+// Internal tracking of the store variable
+const logginStatus = ref(null);
 
-         // Instance pinia user store
-         userStore: userStatusStore(),
+// REACTIVE STATE END
 
-         // Internal tracking of the store variable
-         logginStatus: null,
-      };
-   },
-   methods: {
-      async loginSupabase() {
-         try {
-            // Native supabase method
-            let { user, error } = await supabase.auth.signIn({
-               email: this.email,
-               password: this.password,
-            });
-            // If no login error, proceed
-            if (error === null) {
-               console.log("no error in the login, proceed with it");
-               // Saving the user info into the store user variable
-               // this.userStore = user;
-               // Changing the authentified store variable
-               this.userStore.isAuthenticated = true;
-               console.log("Testing below the auth value");
-               console.log(this.userStore.isAuthenticated);
-               // Updating the store session info
-               this.userStore.getAuthStatus();
-               this.userStore.userID = user.id;
-               // console.log(this.getAuthStatus());
-               // Redirecting user to the create entry page
-               router.push({ name: "createHistory" });
-            } else {
-               // Saving error info & message to the store error variable to be displayed in the login page error div
-               this.errorMsg = error.message;
-               console.log(error.message);
-            }
+// Page Methods START
+async function loginSupabase() {
+   try {
+      // Native supabase method
+      let { user, error } = await supabase.auth.signIn({
+         email: email.value,
+         password: password.value,
+      });
+      // If no login error, proceed
+      if (error === null) {
+         console.log("no error in the login, proceed with it");
+         // Saving the user info into the store user variable
+         // userStore.value = user;
+         // Changing the authentified store variable
+         userStore.value.isAuthenticated = true;
+         console.log("Testing below the auth value");
+         console.log(userStore.value.isAuthenticated);
+         // Updating the store session info
+         userStore.value.getAuthStatus();
+         userStore.value.userID = user.id;
+         // console.log(getAuthStatus());
+         // Redirecting user to the create entry page
+         router.push({ name: "createHistory" });
+      } else {
+         // Saving error info & message to the store error variable to be displayed in the login page error div
+         errorMsg.value = error.message;
+         console.log(error.message);
+      }
 
-            // console.log("no error in the login, proceed with it");
-            // Saving the user info into the store user variable
-            // this.userStore.setUserInfo(user);
-            // console.log(user);
+      // console.log("no error in the login, proceed with it");
+      // Saving the user info into the store user variable
+      // userStore.setUserInfo(user);
+      // console.log(user);
 
-            // // Changing the authentified store variable
-            // this.userStore.isAuthenticated = true;
-            // // Updating the store session info
-            // this.userStore.getAuthStatus();
-            // // console.log(this.getAuthStatus());
-            // // Redirecting user to the create entry page
-            // router.push({ name: "createHistory" });
-         } catch (error) {
-            console.log("there is an error");
-            console.log(error.message);
-         } finally {
-            this.userStore.increaseCount();
-         }
+      // // Changing the authentified store variable
+      // userStore.isAuthenticated = true;
+      // // Updating the store session info
+      // userStore.getAuthStatus();
+      // // console.log(getAuthStatus());
+      // // Redirecting user to the create entry page
+      // router.push({ name: "createHistory" });
+   } catch (error) {
+      console.log("there is an error");
+      console.log(error.message);
+   } finally {
+      userStore.value.increaseCount();
+   }
 
-         // // Redirecting user to the create entry page
-         // router.push("/create-history");
-         console.log(this.userStore.userStore);
-      },
-      // Manages the rerender with template keys
-      forceRerender() {
-         this.tagKey = this.tagKey + 1;
-      },
-      test() {
-         this.userStore.isAuthenticated = true;
-         this.userStore.increaseCount();
+   // // Redirecting user to the create entry page
+   // router.push("/create-history");
+   console.log(userStore.value.userStore);
+}
+// Manages the rerender with template keys
+function forceRerender() {
+   tagKey.value = tagKey.value + 1;
+}
+function test() {
+   userStore.value.isAuthenticated = true;
+   userStore.value.increaseCount();
 
-         console.log(this.userStore.count);
-         console.log(this.userStore.isAuthenticated);
-      },
-   },
-   beforeMount() {
-      // Internal tracking of the store variable
-      this.logginStatus = this.userStore.getAuthStatus();
-   },
-   mounted() {
-      // console.log(this.userStore);
-      console.log(this.userStore.isAuthenticated);
-   },
-};
+   console.log(userStore.value.count);
+   console.log(userStore.value.isAuthenticated);
+}
+
+// lifecycle hooks
+onBeforeMount(() => {
+   logginStatus.value = userStore.value.getAuthStatus();
+});
+onMounted(() => {
+   console.log(userStore.value.isAuthenticated);
+});
 </script>
 
 <template>

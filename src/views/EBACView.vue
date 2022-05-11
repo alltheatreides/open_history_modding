@@ -36,7 +36,7 @@ function click() {
 
 // lifecycle hooks
 onMounted(() => {
-   console.log();
+   // console.log();
 });
 </script>
 
