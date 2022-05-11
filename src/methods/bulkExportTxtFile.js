@@ -2,7 +2,7 @@ import { supabase } from "../supabase/supabase";
 
 // 
 
-export default function bulkExportTxtFile(data, selectedCategory) {
+export default function bulkExportTxtFile(data, selectedCategory, exportFilterInput) {
    // Reset the txt string
    let text = "";
 

@@ -9,25 +9,33 @@ import exportTxtFile from "../methods/bulkExportTxtFile.js";
 const selectedCategory = ref("");
 const selectedFilterTier = ref("");
 const exportFilterInput = ref("");
-const EBAC = ref();
-const checked = ref();
+const EBAC = ref(false);
 
 // Page Methods
 // Method triggered by the export button
 function exportBulk() {
    // Instancing the supabase query, returns an array of title objects
-   // const test = exportFilterSupabaseQuery(
-   //    selectedCategory.value,
-   //    selectedFilterTier.value,
-   //    exportFilterInput.value,
-   //    EBAC.value
-   // );
-   const test = exportFilterSupabaseQueryAVEMARIA(
-      selectedCategory.value,
-      selectedFilterTier.value,
-      exportFilterInput.value,
-      EBAC.value
-   );
+   if (EBAC.value === false) {
+      const test = exportFilterSupabaseQuery(
+         selectedCategory.value,
+         selectedFilterTier.value,
+         exportFilterInput.value,
+         EBAC.value
+      );
+   }
+   if (EBAC.value === true) {
+      const test = exportFilterSupabaseQueryAVEMARIA(
+         selectedCategory.value,
+         selectedFilterTier.value,
+         exportFilterInput.value,
+         EBAC.value
+      );
+   }
+}
+
+function resetExportFilters() {
+   selectedFilterTier.value = "";
+   exportFilterInput.value = "";
 }
 
 function click() {

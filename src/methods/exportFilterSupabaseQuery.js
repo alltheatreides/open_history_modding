@@ -17,7 +17,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*)), county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
             .like("title", "b_%")
-            .like("empire", "%" + exportFilterInput + "%");
+            .or(`empire.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -26,6 +26,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput);
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
@@ -37,7 +38,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*)), county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
             .like("title", "b_%")
-            .like("kingdom", "%" + exportFilterInput + "%");
+            .or(`kingdom.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -46,6 +47,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput)
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
@@ -57,7 +59,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*)), county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
             .like("title", "b_%")
-            .like("duchy", "%" + exportFilterInput + "%");
+            .or(`duchy.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -66,6 +68,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput)
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
@@ -79,7 +82,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*)), county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
-            .like("empire", "%" + exportFilterInput + "%");
+            .or(`empire.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -88,6 +91,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput);
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
@@ -98,7 +102,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*)), county, duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
-            .like("kingdom", "%" + exportFilterInput + "%");
+            .or(`kingdom.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -107,6 +111,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput)
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
@@ -117,7 +122,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province_history!province_history_barony_fkey(*), title_history!title_history_title_fkey(*), province, county_capital, county (title, province_history!province_history_barony_fkey(*), user_province_history!user_province_history_barony_fkey(*), title_history!title_history_title_fkey(*), user_title_history!user_title_history_title_fkey(*)), duchy, kingdom, empire, user_province_history!user_province_history_barony_fkey(*), user_title_history!user_title_history_title_fkey(*)"
             )
-            .like("duchy", "%" + exportFilterInput + "%");
+            .or(`duchy.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -126,6 +131,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             console.log("ebac activated")
             bulkExportTxtFileEBAC(data, selectedCategory, exportFilterInput)
          } else {
+            console.log("ebac not activated")
             bulkExportTxtFile(data, selectedCategory, exportFilterInput);
          }
       }
