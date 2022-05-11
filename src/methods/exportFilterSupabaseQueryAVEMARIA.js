@@ -80,7 +80,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province(county (title_history!title_history_title_fkey(*), user_title_history!user_title_history_title_fkey(*))), county_capital, county, duchy, kingdom, empire, title_history_duplicate!title_history_duplicate_title_fkey(*)"
             )
-            .like("empire", "%" + exportFilterInput + "%");
+            .or(`empire.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -99,7 +99,7 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province(county (title_history!title_history_title_fkey(*), user_title_history!user_title_history_title_fkey(*))), county_capital, county, duchy, kingdom, empire, title_history_duplicate!title_history_duplicate_title_fkey(*)"
             )
-            .like("kingdom", "%" + exportFilterInput + "%");
+            .or(`kingdom.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
@@ -118,7 +118,8 @@ export default async function exportFilterSupabaseQuery(selectedCategory, tier, 
             .select(
                "title, province(county (title_history!title_history_title_fkey(*), user_title_history!user_title_history_title_fkey(*))), county_capital, county, duchy, kingdom, empire, title_history_duplicate!title_history_duplicate_title_fkey(*)"
             )
-            .like("duchy", "%" + exportFilterInput + "%")
+
+            .or(`duchy.like.%${exportFilterInput}%, title.like.%${exportFilterInput}%`)
 
          console.log(data);
          console.log(error);
