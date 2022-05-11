@@ -6,7 +6,7 @@ import TitleCard from "../components/TitleCard.vue";
 import { userStatusStore } from "../stores/counter";
 import downloadIcon from "../assets/svg/download_arrow.svg";
 import router from "../router";
-
+import exportUserHistory from "../methods/exportUserHistory";
 import EBACView from "./EBACView.vue";
 
 // REACTIVE STATE START
@@ -28,7 +28,7 @@ const selectedFilterTier = ref("");
 const exportFilterInput = ref("");
 
 // Txt stream for the file export
-const text = ref("");
+let text = ref("");
 
 const bulkExport = ref([]);
 
@@ -167,6 +167,15 @@ function resetExportFilters() {
    selectedFilterTier.value = "";
    exportFilterInput.value = "";
 }
+
+function exportAllResearchResults() {
+   const test = exportUserHistory(
+      selectedCategory.value,
+      exportFilterInput.value,
+      userStore.value.getUserInfo().id
+   );
+}
+
 // Page Methods END
 
 // lifecycle hooks
@@ -175,7 +184,9 @@ onBeforeMount(() => {
       router.push("/404");
    }
 });
-onMounted(() => {});
+onMounted(() => {
+   // console.log(userStore.value.getUserInfo().id);
+});
 </script>
 
 <template>
@@ -274,28 +285,6 @@ onMounted(() => {});
                class="mt-10 xl:w-9/12 max-h-[1rem]"
                v-if="selectedCategory === 'Provinces'"
             >
-               <!-- Export button -->
-               <!-- Buttons to export -->
-               <div class="flex gap-4" v-if="createdProvinceHistory.length > 0">
-                  <!-- Export all button -->
-                  <button
-                     class="text-secondary bg-tertiary focus:outline-none font-medium px-5 py-3.5 text-center inline-flex items-center focus:ring-0 border-0 focus:border-0 rounded-lg mb-6"
-                     title="Export all search results into one file"
-                     @click="exportAllResearchResults"
-                  >
-                     Export all
-                     <img class="ml-5 h-[25px] color" :src="downloadIcon" />
-                  </button>
-                  <!-- Export all button -->
-                  <button
-                     class="text-secondary bg-tertiary focus:outline-none font-medium px-5 py-3.5 text-center inline-flex items-center focus:ring-0 border-0 focus:border-0 rounded-lg mb-6"
-                     title="Export selected search results into one file"
-                     @click="exportSelectedResearchResults"
-                  >
-                     Export selected
-                     <img class="ml-5 h-[25px] color" :src="downloadIcon" />
-                  </button>
-               </div>
                <!-- Province Results entry -->
                <div class="flex flex-wrap gap-4 mt-6">
                   <div
