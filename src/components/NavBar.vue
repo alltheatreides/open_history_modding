@@ -11,6 +11,7 @@ export default {
          // Instance pinia user store
          userStore: userStatusStore(),
          authenticated: userStatusStore().isAuthenticated,
+         landingPage: false,
       };
    },
    methods: {
@@ -20,6 +21,12 @@ export default {
          // console.log(this.userStore.session);
          router.push("/");
       },
+   },
+   mounted() {
+      if (router.currentRoute._value.name === "home") {
+         this.landingPage = true;
+         console.log(this.landingPage);
+      }
    },
 };
 </script>
@@ -75,6 +82,7 @@ export default {
          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
             <ul
                class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-lg lg:text-xl justify-end items-center"
+               :class="{ '2xl:pr-48': !landingPage }"
             >
                <!-- Home -->
                <li>
