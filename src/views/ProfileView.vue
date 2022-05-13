@@ -303,7 +303,27 @@ onMounted(() => {
                class="mt-10 xl:w-9/12 mx-auto"
                v-if="selectedCategory === ''"
             >
-               <p>Select filter options and click on search to see results</p>
+               <p
+                  v-if="
+                     selectedCategory === '' &&
+                     searchInput1 === '' &&
+                     searchInput2 === '' &&
+                     searchInput3 === ''
+                  "
+               >
+                  Select filter options and click on search to see results
+               </p>
+               <p
+                  v-if="
+                     selectedCategory === '' &&
+                     (searchInput1 !== '' ||
+                        searchInput2 !== '' ||
+                        searchInput3 !== '')
+                  "
+               >
+                  Select a category, either Provinces or Titles to see search
+                  results
+               </p>
             </article>
             <!-- Right column , province created results -->
             <article
@@ -471,6 +491,7 @@ onMounted(() => {
                   <p>No results were found for selected search parameters</p>
                </div>
             </article>
+            <!-- Right column, search input but no category selected Error message -->
          </div>
       </section>
    </main>
