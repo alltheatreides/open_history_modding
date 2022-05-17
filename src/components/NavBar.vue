@@ -128,7 +128,7 @@ export default {
                </li>
 
                <!-- Create Entry -->
-               <li>
+               <!-- <li>
                   <router-link
                      v-if="userStatusStore().isAuthenticated"
                      to="create-history"
@@ -150,7 +150,7 @@ export default {
                         </svg>
                      </div>
                   </router-link>
-               </li>
+               </li> -->
                <!-- User page -->
                <li v-if="userStatusStore().isAuthenticated">
                   <router-link to="/profile" title="Go to your profile page">

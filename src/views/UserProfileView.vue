@@ -4,6 +4,8 @@ import { supabase } from "../supabase/supabase";
 
 import ProfileOverviewSection from "../components/ProfileOverviewSection.vue";
 import ProfileCreatedSection from "../components/ProfileCreatedSection.vue";
+import ProfileCreateSection from "../components/ProfileCreateSection.vue";
+import ProfileExportSection from "../components/ProfileExportSection.vue";
 import ProvinceCard from "../components/ProvinceCard.vue";
 import TitleCard from "../components/TitleCard.vue";
 import EntryCard from "../components/EntryCard.vue";
@@ -222,6 +224,10 @@ onMounted(() => {
             :info="userLatestEntries"
          >
          </ProfileCreatedSection>
+         <ProfileCreateSection v-if="selectedSection === 'Create History'">
+         </ProfileCreateSection>
+         <ProfileExportSection v-if="selectedSection === 'Export History'">
+         </ProfileExportSection>
       </div>
    </main>
 </template>

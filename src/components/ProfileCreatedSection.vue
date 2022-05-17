@@ -70,7 +70,7 @@ defineProps({
             placeholder="Search for an history entry"
             class="flex-1 h-10 rounded-[10px] border border-secondary px-2.5 py-2 bg-transparent focus:outline-none focus:outline-tertiary"
          />
-
+         <!-- Search filter options -->
          <div class="flex gap-4">
             <select
                v-model="selectedCategory"
