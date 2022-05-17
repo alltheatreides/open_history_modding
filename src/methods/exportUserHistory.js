@@ -10,6 +10,7 @@ export default async function exportUserHistory(selectedCategory, exportFilterIn
             "*"
          )
          .eq("author", author)
+         .order("created_at")
 
       console.log(data);
       console.log(error);

@@ -7,6 +7,7 @@ import LoginView from '../views/LoginView.vue'
 import ProfileView from '../views/ProfileView.vue'
 import EBACView from '../views/EBACView.vue'
 import NotFound from '../views/404View.vue'
+import UserProfileView from '../views/UserProfileView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +49,11 @@ const router = createRouter({
       path: '/create-history',
       name: 'createHistory',
       component: CreateHistory
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: UserProfileView
     },
     // {
     //   path: '/about',

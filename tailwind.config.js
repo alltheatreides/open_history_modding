@@ -18,6 +18,10 @@ module.exports = {
       },
       height: {
         'h-modal-center': "calc(100% - 25rem)",
+      },
+      boxShadow: {
+        'brutal': '3px 4px 0px 0 rgba(0, 0, 0)',
+        'brutal-sm': '1.5px 2px 0px 0 rgba(0, 0, 0)',
       }
     },
   },
