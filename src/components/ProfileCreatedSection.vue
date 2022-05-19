@@ -62,13 +62,13 @@ defineProps({
 </script>
 
 <template>
-   <section class="mt-12 w-4/6">
+   <section class="">
       <div class="flex items-center gap-4 w-full mx-auto justify-between">
          <input
             v-model="searchInput"
             @keyup.enter="instanceSUE"
             placeholder="Search for an history entry"
-            class="flex-1 h-10 rounded-[10px] border border-secondary px-2.5 py-2 bg-transparent focus:outline-none focus:outline-tertiary"
+            class="flex-1 h-10 rounded-[10px] border border-secondary px-2.5 py-2 bg-primary focus:outline-none focus:outline-tertiary"
          />
          <!-- Search filter options -->
          <div class="flex gap-4">
@@ -109,12 +109,16 @@ defineProps({
             Specify a Category or a Tier to make your search
          </p>
          <!-- Placeholder results -->
-         <ul v-if="!searchStarted" class="mt-6 grid grid-cols-3 gap-10">
+         <ul
+            v-if="!searchStarted"
+            class="mt-6 flex flex-wrap justify-start gap-10"
+         >
             <li v-for="entry in info" :key="entry.id">
                <EntryCard
                   v-if="entry.barony"
                   :title="entry.barony"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="27"
@@ -143,6 +147,7 @@ defineProps({
                   v-if="entry.title"
                   :title="entry.title"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="24"
@@ -172,13 +177,14 @@ defineProps({
          <!-- Province Search results -->
          <ul
             v-if="searchStarted && selectedCategory === 'Provinces'"
-            class="mt-6 grid grid-cols-3 gap-10"
+            class="mt-6 flex flex-wrap justify-start gap-10"
          >
             <li v-for="entry in searchResults" :key="entry.id">
                <EntryCard
                   v-if="entry.barony"
                   :title="entry.barony"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="27"
@@ -208,13 +214,14 @@ defineProps({
          <!-- Title search results -->
          <ul
             v-if="searchStarted && selectedCategory === 'Titles'"
-            class="mt-6 grid grid-cols-3 gap-10"
+            class="mt-6 flex flex-wrap justify-start gap-10"
          >
             <li v-for="entry in searchResults" :key="entry.id">
                <EntryCard
                   v-if="entry.title"
                   :title="entry.title"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="24"

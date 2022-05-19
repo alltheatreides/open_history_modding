@@ -5,6 +5,8 @@ import SortButton from "./small_components/SortButton.vue";
 import LoadingIcon from "./small_components/LoadingIcon.vue";
 import { userStatusStore } from "../stores/counter";
 
+import ProfileCreatedSection from "./ProfileCreatedSection.vue";
+
 import exportFilterSupabaseQuery from "../methods/exportFilterSupabaseQuery.js";
 import exportFilterSupabaseQueryAVEMARIA from "../methods/exportFilterSupabaseQueryAVEMARIA.js";
 
@@ -138,11 +140,13 @@ function exportBulk() {
             </div>
          </div>
       </article>
-      <article class="mt-20 xl:mt-40">
+      <article class="mt-20 xl:mt-24">
          <h2 class="text-xl font-bold mb-6">
             Export your created history individually
          </h2>
-         <div class="bg-[#DED6C5] rounded-[10px] shadow-brutal p-6"></div>
+         <div class="bg-[#DED6C5] rounded-[10px] shadow-brutal p-6 w-full">
+            <ProfileCreatedSection />
+         </div>
       </article>
    </section>
 </template>

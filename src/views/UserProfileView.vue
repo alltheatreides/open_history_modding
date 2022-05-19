@@ -220,6 +220,7 @@ onMounted(() => {
             :info="userLatestEntries"
          ></ProfileOverviewSection>
          <ProfileCreatedSection
+            class="mt-12 w-4/6"
             v-if="selectedSection === 'Created History'"
             :info="userLatestEntries"
          >

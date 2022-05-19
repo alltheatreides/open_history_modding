@@ -1,6 +1,10 @@
 <script setup>
 import { ref, onBeforeMount, onMounted, watch } from "vue";
 import EntryCard from "../components/EntryCard.vue";
+import LoadingIcon from "./small_components/LoadingIcon.vue";
+
+// Request in progress indicator
+let displaySearchProgressIcon = ref(false);
 
 defineProps({
    info: Array,
@@ -15,12 +19,16 @@ defineProps({
          >
             Latest created entries
          </h2>
+         <p v-if="displaySearchProgressIcon" class="flex gap-4">
+            Loading... <LoadingIcon></LoadingIcon>
+         </p>
          <ul class="mt-6 grid grid-cols-3 gap-10">
             <li v-for="entry in info" :key="entry.id">
                <EntryCard
                   v-if="entry.barony"
                   :title="entry.barony"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="27"
@@ -49,6 +57,7 @@ defineProps({
                   v-if="entry.title"
                   :title="entry.title"
                   :date="entry.date"
+                  :infos="entry"
                >
                   <svg
                      width="24"
